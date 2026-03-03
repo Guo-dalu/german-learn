@@ -1,12 +1,34 @@
 {
   "topic": "food",
   "tags": ["A1", "food"],
+  "words": [
+    { "german": "das Wasser", "article": "das", "gender": "neuter",   "en": "water",  "zh": "水",   "level": "A1" },
+    { "german": "die Milch",  "article": "die", "gender": "feminine", "en": "milk",   "zh": "牛奶", "level": "A1" },
+    { "german": "das Brot",   "article": "das", "gender": "neuter",   "en": "bread",  "zh": "面包", "level": "A1" },
+    { "german": "der Käse",   "article": "der", "gender": "masculine","en": "cheese", "zh": "奶酪", "level": "A1" },
+    { "german": "der Apfel",  "article": "der", "gender": "masculine","en": "apple",  "zh": "苹果", "level": "A1" },
+    { "german": "die Suppe",  "article": "die", "gender": "feminine", "en": "soup",   "zh": "汤",   "level": "A1" },
+    { "german": "das Ei",     "article": "das", "gender": "neuter",   "en": "egg",    "zh": "鸡蛋", "level": "A1" },
+    { "german": "das Fleisch","article": "das", "gender": "neuter",   "en": "meat",   "zh": "肉",   "level": "A1" }
+  ],
   "exercises": [
     {
       "type": "fill-in",
       "sentence": "das ___ ist kalt",
       "answer": "Wasser",
       "hint": { "en": "water", "zh": "水" }
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich esse das ___ mit Käse",
+      "answer": "Brot",
+      "hint": { "en": "bread", "zh": "面包" }
+    },
+    {
+      "type": "fill-in",
+      "sentence": "der ___ ist lecker",
+      "answer": "Käse",
+      "hint": { "en": "cheese", "zh": "奶酪" }
     },
     {
       "type": "multiple-choice",
@@ -20,10 +42,34 @@
       "answer": 1
     },
     {
+      "type": "multiple-choice",
+      "question": { "en": "Which article does 'Brot' use?", "zh": "'Brot' 用哪个冠词？" },
+      "options": [
+        { "en": "der (masculine)", "zh": "der（阳性）" },
+        { "en": "die (feminine)",  "zh": "die（阴性）" },
+        { "en": "das (neuter)",    "zh": "das（中性）" },
+        { "en": "keine (none)",    "zh": "keine（无）"  }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "How do you say 'I eat an apple'?", "zh": "如何说\"我吃一个苹果\"？" },
+      "options": [
+        { "en": "Ich trinke einen Apfel", "zh": "Ich trinke einen Apfel" },
+        { "en": "Ich esse einen Apfel",   "zh": "Ich esse einen Apfel"   },
+        { "en": "Ich koche einen Apfel",  "zh": "Ich koche einen Apfel"  },
+        { "en": "Ich kaufe einen Apfel",  "zh": "Ich kaufe einen Apfel"  }
+      ],
+      "answer": 1
+    },
+    {
       "type": "matching",
       "pairs": [
         { "german": "das Brot",  "en": "bread",  "zh": "面包" },
-        { "german": "der Käse", "en": "cheese", "zh": "奶酪" }
+        { "german": "der Käse",  "en": "cheese", "zh": "奶酪" },
+        { "german": "die Milch", "en": "milk",   "zh": "牛奶" },
+        { "german": "der Apfel", "en": "apple",  "zh": "苹果" }
       ]
     }
   ]

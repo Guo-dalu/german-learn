@@ -1,5 +1,14 @@
 export type Lang = 'en' | 'zh'
 
+export interface Word {
+  german: string
+  article: string
+  gender: 'masculine' | 'feminine' | 'neuter'
+  en: string
+  zh: string
+  level: string
+}
+
 export interface LocalizedString {
   en: string
   zh: string
@@ -29,5 +38,6 @@ export type Exercise = FillInExercise | MultipleChoiceExercise | MatchingExercis
 export interface ContentFile {
   topic: string
   tags: string[]
+  words?: Word[]
   exercises: Exercise[]
 }
