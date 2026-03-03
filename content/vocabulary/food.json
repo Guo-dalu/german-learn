@@ -1,0 +1,30 @@
+{
+  "topic": "food",
+  "tags": ["A1", "food"],
+  "exercises": [
+    {
+      "type": "fill-in",
+      "sentence": "das ___ ist kalt",
+      "answer": "Wasser",
+      "hint": { "en": "water", "zh": "水" }
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is 'die Milch'?", "zh": "'die Milch' 是什么意思？" },
+      "options": [
+        { "en": "water",  "zh": "水"   },
+        { "en": "milk",   "zh": "牛奶" },
+        { "en": "bread",  "zh": "面包" },
+        { "en": "cheese", "zh": "奶酪" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "das Brot",  "en": "bread",  "zh": "面包" },
+        { "german": "der Käse", "en": "cheese", "zh": "奶酪" }
+      ]
+    }
+  ]
+}

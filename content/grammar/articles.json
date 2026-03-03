@@ -1,0 +1,16 @@
+{
+  "topic": "articles",
+  "tags": ["A1", "articles"],
+  "exercises": [
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the article for 'Tisch' (table)?", "zh": "'Tisch'（桌子）的冠词是什么？" },
+      "options": [
+        { "en": "die", "zh": "die" },
+        { "en": "der", "zh": "der" },
+        { "en": "das", "zh": "das" }
+      ],
+      "answer": 1
+    }
+  ]
+}

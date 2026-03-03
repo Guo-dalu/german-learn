@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "vocabulary": "词汇",
+    "grammar": "语法",
+    "exercises": "练习"
+  },
+  "exercise": {
+    "fillIn": "填空",
+    "multipleChoice": "选择正确答案",
+    "matching": "配对",
+    "reveal": "显示答案",
+    "correct": "✓ 正确！",
+    "wrong": "✗ 再试一次...",
+    "richtig": "✓ Richtig!（正确！）"
+  },
+  "home": {
+    "tagline": "用有趣的方式学德语",
+    "subtitle": "彩色课程 · 互动练习 · 真实例句"
+  }
+}

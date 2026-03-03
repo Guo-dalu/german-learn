@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "vocabulary": "Vocabulary",
+    "grammar": "Grammar",
+    "exercises": "Exercises"
+  },
+  "exercise": {
+    "fillIn": "Fill in the blank",
+    "multipleChoice": "Choose the correct answer",
+    "matching": "Match the pairs",
+    "reveal": "Reveal",
+    "correct": "✓ Correct!",
+    "wrong": "✗ Try again...",
+    "richtig": "✓ Richtig! (Correct!)"
+  },
+  "home": {
+    "tagline": "Learn German the fun way",
+    "subtitle": "Colorful lessons · Interactive exercises · Real sentences"
+  }
+}
