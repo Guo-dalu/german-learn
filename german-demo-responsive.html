@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch Lernen ✦</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --bg: #FFF9F0; --bg2: #FFF3E0; --card: #FFFFFF;
+    --text: #2D1B00; --text2: #6B4C2A; --border: #FFD8A8;
+    --shadow: rgba(255,160,50,0.2);
+    --accent1: #FF6B6B; --accent2: #4ECDC4; --accent3: #FFE66D;
+    --accent4: #A855F7; --accent5: #3B82F6;
+    --tag-bg: #FFE8CC; --tag-text: #C05621;
+  }
+  [data-theme="dark"] {
+    --bg: #1A1025; --bg2: #231535; --card: #2D1B45;
+    --text: #F5EEFF; --text2: #C4A8E8; --border: #4A2D7A;
+    --shadow: rgba(168,85,247,0.2);
+    --accent1: #FF6B6B; --accent2: #4ECDC4; --accent3: #FFE66D;
+    --accent4: #C084FC; --accent5: #60A5FA;
+    --tag-bg: #3B1F6B; --tag-text: #C084FC;
+  }
+  * { transition: background-color 0.3s, color 0.2s, border-color 0.3s; box-sizing: border-box; }
+  body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; margin: 0; }
+  h1,h2,h3 { font-family: 'Fredoka One', cursive; }
+  .bg-dots { background-image: radial-gradient(circle, var(--border) 1.5px, transparent 1.5px); background-size: 28px 28px; }
+  .card { background: var(--card); border: 2px solid var(--border); box-shadow: 4px 4px 0px var(--border); border-radius: 16px; transition: transform 0.15s, box-shadow 0.15s; }
+  .card:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0px var(--border); }
+  .tag { background: var(--tag-bg); color: var(--tag-text); border-radius: 999px; padding: 2px 10px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; white-space: nowrap; }
+  .pill-btn { border-radius: 999px; font-weight: 800; font-family: 'Fredoka One', cursive; letter-spacing: 0.04em; border: 2px solid transparent; cursor: pointer; transition: all 0.15s; }
+  .pill-btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
+  .pill-btn:active { transform: translateY(1px); }
+  .word-highlight { font-weight: 800; font-style: italic; position: relative; cursor: pointer; }
+  .word-highlight::after { content:''; position:absolute; bottom:0; left:0; width:100%; height:3px; border-radius:2px; opacity:0.5; }
+  .word-highlight:hover::after { opacity:1; }
+  .noun { color: var(--accent1); } .noun::after { background: var(--accent1); }
+  .verb { color: var(--accent2); } .verb::after { background: var(--accent2); }
+  .adj  { color: var(--accent5); } .adj::after  { background: var(--accent5); }
+  .nav-link { color: var(--text2); font-weight: 700; padding: 6px 14px; border-radius: 999px; cursor: pointer; transition: all 0.15s; font-size: 0.95rem; }
+  .nav-link:hover, .nav-link.active { background: var(--tag-bg); color: var(--tag-text); }
+  .toggle-theme { background: var(--card); border: 2px solid var(--border); border-radius: 999px; padding: 5px 14px; cursor: pointer; font-weight: 800; color: var(--text); font-family: 'Fredoka One', cursive; font-size: 0.9rem; white-space: nowrap; }
+  .toggle-theme:hover { background: var(--tag-bg); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 7px; border-radius: 10px; background: var(--tag-bg); border: none; }
+  .hamburger span { display: block; width: 20px; height: 2.5px; background: var(--tag-text); border-radius: 2px; }
+  .mobile-menu { display: none; flex-direction: column; gap: 4px; padding: 10px 16px 14px; background: var(--card); border-bottom: 2px solid var(--border); }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu .nav-link { text-align: center; border-radius: 12px; }
+  .exercise-input { background: var(--bg2); border: 2px solid var(--border); border-radius: 10px; padding: 8px 14px; color: var(--text); font-family: 'Nunito', sans-serif; font-weight: 700; outline: none; width: 100%; font-size: 1rem; }
+  .exercise-input:focus { border-color: var(--accent4); box-shadow: 0 0 0 3px var(--shadow); }
+  .correct { border-color: var(--accent2) !important; color: var(--accent2); }
+  .wrong   { border-color: var(--accent1) !important; color: var(--accent1); }
+  .blob { position: absolute; border-radius: 50%; filter: blur(60px); opacity: 0.15; pointer-events: none; }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  .float { animation: float 3s ease-in-out infinite; }
+  .float-delay { animation: float 3s ease-in-out infinite 1s; }
+  .section-title { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+  .section-title::after { content:''; display:block; width:36px; height:4px; border-radius:2px; background:var(--accent3); }
+
+  @media (max-width: 640px) {
+    .desktop-nav { display: none !important; }
+    .hamburger { display: flex; }
+    .fill-row { flex-direction: column !important; align-items: stretch !important; }
+    .fill-row .exercise-input { max-width: 100% !important; }
+    .fill-row .pill-btn { width: 100%; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<div class="sticky top-0 z-50">
+  <nav style="background:var(--card); border-bottom:2px solid var(--border);" class="px-4 py-3 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <span style="font-size:1.5rem;" class="float">🇩🇪</span>
+      <span style="font-family:'Fredoka One',cursive; font-size:1.4rem; color:var(--text);">Deutsch<span style="color:var(--accent1);">!</span></span>
+    </div>
+    <div class="desktop-nav flex items-center gap-1">
+      <span class="nav-link active">Vocabulary</span>
+      <span class="nav-link">Grammar</span>
+      <span class="nav-link">Exercises</span>
+    </div>
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <button class="toggle-theme" onclick="toggleTheme()"><span id="theme-icon">🌙 Dark</span></button>
+      <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <span class="nav-link active">Vocabulary</span>
+    <span class="nav-link">Grammar</span>
+    <span class="nav-link">Exercises</span>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="relative overflow-hidden bg-dots" style="padding: clamp(28px,6vw,56px) 16px;">
+  <div class="blob" style="width:300px;height:300px;background:var(--accent1);top:-80px;left:-60px;"></div>
+  <div class="blob" style="width:250px;height:250px;background:var(--accent5);bottom:-60px;right:80px;"></div>
+  <div class="blob" style="width:180px;height:180px;background:var(--accent2);top:20px;right:-30px;"></div>
+  <div class="max-w-2xl mx-auto text-center relative z-10">
+    <div class="float-delay inline-block mb-2" style="font-size:2rem;">✦</div>
+    <h1 class="mb-3" style="font-size:clamp(1.9rem,7vw,3rem); color:var(--text); line-height:1.1;">
+      Learn German<br><span style="color:var(--accent1);">the fun way</span>
+    </h1>
+    <p class="mb-5 font-semibold" style="color:var(--text2); font-size:clamp(0.88rem,2.5vw,1.05rem);">
+      Colorful lessons · Interactive exercises · Real sentences
+    </p>
+    <div class="flex gap-2 justify-center flex-wrap">
+      <span class="tag">A1</span><span class="tag">A2</span><span class="tag">B1</span>
+      <span class="tag">🍎 Food</span><span class="tag">🏠 Home</span><span class="tag">🚂 Travel</span>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6" style="padding: clamp(20px,4vw,40px) clamp(16px,4vw,24px);">
+
+  <!-- Vocabulary -->
+  <div>
+    <h2 class="section-title" style="font-size:1.3rem;">📖 Today's Words</h2>
+    <div class="card p-5 mb-4" style="cursor:default;">
+      <div class="flex items-start justify-between mb-3 gap-2">
+        <div>
+          <div style="font-family:'Fredoka One',cursive; font-size:clamp(1.4rem,5vw,1.8rem); color:var(--accent1); line-height:1.2;">das Wasser</div>
+          <div style="color:var(--text2); font-size:0.88rem;" class="font-semibold">water · noun · neuter</div>
+        </div>
+        <span class="tag" style="margin-top:4px;">A1</span>
+      </div>
+      <div style="background:var(--bg2); border-radius:10px; padding:12px; font-size:1rem; color:var(--text); line-height:2; border-left:4px solid var(--accent1);">
+        Das <span class="word-highlight noun">Wasser</span> ist
+        <span class="word-highlight adj">kalt</span>.
+        Ich <span class="word-highlight verb">trinke</span>
+        das <span class="word-highlight noun">Wasser</span>.
+      </div>
+      <div class="flex gap-2 mt-3 flex-wrap">
+        <span class="tag" style="background:#FFE0E0; color:var(--accent1);">🔴 noun</span>
+        <span class="tag" style="background:#E0FBF8; color:#0E9488;">🟢 verb</span>
+        <span class="tag" style="background:#E0EEFF; color:#2563EB;">🔵 adj</span>
+      </div>
+    </div>
+    <div class="card p-4" style="cursor:default;">
+      <div style="font-family:'Fredoka One',cursive; font-size:1rem; color:var(--text2); margin-bottom:10px;">More Food & Drink</div>
+      <div style="display:grid; gap:4px;">
+        <div class="flex justify-between items-center py-2" style="border-bottom:1.5px dashed var(--border); gap:8px;">
+          <span style="font-weight:800; color:var(--accent2); min-width:85px;">die Milch</span>
+          <span style="color:var(--text2); font-size:0.85rem; flex:1;">milk · fem</span>
+          <span class="tag">A1</span>
+        </div>
+        <div class="flex justify-between items-center py-2" style="border-bottom:1.5px dashed var(--border); gap:8px;">
+          <span style="font-weight:800; color:var(--accent2); min-width:85px;">das Brot</span>
+          <span style="color:var(--text2); font-size:0.85rem; flex:1;">bread · neut</span>
+          <span class="tag">A1</span>
+        </div>
+        <div class="flex justify-between items-center py-2" style="gap:8px;">
+          <span style="font-weight:800; color:var(--accent2); min-width:85px;">der Käse</span>
+          <span style="color:var(--text2); font-size:0.85rem; flex:1;">cheese · masc</span>
+          <span class="tag">A1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exercises -->
+  <div>
+    <h2 class="section-title" style="font-size:1.3rem;">✏️ Quick Exercise</h2>
+    <div class="card p-5 mb-4" style="cursor:default;">
+      <div style="font-family:'Fredoka One',cursive; font-size:1.1rem; color:var(--text2); margin-bottom:12px;">Fill in the blank</div>
+      <div style="font-size:1rem; color:var(--text); font-weight:700; line-height:2.2; margin-bottom:14px;">
+        Ich trinke das ___ jeden Morgen.<br>
+        <span style="font-size:0.82rem; color:var(--text2);">(I drink the ___ every morning.)</span>
+      </div>
+      <div class="fill-row flex items-center gap-3" style="flex-wrap:wrap;">
+        <input class="exercise-input" id="fill-input" placeholder="type here..." oninput="checkAnswer(this)" style="max-width:200px;" />
+        <button class="pill-btn px-5 py-2" style="background:var(--accent4); color:white; font-size:0.95rem;" onclick="revealAnswer()">Reveal</button>
+      </div>
+      <div id="feedback" style="margin-top:10px; font-weight:800; font-size:0.9rem; display:none;"></div>
+    </div>
+    <div class="card p-5" style="cursor:default;">
+      <div style="font-family:'Fredoka One',cursive; font-size:1.1rem; color:var(--text2); margin-bottom:14px;">What is "die Milch"?</div>
+      <div style="display:grid; gap:10px;" id="mc-options">
+        <button class="pill-btn px-4 py-3 text-left" style="background:var(--bg2); color:var(--text); border:2px solid var(--border); font-family:'Nunito',sans-serif; font-weight:700; border-radius:12px;" onclick="mcAnswer(this,false)">🥖 bread</button>
+        <button class="pill-btn px-4 py-3 text-left" style="background:var(--bg2); color:var(--text); border:2px solid var(--border); font-family:'Nunito',sans-serif; font-weight:700; border-radius:12px;" onclick="mcAnswer(this,true)">🥛 milk</button>
+        <button class="pill-btn px-4 py-3 text-left" style="background:var(--bg2); color:var(--text); border:2px solid var(--border); font-family:'Nunito',sans-serif; font-weight:700; border-radius:12px;" onclick="mcAnswer(this,false)">💧 water</button>
+        <button class="pill-btn px-4 py-3 text-left" style="background:var(--bg2); color:var(--text); border:2px solid var(--border); font-family:'Nunito',sans-serif; font-weight:700; border-radius:12px;" onclick="mcAnswer(this,false)">🧀 cheese</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div style="background:var(--accent4); padding:12px 16px; text-align:center; margin-top:20px;">
+  <span style="font-family:'Fredoka One',cursive; color:white; font-size:clamp(0.85rem,3vw,1.05rem); letter-spacing:0.04em;">
+    ✦ Keep going · Weitermachen · 你能做到 ✦
+  </span>
+</div>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    document.getElementById('theme-icon').textContent = isDark ? '🌙 Dark' : '☀️ Light';
+  }
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+  function checkAnswer(input) {
+    const val = input.value.trim().toLowerCase();
+    const feedback = document.getElementById('feedback');
+    if (val === 'wasser') {
+      input.classList.add('correct'); input.classList.remove('wrong');
+      feedback.style.display = 'block'; feedback.style.color = 'var(--accent2)';
+      feedback.textContent = '✓ Richtig! (Correct!)';
+    } else if (val.length > 2) {
+      input.classList.add('wrong'); input.classList.remove('correct');
+      feedback.style.display = 'block'; feedback.style.color = 'var(--accent1)';
+      feedback.textContent = '✗ Try again...';
+    } else {
+      input.classList.remove('correct','wrong');
+      feedback.style.display = 'none';
+    }
+  }
+  function revealAnswer() {
+    const input = document.getElementById('fill-input');
+    input.value = 'Wasser'; input.classList.add('correct');
+    const feedback = document.getElementById('feedback');
+    feedback.style.display = 'block'; feedback.style.color = 'var(--accent2)';
+    feedback.textContent = '✓ Wasser! (water)';
+  }
+  function mcAnswer(btn, correct) {
+    const buttons = document.querySelectorAll('#mc-options button');
+    buttons.forEach(b => { b.style.opacity='0.5'; b.style.cursor='default'; b.onclick=null; });
+    if (correct) {
+      btn.style.background='#E0FBF8'; btn.style.borderColor='var(--accent2)';
+      btn.style.color='#0E9488'; btn.style.opacity='1';
+    } else {
+      btn.style.background='#FFE0E0'; btn.style.borderColor='var(--accent1)';
+      btn.style.color='var(--accent1)'; btn.style.opacity='1';
+      buttons[1].style.background='#E0FBF8'; buttons[1].style.borderColor='var(--accent2)';
+      buttons[1].style.color='#0E9488'; buttons[1].style.opacity='1';
+    }
+  }
+</script>
+</body>
+</html>

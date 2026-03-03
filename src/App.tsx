@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ExercisePage from './pages/ExercisePage'
+import GrammarPage from './pages/GrammarPage'
 import Home from './pages/Home'
 import VocabularyPage from './pages/VocabularyPage'
-import GrammarPage from './pages/GrammarPage'
-import ExercisePage from './pages/ExercisePage'
 
 export default function App() {
   return (
