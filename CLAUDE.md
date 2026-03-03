@@ -11,12 +11,13 @@ Supports two UI languages: English (`en`) and Chinese Simplified (`zh`).
 
 | Layer | Choice |
 |---|---|
-| Framework | React 18 + TypeScript |
-| Build tool | Vite |
-| Styling | Tailwind CSS (no component library) |
-| Routing | React Router v6 |
-| Markdown | react-markdown |
-| i18n | react-i18next |
+| Framework | React 19 + TypeScript |
+| Build tool | Vite 7 |
+| Styling | Tailwind CSS v4 (no component library) |
+| Routing | React Router v7 |
+| Markdown | react-markdown v10 |
+| i18n | react-i18next v16 / i18next v25 |
+| Linting | ESLint v9 (flat config) |
 | State | React useState / useReducer |
 | Persistence | localStorage |
 | Hosting | GitHub Pages |
@@ -32,8 +33,10 @@ No antd. No shadcn. No Zustand. Keep dependencies minimal.
 ├── LICENSE                    ← MIT (code)
 ├── index.html
 ├── vite.config.ts
-├── tailwind.config.ts
+├── eslint.config.ts           ← ESLint v9 flat config
+├── postcss.config.js          ← uses @tailwindcss/postcss (Tailwind v4)
 ├── src/
+│   ├── index.css              ← Tailwind v4 entry: @import "tailwindcss"
 │   ├── main.tsx
 │   ├── App.tsx
 │   ├── i18n.ts                ← react-i18next setup
@@ -245,6 +248,18 @@ Italic + colored underline on hover. Nouns → accent1, Verbs → accent2, Adjec
 - Mobile-first, single column → two columns at `md:`
 - Nav: links visible at `md:+`, hamburger drawer on mobile
 - Font sizes use `clamp()` for fluid scaling
+
+## Tooling
+
+### Tailwind v4
+- No `tailwind.config.ts` — deleted, content detection is automatic.
+- PostCSS uses `@tailwindcss/postcss` (includes autoprefixer).
+- CSS entry: `src/index.css` with `@import "tailwindcss"`, imported in `main.tsx`.
+
+### ESLint
+- Flat config (`eslint.config.ts`) using `defineConfig` from `eslint/config` (requires ESLint ≥9.22).
+- Plugins: `typescript-eslint`, `eslint-plugin-react`, `eslint-plugin-react-hooks` (via `configs.flat`), `eslint-plugin-import`.
+- Run: `npm run lint` → `eslint src --fix && tsc --noEmit`
 
 ## localStorage Keys
 
