@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import FillInBlank from '../components/exercises/FillInBlank'
 import MultipleChoice from '../components/exercises/MultipleChoice'
 import type { ContentFile, FillInExercise, Lang, MultipleChoiceExercise, Word } from '../types/content'
@@ -149,7 +150,7 @@ export default function VocabularyPage() {
               <span style={{ display: 'inline-block', width: 36, height: 4, borderRadius: 2, background: 'var(--accent3)' }} />
             </h2>
             <div className="prose-content rounded-2xl p-6" style={{ background: 'var(--card)', border: '2px solid var(--border)', boxShadow: '4px 4px 0 var(--border)' }}>
-              <ReactMarkdown>{body}</ReactMarkdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
             </div>
           </section>
         )}
