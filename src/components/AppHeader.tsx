@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { NavLink } from 'react-router-dom'
 
 export default function AppHeader() {
   const { t, i18n } = useTranslation()

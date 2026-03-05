@@ -1,36 +1,16 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
+import { useParams } from 'react-router-dom'
 import remarkGfm from 'remark-gfm'
 import FillInBlank from '../components/exercises/FillInBlank'
 import MultipleChoice from '../components/exercises/MultipleChoice'
 import type { ContentFile, FillInExercise, Lang, MultipleChoiceExercise, Word } from '../types/content'
+import { GENDER_COLOR, GENDER_LABEL } from '../constants'
+import { parseFrontmatter } from '../utils/content'
 
 const mdModules = import.meta.glob('/content/vocabulary/*.md', { query: '?raw', import: 'default' })
 const jsonModules = import.meta.glob<ContentFile>('/content/vocabulary/*.json', { import: 'default' })
-
-function parseFrontmatter(raw: string): { title: string; tags: string[]; body: string } {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n/)
-  if (!match) return { title: '', tags: [], body: raw }
-  const fm = match[1]
-  const title = (fm.match(/title:\s*"?([^"\n]+)"?/) ?? [])[1] ?? ''
-  const tagStr = (fm.match(/tags:\s*\[([^\]]+)\]/) ?? [])[1] ?? ''
-  const tags = tagStr.split(',').map(s => s.trim().replace(/"/g, ''))
-  const body = raw.slice(match[0].length).trim()
-  return { title, tags, body }
-}
-
-const GENDER_COLOR: Record<string, string> = {
-  masculine: 'var(--accent5)',
-  feminine: 'var(--accent1)',
-  neuter: 'var(--accent2)',
-}
-const GENDER_LABEL: Record<string, string> = {
-  masculine: 'masc',
-  feminine: 'fem',
-  neuter: 'neut',
-}
 
 export default function VocabularyPage() {
   const { topic } = useParams<{ topic: string }>()

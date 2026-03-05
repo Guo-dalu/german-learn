@@ -58,6 +58,10 @@ No antd. No shadcn. No Zustand. Keep dependencies minimal.
 │   │   └── ExercisePage.tsx
 │   ├── hooks/
 │   │   └── useProgress.ts     ← localStorage progress hook
+│   ├── utils/
+│   │   └── content.ts         ← parseFrontmatter and other content helpers
+│   ├── constants/
+│   │   └── index.ts           ← STORAGE_KEYS, GENDER_COLOR, GENDER_LABEL, DEFAULT_LANG
 │   └── types/
 │       └── content.ts         ← shared TypeScript types
 └── content/
@@ -71,6 +75,13 @@ No antd. No shadcn. No Zustand. Keep dependencies minimal.
     │   └── articles.json
     └── LICENSE                 ← CC BY 4.0 (content)
 ```
+
+## Code Conventions
+
+- **Shared functions** → `src/utils/` (e.g. `parseFrontmatter` in `utils/content.ts`)
+- **Shared constants** → `src/constants/index.ts` (e.g. `STORAGE_KEYS`, `GENDER_COLOR`, `DEFAULT_LANG`)
+- Never hardcode localStorage key strings — always use `STORAGE_KEYS` from `src/constants`
+- Never duplicate logic across pages — extract to `src/utils/` first
 
 ## Internationalization (i18n)
 

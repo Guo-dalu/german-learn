@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { STORAGE_KEYS } from '../constants'
 
 interface Progress {
   correct: number
@@ -6,7 +7,7 @@ interface Progress {
 }
 
 export function useProgress(topic: string) {
-  const key = `progress:${topic}`
+  const key = STORAGE_KEYS.PROGRESS(topic)
   const [progress, setProgress] = useState<Progress>(() => {
     const stored = localStorage.getItem(key)
     return stored ? JSON.parse(stored) : { correct: 0, total: 0 }
