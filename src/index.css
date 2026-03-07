@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* ── Design tokens ─────────────────────────────────────── */
 :root {
   --bg: #FFF9F0;
   --bg2: #FFF3E0;
@@ -15,6 +16,13 @@
   --accent5: #3B82F6;
   --tag-bg: #FFE8CC;
   --tag-text: #C05621;
+  --accent1-soft: rgba(255, 107, 107, 0.18);
+  --accent2-soft: rgba(78, 205, 196, 0.18);
+  --noun-badge-bg: #FFE0E0;
+  --verb-badge-bg: #E0FBF8;
+  --verb-badge-text: #0E9488;
+  --adj-badge-bg: #E0EEFF;
+  --adj-badge-text: #2563EB;
 }
 
 [data-theme="dark"] {
@@ -31,6 +39,33 @@
   --tag-text: #C084FC;
 }
 
+/* ── Tailwind theme mapping ────────────────────────────── */
+@theme inline {
+  --color-bg:       var(--bg);
+  --color-bg2:      var(--bg2);
+  --color-card:     var(--card);
+  --color-text:     var(--text);
+  --color-text2:    var(--text2);
+  --color-border:   var(--border);
+  --color-accent1:  var(--accent1);
+  --color-accent2:  var(--accent2);
+  --color-accent3:  var(--accent3);
+  --color-accent4:  var(--accent4);
+  --color-accent5:  var(--accent5);
+  --color-tag-bg:        var(--tag-bg);
+  --color-tag-text:      var(--tag-text);
+  --color-accent1-soft:  var(--accent1-soft);
+  --color-accent2-soft:  var(--accent2-soft);
+  --color-noun-badge-bg: var(--noun-badge-bg);
+  --color-verb-badge-bg: var(--verb-badge-bg);
+  --color-verb-badge-text: var(--verb-badge-text);
+  --color-adj-badge-bg:  var(--adj-badge-bg);
+  --color-adj-badge-text: var(--adj-badge-text);
+  --font-display:        'Fredoka One', cursive;
+  --font-body:      'Nunito', sans-serif;
+}
+
+/* ── Base ──────────────────────────────────────────────── */
 * { box-sizing: border-box; transition: background-color 0.3s, color 0.2s, border-color 0.3s; }
 
 body {
@@ -42,50 +77,55 @@ body {
 
 h1, h2, h3 { font-family: 'Fredoka One', cursive; }
 
-/* Word highlights */
-.word-highlight {
-  font-weight: 800;
-  font-style: italic;
-  position: relative;
-  cursor: default;
-}
-.word-highlight::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  border-radius: 2px;
-  opacity: 0.5;
-}
-.word-highlight:hover::after { opacity: 1; }
-.noun { color: var(--accent1); } .noun::after { background: var(--accent1); }
-.verb { color: var(--accent2); } .verb::after { background: var(--accent2); }
-.adj  { color: var(--accent5); } .adj::after  { background: var(--accent5); }
+/* ── Reusable components ───────────────────────────────── */
+@layer components {
+  /* Word highlights */
+  .word-highlight {
+    font-weight: 800;
+    font-style: italic;
+    position: relative;
+    cursor: default;
+  }
+  .word-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    opacity: 0.5;
+  }
+  .word-highlight:hover::after { opacity: 1; }
+  .noun { color: var(--accent1); } .noun::after { background: var(--accent1); }
+  .verb { color: var(--accent2); } .verb::after { background: var(--accent2); }
+  .adj  { color: var(--accent5); } .adj::after  { background: var(--accent5); }
 
-/* Decorative blobs */
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  pointer-events: none;
+  /* Markdown prose */
+  .prose-content h2 { font-size: 1.2rem; margin: 1.2rem 0 0.5rem; color: var(--text); }
+  .prose-content p  { line-height: 1.8; margin-bottom: 0.75rem; color: var(--text2); }
+  .prose-content ul { list-style: none; padding: 0; margin-bottom: 0.75rem; }
+  .prose-content li { padding: 3px 0; color: var(--text2); font-weight: 600; }
+  .prose-content li::before { content: '✦ '; color: var(--accent3); }
+  .prose-content strong { color: var(--text); font-weight: 800; }
+  .prose-content em { color: var(--text2); font-style: italic; }
+  .prose-content table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.9rem; }
+  .prose-content th { text-align: left; border-bottom: 2px solid var(--border); padding: 6px 10px; font-family: 'Fredoka One', cursive; color: var(--text2); }
+  .prose-content td { padding: 6px 10px; border-bottom: 1px solid var(--border); color: var(--text); font-weight: 600; }
 }
 
-/* Animations */
+/* ── Utilities ─────────────────────────────────────────── */
+@layer utilities {
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  .float       { animation: float 3s ease-in-out infinite; }
+  .float-delay { animation: float 3s ease-in-out infinite 1s; }
+}
+
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-.float       { animation: float 3s ease-in-out infinite; }
-.float-delay { animation: float 3s ease-in-out infinite 1s; }
-
-/* Markdown prose */
-.prose-content h2 { font-size: 1.2rem; margin: 1.2rem 0 0.5rem; color: var(--text); }
-.prose-content p  { line-height: 1.8; margin-bottom: 0.75rem; color: var(--text2); }
-.prose-content ul { list-style: none; padding: 0; margin-bottom: 0.75rem; }
-.prose-content li { padding: 3px 0; color: var(--text2); font-weight: 600; }
-.prose-content li::before { content: '✦ '; color: var(--accent3); }
-.prose-content strong { color: var(--text); font-weight: 800; }
-.prose-content em { color: var(--text2); font-style: italic; }
-.prose-content table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.9rem; }
-.prose-content th { text-align: left; border-bottom: 2px solid var(--border); padding: 6px 10px; font-family: 'Fredoka One', cursive; color: var(--text2); }
-.prose-content td { padding: 6px 10px; border-bottom: 1px solid var(--border); color: var(--text); font-weight: 600; }

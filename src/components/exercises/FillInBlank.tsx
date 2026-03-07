@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import Card from '../Card'
 import type { FillInExercise, Lang } from '../../types/content'
 
 interface Props {
@@ -38,33 +39,23 @@ export default function FillInBlank({ exercise, lang }: Props) {
     'var(--border)'
 
   return (
-    <div
-      className="rounded-2xl p-5"
-      style={{ background: 'var(--card)', border: '2px solid var(--border)', boxShadow: '4px 4px 0 var(--border)' }}
-    >
-      <div className="mb-3 font-black" style={{ fontFamily: 'Fredoka One, cursive', color: 'var(--text2)', fontSize: '1.05rem' }}>
+    <Card className="p-5">
+      <div className="mb-3 font-black font-display text-text2 text-[1.05rem]">
         {t('exercise.fillIn')}
       </div>
 
-      <div className="mb-4 font-bold text-base leading-loose" style={{ color: 'var(--text)' }}>
+      <div className="mb-4 font-bold text-base leading-loose text-text">
         {before}
         <input
-          className="inline-block mx-1 rounded-xl px-3 py-1 font-bold text-center outline-none"
-          style={{
-            width: '7rem',
-            background: 'var(--bg2)',
-            color: 'var(--text)',
-            border: `2px solid ${borderColor}`,
-            fontFamily: 'Nunito, sans-serif',
-            fontSize: '1rem',
-          }}
+          className="inline-block mx-1 w-28 rounded-xl px-3 py-1 font-bold text-base text-center outline-none bg-bg2 text-text font-body"
+          style={{ border: `2px solid ${borderColor}` }}
           value={value}
           onChange={e => check(e.target.value)}
           placeholder="..."
           disabled={revealed}
         />
         {after}
-        <span className="block text-xs mt-1" style={{ color: 'var(--text2)' }}>
+        <span className="block text-xs mt-1 text-text2">
           hint: <em>{exercise.hint[lang]}</em>
         </span>
       </div>
@@ -72,18 +63,17 @@ export default function FillInBlank({ exercise, lang }: Props) {
       <div className="flex items-center gap-3 flex-wrap">
         <button
           onClick={reveal}
-          className="rounded-full px-5 py-2 text-sm font-black text-white cursor-pointer hover:-translate-y-0.5 transition-transform"
-          style={{ background: 'var(--accent4)', fontFamily: 'Fredoka One, cursive' }}
+          className="rounded-full px-5 py-2 text-sm font-black text-white cursor-pointer hover:-translate-y-0.5 transition-transform bg-accent4 font-display"
         >
           {t('exercise.reveal')}
         </button>
         {status === 'correct' && (
-          <span className="font-black text-sm" style={{ color: 'var(--accent2)' }}>{t('exercise.richtig')}</span>
+          <span className="font-black text-sm text-accent2">{t('exercise.richtig')}</span>
         )}
         {status === 'wrong' && (
-          <span className="font-black text-sm" style={{ color: 'var(--accent1)' }}>{t('exercise.wrong')}</span>
+          <span className="font-black text-sm text-accent1">{t('exercise.wrong')}</span>
         )}
       </div>
-    </div>
+    </Card>
   )
 }
