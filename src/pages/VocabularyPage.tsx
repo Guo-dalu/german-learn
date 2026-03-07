@@ -40,6 +40,13 @@ function highlightLine(text: string, highlightedWords: string[], words: Word[]) 
   })
 }
 
+const stickerPositions = [
+  'absolute bottom-2 left-3 text-3xl rotate-8',
+  'absolute bottom-3 left-15 text-3xl -rotate-10',
+  'absolute bottom-2 right-15 text-3xl rotate-10',
+  'absolute bottom-2 right-3 text-4xl -rotate-6',
+]
+
 function DialogueSection({ dialogue, words, lang }: { dialogue: Dialogue; words: Word[]; lang: Lang }) {
   return (
     <Card className='p-4 mb-3'>
@@ -99,17 +106,10 @@ export default function VocabularyPage() {
   const emoji = content?.emoji ?? '📖'
   const stickers = content?.stickers ?? ['🇩🇪', '⭐', '✏️', '📖']
 
-  const stickerPositions = [
-    'absolute bottom-2 left-4 text-3xl rotate-8',
-    'absolute bottom-3 left-28 text-3xl -rotate-10',
-    'absolute bottom-2 right-28 text-3xl rotate-10',
-    'absolute bottom-2 right-3 text-4xl -rotate-6',
-  ]
-
   return (
     <SectionLayout section='vocabulary' currentSlug={topic ?? ''}>
       {/* Mobile breadcrumb */}
-      <div className='md:hidden px-4 pt-3'>
+      <div className='md:hidden px-4 my-2'>
         <Link to='/vocabulary' className='text-xs font-black text-text2 uppercase tracking-wider hover:text-accent1 transition-colors'>
           ← {t('vocab.allTopics')}
         </Link>

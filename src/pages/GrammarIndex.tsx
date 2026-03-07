@@ -1,27 +1,15 @@
-import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Tag from '../components/Tag'
-import { parseFrontmatter } from '../utils/content'
+import { getTopics } from '../utils/content'
 import type { Lang } from '../types/content'
-
-const mdModules = import.meta.glob<string>('/content/grammar/*/index*.md', { eager: true, query: '?raw', import: 'default' })
 
 export default function GrammarIndex() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language as Lang
 
-  const topics = useMemo(() => {
-    const slugs = Object.keys(mdModules)
-      .filter(p => !p.includes('.zh.'))
-      .map(p => p.replace('/content/grammar/', '').replace('/index.md', ''))
-    return slugs.map(slug => {
-      const raw = mdModules[`/content/grammar/${slug}/index.${lang}.md`] ?? mdModules[`/content/grammar/${slug}/index.md`] ?? ''
-      const { title, tags, emoji } = parseFrontmatter(raw)
-      return { slug, emoji: emoji || '📖', title: title || slug, tags }
-    })
-  }, [lang])
+  const topics = getTopics('grammar', lang)
 
   return (
     <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] py-8'>

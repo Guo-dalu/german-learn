@@ -40,8 +40,9 @@ src/
 ├── constants/index.ts     ← STORAGE_KEYS, GENDER_COLOR, GENDER_LABEL, DEFAULT_LANG
 └── types/content.ts       ← shared TypeScript types
 content/
-├── vocabulary/{topic}.md, {topic}.zh.md, {topic}.json   ← words + dialogue + phrasebook + exercises
-├── grammar/{topic}.md, {topic}.zh.md, {topic}.json       ← rules + examples + exercises
+├── meta.json                                              ← topic metadata: emoji, tags, wordCount, title {en,zh}
+├── vocabulary/{topic}/index.md, index.zh.md, index.json  ← words + dialogue + phrasebook + exercises
+├── grammar/{topic}/index.md, index.zh.md, index.json     ← rules + examples + exercises
 ├── reference/{name}.json                                  ← lookup tables, no exercises
 └── reading/{title}.md, {title}.zh.md                     ← graded stories B1+, no exercises
 ```
@@ -49,8 +50,14 @@ content/
 ## Code Conventions
 
 - **Shared functions** → `src/utils/`; **shared constants** → `src/constants/index.ts`
+- Before writing a helper, check `src/utils/content.ts` and `src/constants/index.ts` — reuse what exists, don't duplicate. DRY PRINCIPLE!
 - Never hardcode localStorage key strings — always use `STORAGE_KEYS`
-- Never duplicate logic across pages — extract to `src/utils/` first
+
+### Adding a new topic
+
+1. Add entry to `content/meta.json` — `{ emoji, tags, wordCount?, title: { en, zh } }`
+2. Create `content/{section}/{slug}/index.md`, `index.zh.md`, `index.json`
+3. Index pages, sidebar, and exercises pick it up automatically
 
 ## Styling Conventions
 

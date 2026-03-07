@@ -1,22 +1,8 @@
-import { type ReactNode, useMemo } from 'react'
+import { type ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { parseFrontmatter } from '../utils/content'
+import { getTopics } from '../utils/content'
 import type { Lang } from '../types/content'
-
-const vocabMds = import.meta.glob<string>('/content/vocabulary/*/index*.md', { eager: true, query: '?raw', import: 'default' })
-const grammarMds = import.meta.glob<string>('/content/grammar/*/index*.md', { eager: true, query: '?raw', import: 'default' })
-
-function buildTopics(mds: Record<string, string>, basePath: string, lang: Lang) {
-  const slugs = Object.keys(mds)
-    .filter(p => !p.includes('.zh.'))
-    .map(p => p.replace(`${basePath}/`, '').replace('/index.md', ''))
-  return slugs.map(slug => {
-    const raw = mds[`${basePath}/${slug}/index.${lang}.md`] ?? mds[`${basePath}/${slug}/index.md`] ?? ''
-    const { title, emoji } = parseFrontmatter(raw)
-    return { slug, emoji: emoji || '📖', title: title || slug }
-  })
-}
 
 interface Props {
   section: 'vocabulary' | 'grammar'
@@ -28,10 +14,7 @@ export default function SectionLayout({ section, currentSlug, children }: Props)
   const { t, i18n } = useTranslation()
   const lang = i18n.language as Lang
 
-  const topics = useMemo(() => {
-    if (section === 'vocabulary') return buildTopics(vocabMds, '/content/vocabulary', lang)
-    return buildTopics(grammarMds, '/content/grammar', lang)
-  }, [section, lang])
+  const topics = getTopics(section, lang)
 
   const indexPath = section === 'vocabulary' ? '/vocabulary' : '/grammar'
   const topicPath = (slug: string) => `/${section}/${slug}`

@@ -1,12 +1,9 @@
-import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Tag from '../components/Tag'
-import { parseFrontmatter } from '../utils/content'
+import { getTopics } from '../utils/content'
 import type { Lang } from '../types/content'
-
-const mdModules = import.meta.glob<string>('/content/vocabulary/*/index*.md', { eager: true, query: '?raw', import: 'default' })
 
 const HERO_LETTERS = [
   { char: 'W', cls: 'text-accent3' },
@@ -32,16 +29,7 @@ export default function Home() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language as Lang
 
-  const topics = useMemo(() => {
-    const slugs = Object.keys(mdModules)
-      .filter(p => !p.includes('.zh.'))
-      .map(p => p.replace('/content/vocabulary/', '').replace('/index.md', ''))
-    return slugs.map(slug => {
-      const raw = mdModules[`/content/vocabulary/${slug}/index.${lang}.md`] ?? mdModules[`/content/vocabulary/${slug}/index.md`] ?? ''
-      const { title, tags, emoji, wordCount } = parseFrontmatter(raw)
-      return { slug, emoji: emoji || '📖', title: title || slug, tags: tags.slice(0, 2), wordCount }
-    })
-  }, [lang])
+  const topics = getTopics('vocabulary', lang).map(t => ({ ...t, tags: t.tags.slice(0, 2) }))
 
   const topicCount = topics.length
   const totalWords = topics.reduce((sum, t) => sum + t.wordCount, 0)

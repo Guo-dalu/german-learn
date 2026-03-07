@@ -1,5 +1,17 @@
 export type Lang = 'en' | 'zh'
 
+export interface TopicMeta {
+  emoji: string
+  tags: string[]
+  wordCount?: number
+  title: { en: string; zh: string }
+}
+
+export interface SiteMeta {
+  vocabulary: Record<string, TopicMeta>
+  grammar: Record<string, TopicMeta>
+}
+
 export interface Word {
   german: string
   article: string

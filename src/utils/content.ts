@@ -1,3 +1,22 @@
+import metaRaw from '../../content/meta.json'
+import type { Lang, SiteMeta, TopicMeta } from '../types/content'
+
+export const meta = metaRaw as SiteMeta
+
+export function getLocalizedTitle(m: TopicMeta, lang: Lang): string {
+  return m.title[lang] ?? m.title.en
+}
+
+export function getTopics(section: 'vocabulary' | 'grammar', lang: Lang) {
+  return Object.entries(meta[section]).map(([slug, m]) => ({
+    slug,
+    emoji: m.emoji,
+    title: getLocalizedTitle(m, lang),
+    tags: m.tags,
+    wordCount: m.wordCount ?? 0,
+  }))
+}
+
 export function parseFrontmatter(raw: string): { title: string; tags: string[]; emoji: string; wordCount: number; body: string } {
   const match = raw.match(/^---\n([\s\S]*?)\n---\n/)
   if (!match) return { title: '', tags: [], emoji: '', wordCount: 0, body: raw }

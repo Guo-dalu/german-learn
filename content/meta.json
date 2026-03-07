@@ -1,0 +1,12 @@
+{
+  "vocabulary": {
+    "food":      { "emoji": "🍳", "tags": ["A1", "A2", "food"],           "wordCount": 43, "title": { "en": "Food Vocabulary",      "zh": "食物词汇" } },
+    "apartment": { "emoji": "🏠", "tags": ["A1", "A2", "home"],           "wordCount": 38, "title": { "en": "Apartment Vocabulary", "zh": "公寓词汇" } },
+    "health":    { "emoji": "🏥", "tags": ["A2", "B1", "health"],         "wordCount": 25, "title": { "en": "Health Vocabulary",    "zh": "健康词汇" } },
+    "work":      { "emoji": "💼", "tags": ["A2", "B1", "work"],           "wordCount": 25, "title": { "en": "Work Vocabulary",      "zh": "工作词汇" } },
+    "travel":    { "emoji": "✈️", "tags": ["A2", "B1", "travel"],        "wordCount": 25, "title": { "en": "Travel Vocabulary",    "zh": "旅行词汇" } }
+  },
+  "grammar": {
+    "articles":  { "emoji": "📌", "tags": ["A1", "articles", "grammar"],             "title": { "en": "German Articles",  "zh": "德语冠词" } }
+  }
+}

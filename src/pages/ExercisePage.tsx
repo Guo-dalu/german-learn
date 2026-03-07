@@ -3,22 +3,19 @@ import { useTranslation } from 'react-i18next'
 import FillInBlanks from '../components/exercises/FillInBlanks'
 import Matching from '../components/exercises/Matching'
 import MultipleChoice from '../components/exercises/MultipleChoice'
-import { parseFrontmatter } from '../utils/content'
+import { meta, getLocalizedTitle } from '../utils/content'
 import type { ContentFile, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise } from '../types/content'
 
 const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*/index.json', { eager: true, import: 'default' })
 const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*/index.json', { eager: true, import: 'default' })
-const vocabMds = import.meta.glob<string>('/content/vocabulary/*/*.md', { eager: true, query: '?raw', import: 'default' })
-const grammarMds = import.meta.glob<string>('/content/grammar/*/*.md', { eager: true, query: '?raw', import: 'default' })
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
-function buildTopicData(jsons: Record<string, ContentFile>, mds: Record<string, string>, basePath: string, lang: Lang) {
+function buildTopicData(jsons: Record<string, ContentFile>, section: 'vocabulary' | 'grammar', basePath: string, lang: Lang) {
   return Object.entries(jsons).map(([path, json]) => {
     const slug = path.replace(`${basePath}/`, '').replace('/index.json', '')
-    const raw = mds[`${basePath}/${slug}/index.${lang}.md`] ?? mds[`${basePath}/${slug}/index.md`] ?? ''
-    const { title } = parseFrontmatter(raw)
-    return { slug, title: title || slug, emoji: json.emoji ?? '📖', tags: json.tags ?? [], exercises: json.exercises ?? [] }
+    const m = meta[section][slug]
+    return { slug, title: m ? getLocalizedTitle(m, lang) : slug, emoji: m?.emoji ?? '📖', tags: m?.tags ?? [], exercises: json.exercises ?? [] }
   })
 }
 
@@ -28,8 +25,8 @@ export default function ExercisePage() {
   const [activeTag, setActiveTag] = useState<string>('all')
 
   const allTopics = useMemo(() => {
-    const vocab = buildTopicData(vocabJsons, vocabMds, '/content/vocabulary', lang)
-    const grammar = buildTopicData(grammarJsons, grammarMds, '/content/grammar', lang)
+    const vocab = buildTopicData(vocabJsons, 'vocabulary', '/content/vocabulary', lang)
+    const grammar = buildTopicData(grammarJsons, 'grammar', '/content/grammar', lang)
     return [...vocab, ...grammar]
   }, [lang])
 
