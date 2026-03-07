@@ -41,13 +41,13 @@ function highlightLine(text: string, highlightedWords: string[], words: Word[]) 
 
 function DialogueSection({ dialogue, words, lang }: { dialogue: Dialogue; words: Word[]; lang: Lang }) {
   return (
-    <Card className='p-5 mb-4'>
-      <p className='italic text-sm text-text2 mb-4'>{dialogue.scene[lang]}</p>
+    <Card className='p-4 mb-3'>
+      <p className='italic text-sm text-text2 mb-3'>{dialogue.scene[lang]}</p>
       <div className='space-y-2'>
         {dialogue.lines.map((line, i) => (
           <div key={i} className='flex gap-3'>
             <span className='font-display text-accent4 text-sm w-20 shrink-0'>{line.speaker}</span>
-            <span className='text-sm font-semibold text-text leading-relaxed'>{highlightLine(line.text, dialogue.highlighted_words, words)}</span>
+            <span className='text-base font-semibold text-text leading-relaxed'>{highlightLine(line.text, dialogue.highlighted_words, words)}</span>
           </div>
         ))}
       </div>
@@ -106,16 +106,18 @@ export default function VocabularyPage() {
   ]
 
   return (
-    <div className='bg-bg min-h-screen'>
+    <div>
       {/* 1. Header */}
-      <div className='relative overflow-hidden bg-bg2 border-b-2 border-border px-4 py-[clamp(28px,5vw,48px)]'>
+      <div className='relative overflow-hidden bg-bg2 border-b-2 border-border p-4'>
         {stickers.slice(0, 4).map((s, i) => (
-          <span key={i} className={`${stickerPositions[i]} select-none pointer-events-none`}>{s}</span>
+          <span key={i} className={`${stickerPositions[i]} select-none pointer-events-none`}>
+            {s}
+          </span>
         ))}
         <div className='max-w-2xl mx-auto text-center relative z-10'>
-          <div className='float-delay inline-block mb-2 text-3xl'>{emoji}</div>
-          <h1 className='font-display text-text text-[clamp(1.8rem,6vw,2.8rem)] leading-none'>{title || topic}</h1>
-          <div className='flex gap-2 justify-center flex-wrap mt-3'>
+          <div className='float-delay inline-block mb-1 text-2xl'>{emoji}</div>
+          <h1 className='font-display text-text text-[clamp(1.1rem,4vw,2rem)] leading-none'>{title || topic}</h1>
+          <div className='flex gap-2 justify-center flex-wrap mt-2'>
             {tags.map((tag) => (
               <Tag key={tag} label={tag} />
             ))}
@@ -123,33 +125,31 @@ export default function VocabularyPage() {
         </div>
       </div>
 
-      <div className='max-w-5xl mx-auto px-[clamp(16px,4vw,24px)] py-[clamp(20px,4vw,40px)]'>
+      <div className='max-w-5xl mx-auto px-[clamp(10px,4vw,20px)] py-[clamp(8px,2vw,20px)]'>
         {/* 2. Word List */}
         {words.length > 0 && (
-          <section className='mb-10'>
-            <h2 className='flex items-center gap-3 mb-5 font-display text-xl text-text'>
+          <section className='mb-6'>
+            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
               📖 Word List
               <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
             </h2>
             <Card className='p-4'>
               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
                 {words.map((word) => (
-                  <div key={word.german} className='flex flex-col py-2 px-2 border-b border-dashed border-border'>
+                  <div key={word.german} className='flex flex-col py-1.5 px-2 border-b border-dashed border-border'>
                     <div className='flex items-center gap-2'>
                       <span className={`font-display text-base leading-none ${GENDER_CLASS[word.gender] ?? 'text-text'}`}>
                         {word.article} {word.german}
                       </span>
                       {word.level && (
-                        <span className='text-[10px] bg-tag-bg text-tag-text rounded-full px-1.5 py-0.5 leading-none shrink-0'>
-                          {word.level}
-                        </span>
+                        <span className='text-[10px] bg-tag-bg text-tag-text rounded-full px-1.5 py-0.5 leading-none shrink-0'>{word.level}</span>
                       )}
                     </div>
                     <div className='text-sm font-semibold text-text2 mt-0.5'>
                       {word.plural} · {word[lang]}
                     </div>
                     {word.example && (
-                      <div className='mt-1 text-xs text-text2 italic leading-snug'>
+                      <div className='mt-1 text-sm text-text2 italic leading-snug'>
                         {word.example.de}
                         <span className='not-italic text-text2/70'> — {word.example[lang]}</span>
                       </div>
@@ -163,8 +163,8 @@ export default function VocabularyPage() {
 
         {/* 3. Dialogue */}
         {dialogues.length > 0 && (
-          <section className='mb-10'>
-            <h2 className='flex items-center gap-3 mb-5 font-display text-xl text-text'>
+          <section className='mb-6'>
+            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
               💬 Dialogue
               <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
             </h2>
@@ -176,16 +176,16 @@ export default function VocabularyPage() {
 
         {/* 4. Phrasebook */}
         {phrasebook.length > 0 && (
-          <section className='mb-10'>
-            <h2 className='flex items-center gap-3 mb-5 font-display text-xl text-text'>
+          <section className='mb-6'>
+            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
               📝 Phrasebook
               <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
             </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
               {phrasebook.map((phrase, i) => (
-                <Card key={i} className='p-4 flex flex-col gap-2'>
-                  <div className='font-display text-lg text-accent2 leading-snug'>{phrase.german}</div>
-                  <div className='text-sm font-semibold text-text2'>{phrase[lang]}</div>
+                <Card key={i} className='p-3 flex flex-col gap-1.5'>
+                  <div className='font-display text-base text-accent4 leading-snug'>{phrase.german}</div>
+                  <div className='text-sm text-text2'>{phrase[lang]}</div>
                 </Card>
               ))}
             </div>
@@ -194,7 +194,7 @@ export default function VocabularyPage() {
 
         {/* 5. Language Notes */}
         {notesBody && (
-          <section className='mb-10'>
+          <section className='mb-6'>
             <Card className='prose-content px-6'>
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{notesBody}</ReactMarkdown>
             </Card>
@@ -204,11 +204,11 @@ export default function VocabularyPage() {
         {/* 5. Exercises */}
         {exercises.length > 0 && (
           <section>
-            <h2 className='flex items-center gap-3 mb-5 font-display text-xl text-text'>
+            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
               ✏️ Exercises
               <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
             </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
               {matchings.map((ex, i) => (
                 <Matching key={i} exercise={ex} lang={lang} />
               ))}
@@ -221,7 +221,7 @@ export default function VocabularyPage() {
         )}
       </div>
 
-      <div className='mt-12 py-3 text-center bg-accent4'>
+      <div className='mt-6 py-2.5 text-center bg-accent4'>
         <span className='font-display text-white text-[clamp(0.85rem,2.5vw,1rem)] tracking-wider'>✦ Keep going · Weitermachen · 你能做到 ✦</span>
       </div>
     </div>
