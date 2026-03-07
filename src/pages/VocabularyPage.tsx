@@ -122,15 +122,29 @@ export default function VocabularyPage() {
               📖 Word List
               <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
             </h2>
-            <Card className='p-5'>
-              <div className='space-y-0'>
+            <Card className='p-4'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
                 {words.map((word) => (
-                  <div key={word.german} className='flex items-baseline gap-2 py-1.5 border-b border-dashed border-border'>
-                    <span className='font-black text-sm min-w-32' style={{ color: GENDER_COLOR[word.gender] ?? 'var(--text)' }}>
-                      {word.article} {word.german}
-                    </span>
-                    <span className='text-xs text-text2 shrink-0'>· {word.plural}</span>
-                    <span className='text-xs font-semibold text-text2 ml-auto'>{word[lang]}</span>
+                  <div key={word.german} className='flex flex-col py-2 px-2 border-b border-dashed border-border'>
+                    <div className='flex items-center gap-2'>
+                      <span className='font-display text-base leading-none' style={{ color: GENDER_COLOR[word.gender] ?? 'var(--text)' }}>
+                        {word.article} {word.german}
+                      </span>
+                      {word.level && (
+                        <span className='text-[10px] bg-tag-bg text-tag-text rounded-full px-1.5 py-0.5 leading-none shrink-0'>
+                          {word.level}
+                        </span>
+                      )}
+                    </div>
+                    <div className='text-sm font-semibold text-text2 mt-0.5'>
+                      {word.plural} · {word[lang]}
+                    </div>
+                    {word.example && (
+                      <div className='mt-1 text-xs text-text2 italic leading-snug'>
+                        {word.example.de}
+                        <span className='not-italic text-text2/70'> — {word.example[lang]}</span>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

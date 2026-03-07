@@ -9,6 +9,7 @@ export interface Word {
   zh: string
   level: string
   tags: string[]
+  example?: { de: string; en: string; zh: string }
 }
 
 export interface LocalizedString {
