@@ -82,6 +82,14 @@
       ]
     }
   ],
+  "phrasebook": [
+    { "german": "Ich hätte gern ...", "en": "I would like ...", "zh": "我想要……" },
+    { "german": "Was kostet das?", "en": "How much does this cost?", "zh": "这多少钱？" },
+    { "german": "Ich bin Vegetarier.", "en": "I am a vegetarian.", "zh": "我是素食者。" },
+    { "german": "Das schmeckt sehr gut!", "en": "That tastes really good!", "zh": "这很好吃！" },
+    { "german": "Haben Sie etwas ohne Fleisch?", "en": "Do you have anything without meat?", "zh": "您有不含肉的食物吗？" },
+    { "german": "Die Rechnung, bitte.", "en": "The bill, please.", "zh": "请结账。" }
+  ],
   "exercises": [
     {
       "type": "matching",

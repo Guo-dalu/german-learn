@@ -49,6 +49,12 @@ export interface MatchingExercise {
 
 export type Exercise = FillInExercise | MultipleChoiceExercise | MatchingExercise
 
+export interface Phrase {
+  german: string
+  en: string
+  zh: string
+}
+
 export interface ContentFile {
   topic: string
   tags: string[]
@@ -56,5 +62,6 @@ export interface ContentFile {
   emoji?: string
   words?: Word[]
   dialogues?: Dialogue[]
+  phrasebook?: Phrase[]
   exercises: Exercise[]
 }

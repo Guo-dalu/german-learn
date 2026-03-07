@@ -5,19 +5,11 @@ import { useParams } from 'react-router-dom'
 import remarkGfm from 'remark-gfm'
 import Card from '../components/Card'
 import Tag from '../components/Tag'
-import FillInBlank from '../components/exercises/FillInBlank'
+import FillInBlanks from '../components/exercises/FillInBlanks'
 import Matching from '../components/exercises/Matching'
 import MultipleChoice from '../components/exercises/MultipleChoice'
 import { GENDER_COLOR } from '../constants'
-import type {
-  ContentFile,
-  Dialogue,
-  FillInExercise,
-  Lang,
-  MatchingExercise,
-  MultipleChoiceExercise,
-  Word,
-} from '../types/content'
+import type { ContentFile, Dialogue, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise, Phrase, Word } from '../types/content'
 import { parseFrontmatter } from '../utils/content'
 
 const mdModules = import.meta.glob('/content/vocabulary/*.md', { query: '?raw', import: 'default' })
@@ -55,9 +47,7 @@ function DialogueSection({ dialogue, words, lang }: { dialogue: Dialogue; words:
         {dialogue.lines.map((line, i) => (
           <div key={i} className='flex gap-3'>
             <span className='font-display text-accent3 text-sm w-20 shrink-0'>{line.speaker}</span>
-            <span className='text-sm font-semibold text-text leading-relaxed'>
-              {highlightLine(line.text, dialogue.highlighted_words, words)}
-            </span>
+            <span className='text-sm font-semibold text-text leading-relaxed'>{highlightLine(line.text, dialogue.highlighted_words, words)}</span>
           </div>
         ))}
       </div>
@@ -99,21 +89,11 @@ export default function VocabularyPage() {
 
   const words: Word[] = content?.words ?? []
   const dialogues: Dialogue[] = content?.dialogues ?? []
+  const phrasebook: Phrase[] = content?.phrasebook ?? []
   const exercises = content?.exercises ?? []
   const matchings = exercises.filter((e): e is MatchingExercise => e.type === 'matching')
   const fillIns = exercises.filter((e): e is FillInExercise => e.type === 'fill-in')
   const multiChoices = exercises.filter((e): e is MultipleChoiceExercise => e.type === 'multiple-choice')
-
-  const featuredWordKey = content?.featured_word ?? ''
-  // featured_word is "das Ei" — bare noun is the word after the article
-  const bareNoun = featuredWordKey.split(' ').slice(1).join(' ')
-  const featuredWord = words.find((w) => w.german === bareNoun) ?? words[0]
-  const featuredFull = featuredWord ? `${featuredWord.article} ${featuredWord.german}` : ''
-
-  // Find first dialogue line containing the featured word as example sentence
-  const exampleLine = dialogues
-    .flatMap((d) => d.lines)
-    .find((l) => bareNoun && l.text.includes(bareNoun))
 
   const emoji = content?.emoji ?? '📖'
 
@@ -135,67 +115,26 @@ export default function VocabularyPage() {
       </div>
 
       <div className='max-w-5xl mx-auto px-[clamp(16px,4vw,24px)] py-[clamp(20px,4vw,40px)]'>
-        {/* 2. Vocabulary */}
+        {/* 2. Word List */}
         {words.length > 0 && (
           <section className='mb-10'>
             <h2 className='flex items-center gap-3 mb-5 font-display text-xl text-text'>
-              📖 Vocabulary
+              📖 Word List
               <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
             </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-              {/* Featured word card */}
-              {featuredWord && (
-                <Card className='p-5 flex flex-col gap-4'>
-                  {/* Word + gender badge */}
-                  <div>
-                    <div className='font-display text-[clamp(1.8rem,5vw,2.4rem)] leading-tight' style={{ color: GENDER_COLOR[featuredWord.gender] }}>
-                      {featuredFull}
-                    </div>
-                    <div className='mt-2 flex items-center gap-2 flex-wrap'>
-                      <span className='text-xs font-black px-2.5 py-0.5 rounded-full border-2' style={{ color: GENDER_COLOR[featuredWord.gender], borderColor: GENDER_COLOR[featuredWord.gender] }}>
-                        {featuredWord.gender}
-                      </span>
-                      <span className='text-xs font-semibold text-text2'>pl. {featuredWord.plural}</span>
-                    </div>
+            <Card className='p-5'>
+              <div className='space-y-0'>
+                {words.map((word) => (
+                  <div key={word.german} className='flex items-baseline gap-2 py-1.5 border-b border-dashed border-border'>
+                    <span className='font-black text-sm min-w-32' style={{ color: GENDER_COLOR[word.gender] ?? 'var(--text)' }}>
+                      {word.article} {word.german}
+                    </span>
+                    <span className='text-xs text-text2 shrink-0'>· {word.plural}</span>
+                    <span className='text-xs font-semibold text-text2 ml-auto'>{word[lang]}</span>
                   </div>
-
-                  {/* Translations */}
-                  <div className='flex flex-col gap-1.5'>
-                    <div className='flex items-center gap-3'>
-                      <span className='text-xs font-black text-text2 w-6 shrink-0'>EN</span>
-                      <span className='font-bold text-base text-text'>{featuredWord.en}</span>
-                    </div>
-                    <div className='flex items-center gap-3'>
-                      <span className='text-xs font-black text-text2 w-6 shrink-0'>ZH</span>
-                      <span className='font-bold text-base text-text'>{featuredWord.zh}</span>
-                    </div>
-                  </div>
-
-                  {/* Example sentence */}
-                  {exampleLine && (
-                    <div className='rounded-xl p-3 text-sm font-semibold leading-relaxed bg-bg2 border-l-4 border-l-accent1 text-text mt-auto'>
-                      {exampleLine.text}
-                    </div>
-                  )}
-                </Card>
-              )}
-
-              {/* Word list */}
-              <Card className='p-5'>
-                <div className='font-display font-black mb-3 text-sm text-text2'>All Words</div>
-                <div className='space-y-0'>
-                  {words.map((word) => (
-                    <div key={word.german} className='flex items-baseline gap-2 py-1.5 border-b border-dashed border-border'>
-                      <span className='font-black text-sm min-w-32' style={{ color: GENDER_COLOR[word.gender] ?? 'var(--text)' }}>
-                        {word.article} {word.german}
-                      </span>
-                      <span className='text-xs text-text2 shrink-0'>· {word.plural}</span>
-                      <span className='text-xs font-semibold text-text2 ml-auto'>{word[lang]}</span>
-                    </div>
-                  ))}
-                </div>
-              </Card>
-            </div>
+                ))}
+              </div>
+            </Card>
           </section>
         )}
 
@@ -212,10 +151,28 @@ export default function VocabularyPage() {
           </section>
         )}
 
-        {/* 4. Language Notes */}
+        {/* 4. Phrasebook */}
+        {phrasebook.length > 0 && (
+          <section className='mb-10'>
+            <h2 className='flex items-center gap-3 mb-5 font-display text-xl text-text'>
+              📝 Phrasebook
+              <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
+            </h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+              {phrasebook.map((phrase, i) => (
+                <Card key={i} className='p-4 flex flex-col gap-2'>
+                  <div className='font-display text-lg text-accent2 leading-snug'>{phrase.german}</div>
+                  <div className='text-sm font-semibold text-text2'>{phrase[lang]}</div>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* 5. Language Notes */}
         {notesBody && (
           <section className='mb-10'>
-            <Card className='prose-content p-6'>
+            <Card className='prose-content px-6'>
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{notesBody}</ReactMarkdown>
             </Card>
           </section>
@@ -232,9 +189,7 @@ export default function VocabularyPage() {
               {matchings.map((ex, i) => (
                 <Matching key={i} exercise={ex} lang={lang} />
               ))}
-              {fillIns.map((ex, i) => (
-                <FillInBlank key={i} exercise={ex} lang={lang} />
-              ))}
+              {fillIns.length > 0 && <FillInBlanks exercises={fillIns} lang={lang} />}
               {multiChoices.map((ex, i) => (
                 <MultipleChoice key={i} exercise={ex} lang={lang} />
               ))}
