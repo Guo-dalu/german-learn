@@ -73,8 +73,6 @@ export default function VocabularyPage() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language as Lang
 
-  const [title, setTitle] = useState('')
-  const [tags, setTags] = useState<string[]>([])
   const [notesBody, setNotesBody] = useState('')
   const [content, setContent] = useState<ContentFile | null>(null)
 
@@ -85,15 +83,15 @@ export default function VocabularyPage() {
     const mdLoader = mdModules[mdKey] ?? mdModules[mdFallback]
     if (mdLoader) {
       mdLoader().then((raw) => {
-        const parsed = parseFrontmatter(raw as string)
-        setTitle(parsed.title)
-        setTags(parsed.tags)
-        setNotesBody(parsed.body)
+        setNotesBody(parseFrontmatter(raw as string).body)
       })
     }
     const jsonLoader = jsonModules[`/content/vocabulary/${topic}/index.json`]
     if (jsonLoader) jsonLoader().then((data) => setContent(data))
   }, [topic, lang])
+
+  const title = content?.topic ?? topic ?? ''
+  const tags = content?.tags ?? []
 
   const words: Word[] = content?.words ?? []
   const dialogues: Dialogue[] = content?.dialogues ?? []
