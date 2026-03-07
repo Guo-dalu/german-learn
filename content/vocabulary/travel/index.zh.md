@@ -1,6 +1,8 @@
 ---
 title: "旅行词汇"
 tags: ["A2", "B1", "travel"]
+emoji: "✈️"
+wordCount: 25
 ---
 
 ## 语法笔记

@@ -1,6 +1,8 @@
 ---
 title: "公寓词汇"
 tags: ["A1", "A2", "home"]
+emoji: "🏠"
+wordCount: 38
 ---
 
 ## 语法笔记

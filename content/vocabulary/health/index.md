@@ -1,6 +1,8 @@
 ---
 title: "Health Vocabulary"
 tags: ["A2", "B1", "health"]
+emoji: "🏥"
+wordCount: 25
 ---
 
 ## Language Notes

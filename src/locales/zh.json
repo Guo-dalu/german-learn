@@ -15,7 +15,26 @@
   },
   "home": {
     "tagline": "用有趣的方式学德语",
-    "subtitle": "彩色课程 · 互动练习 · 真实例句"
+    "subtitle": "彩色课程 · 互动练习 · 真实例句",
+    "cta": "开始学习",
+    "ctaExercises": "做练习",
+    "explore": "探索",
+    "sections": {
+      "vocabulary": "词汇",
+      "grammar": "语法",
+      "exercises": "练习"
+    },
+    "sectionDesc": {
+      "vocabulary": "按主题学习词汇，含对话与练习",
+      "grammar": "掌握冠词、格变化与动词变位",
+      "exercises": "练习填空、选择题与配对题"
+    },
+    "featuredTopics": "精选主题",
+    "wordOfDay": "今日单词",
+    "statsTopics": "个主题",
+    "statsWords": "个词汇",
+    "statsExercises": "种题型",
+    "exploreAll": "查看全部"
   },
   "vocab": {
     "allTopics": "所有主题",

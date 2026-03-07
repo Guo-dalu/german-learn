@@ -1,6 +1,8 @@
 ---
 title: "Work Vocabulary"
 tags: ["A2", "B1", "work"]
+emoji: "💼"
+wordCount: 25
 ---
 
 ## Language Notes

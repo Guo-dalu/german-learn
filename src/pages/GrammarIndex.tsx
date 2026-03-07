@@ -4,26 +4,22 @@ import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Tag from '../components/Tag'
 import { parseFrontmatter } from '../utils/content'
-import type { ContentFile, Lang } from '../types/content'
+import type { Lang } from '../types/content'
 
-const jsonModules = import.meta.glob<ContentFile>('/content/grammar/*/index.json', { eager: true, import: 'default' })
-const mdModules = import.meta.glob<string>('/content/grammar/*/*.md', { eager: true, query: '?raw', import: 'default' })
+const mdModules = import.meta.glob<string>('/content/grammar/*/index*.md', { eager: true, query: '?raw', import: 'default' })
 
 export default function GrammarIndex() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language as Lang
 
   const topics = useMemo(() => {
-    return Object.entries(jsonModules).map(([path, json]) => {
-      const slug = path.replace('/content/grammar/', '').replace('/index.json', '')
+    const slugs = Object.keys(mdModules)
+      .filter(p => !p.includes('.zh.'))
+      .map(p => p.replace('/content/grammar/', '').replace('/index.md', ''))
+    return slugs.map(slug => {
       const raw = mdModules[`/content/grammar/${slug}/index.${lang}.md`] ?? mdModules[`/content/grammar/${slug}/index.md`] ?? ''
-      const { title, tags } = parseFrontmatter(raw)
-      return {
-        slug,
-        emoji: json.emoji ?? '📖',
-        title: title || slug,
-        tags: json.tags ?? tags,
-      }
+      const { title, tags, emoji } = parseFrontmatter(raw)
+      return { slug, emoji: emoji || '📖', title: title || slug, tags }
     })
   }, [lang])
 

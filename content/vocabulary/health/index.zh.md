@@ -1,6 +1,8 @@
 ---
 title: "健康词汇"
 tags: ["A2", "B1", "health"]
+emoji: "🏥"
+wordCount: 25
 ---
 
 ## 语法笔记

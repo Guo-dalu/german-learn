@@ -15,7 +15,26 @@
   },
   "home": {
     "tagline": "Learn German the fun way",
-    "subtitle": "Colorful lessons · Interactive exercises · Real sentences"
+    "subtitle": "Colorful lessons · Interactive exercises · Real sentences",
+    "cta": "Start Learning",
+    "ctaExercises": "Try Exercises",
+    "explore": "Explore",
+    "sections": {
+      "vocabulary": "Vocabulary",
+      "grammar": "Grammar",
+      "exercises": "Exercises"
+    },
+    "sectionDesc": {
+      "vocabulary": "Learn words by topic with dialogues & exercises",
+      "grammar": "Master articles, cases, and verb conjugation",
+      "exercises": "Practice fill-in, multiple choice, and matching"
+    },
+    "featuredTopics": "Featured Topics",
+    "wordOfDay": "Word of the Day",
+    "statsTopics": "Topics",
+    "statsWords": "Words",
+    "statsExercises": "Exercise Types",
+    "exploreAll": "See All"
   },
   "vocab": {
     "allTopics": "All Topics",

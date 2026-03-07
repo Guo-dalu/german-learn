@@ -1,6 +1,8 @@
 ---
 title: "Food Vocabulary"
 tags: ["A1", "A2", "food"]
+emoji: "🍳"
+wordCount: 43
 ---
 
 ## Language Notes

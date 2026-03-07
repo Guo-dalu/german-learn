@@ -1,6 +1,8 @@
 ---
 title: "工作词汇"
 tags: ["A2", "B1", "work"]
+emoji: "💼"
+wordCount: 25
 ---
 
 ## 语法笔记

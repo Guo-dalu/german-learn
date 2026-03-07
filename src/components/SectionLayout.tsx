@@ -2,24 +2,19 @@ import { type ReactNode, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { parseFrontmatter } from '../utils/content'
-import type { ContentFile, Lang } from '../types/content'
+import type { Lang } from '../types/content'
 
-const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*/index.json', { eager: true, import: 'default' })
-const vocabMds = import.meta.glob<string>('/content/vocabulary/*/*.md', { eager: true, query: '?raw', import: 'default' })
-const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*/index.json', { eager: true, import: 'default' })
-const grammarMds = import.meta.glob<string>('/content/grammar/*/*.md', { eager: true, query: '?raw', import: 'default' })
+const vocabMds = import.meta.glob<string>('/content/vocabulary/*/index*.md', { eager: true, query: '?raw', import: 'default' })
+const grammarMds = import.meta.glob<string>('/content/grammar/*/index*.md', { eager: true, query: '?raw', import: 'default' })
 
-function buildTopics(
-  jsons: Record<string, ContentFile>,
-  mds: Record<string, string>,
-  basePath: string,
-  lang: Lang,
-) {
-  return Object.entries(jsons).map(([path, json]) => {
-    const slug = path.replace(`${basePath}/`, '').replace('/index.json', '')
+function buildTopics(mds: Record<string, string>, basePath: string, lang: Lang) {
+  const slugs = Object.keys(mds)
+    .filter(p => !p.includes('.zh.'))
+    .map(p => p.replace(`${basePath}/`, '').replace('/index.md', ''))
+  return slugs.map(slug => {
     const raw = mds[`${basePath}/${slug}/index.${lang}.md`] ?? mds[`${basePath}/${slug}/index.md`] ?? ''
-    const { title } = parseFrontmatter(raw)
-    return { slug, emoji: json.emoji ?? '📖', title: title || slug }
+    const { title, emoji } = parseFrontmatter(raw)
+    return { slug, emoji: emoji || '📖', title: title || slug }
   })
 }
 
@@ -34,8 +29,8 @@ export default function SectionLayout({ section, currentSlug, children }: Props)
   const lang = i18n.language as Lang
 
   const topics = useMemo(() => {
-    if (section === 'vocabulary') return buildTopics(vocabJsons, vocabMds, '/content/vocabulary', lang)
-    return buildTopics(grammarJsons, grammarMds, '/content/grammar', lang)
+    if (section === 'vocabulary') return buildTopics(vocabMds, '/content/vocabulary', lang)
+    return buildTopics(grammarMds, '/content/grammar', lang)
   }, [section, lang])
 
   const indexPath = section === 'vocabulary' ? '/vocabulary' : '/grammar'

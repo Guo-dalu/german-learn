@@ -1,6 +1,8 @@
 ---
 title: "Travel Vocabulary"
 tags: ["A2", "B1", "travel"]
+emoji: "✈️"
+wordCount: 25
 ---
 
 ## Language Notes

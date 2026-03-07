@@ -1,6 +1,8 @@
 ---
 title: "Apartment Vocabulary"
 tags: ["A1", "A2", "home"]
+emoji: "🏠"
+wordCount: 38
 ---
 
 ## Language Notes
