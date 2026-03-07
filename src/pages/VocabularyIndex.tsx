@@ -29,11 +29,9 @@ export default function VocabularyIndex() {
   }, [lang])
 
   return (
-    <div className='max-w-5xl mx-auto px-[clamp(10px,4vw,20px)] py-8'>
-      <h1 className='font-display text-[clamp(1.4rem,5vw,2.2rem)] text-text mb-6'>
-        {t('nav.vocabulary')}
-      </h1>
-      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3'>
+    <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] py-8'>
+      <h1 className='font-display text-[clamp(1.4rem,5vw,2.2rem)] text-text mb-6'>{t('nav.vocabulary')}</h1>
+      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
         {topics.map(({ slug, emoji, title, tags, wordCount }) => (
           <Link key={slug} to={`/vocabulary/${slug}`} className='group block'>
             <Card className='h-full flex flex-col gap-2 transition-transform group-hover:-translate-y-0.5 group-hover:shadow-[6px_6px_0_var(--border)]'>
@@ -46,7 +44,9 @@ export default function VocabularyIndex() {
                   <Tag key={tag} label={tag} />
                 ))}
                 {wordCount > 0 && (
-                  <span className='text-[11px] font-semibold text-text2'>{wordCount} {t('vocab.words')}</span>
+                  <span className='text-[11px] font-semibold text-text2'>
+                    {wordCount} {t('vocab.words')}
+                  </span>
                 )}
               </div>
             </Card>

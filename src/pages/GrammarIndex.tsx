@@ -28,11 +28,9 @@ export default function GrammarIndex() {
   }, [lang])
 
   return (
-    <div className='max-w-5xl mx-auto px-[clamp(10px,4vw,20px)] py-8'>
-      <h1 className='font-display text-[clamp(1.4rem,5vw,2.2rem)] text-text mb-6'>
-        {t('nav.grammar')}
-      </h1>
-      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3'>
+    <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] py-8'>
+      <h1 className='font-display text-[clamp(1.4rem,5vw,2.2rem)] text-text mb-6'>{t('nav.grammar')}</h1>
+      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4'>
         {topics.map(({ slug, emoji, title, tags }) => (
           <Link key={slug} to={`/grammar/${slug}`} className='group block'>
             <Card className='h-full flex flex-col gap-2 transition-transform group-hover:-translate-y-0.5 group-hover:shadow-[6px_6px_0_var(--border)]'>

@@ -34,7 +34,15 @@
     { "german": "Keller",       "article": "der", "gender": "masculine", "plural": "die Keller",       "en": "basement/cellar","zh": "地下室", "level": "A2", "tags": [],           "example": { "de": "Fahrräder stehen im Keller.", "en": "Bikes are stored in the basement.", "zh": "自行车放在地下室。" } },
     { "german": "Balkon",       "article": "der", "gender": "masculine", "plural": "die Balkone",      "en": "balcony",        "zh": "阳台",   "level": "A2", "tags": [],           "example": { "de": "Wir frühstücken auf dem Balkon.", "en": "We have breakfast on the balcony.", "zh": "我们在阳台上吃早饭。" } },
     { "german": "Heizung",      "article": "die", "gender": "feminine",  "plural": "die Heizungen",    "en": "heating",        "zh": "暖气",   "level": "A2", "tags": [],           "example": { "de": "Die Heizung funktioniert nicht gut.", "en": "The heating doesn't work well.", "zh": "暖气不太好使。" } },
-    { "german": "Steckdose",    "article": "die", "gender": "feminine",  "plural": "die Steckdosen",   "en": "power outlet",   "zh": "插座",   "level": "A2", "tags": [],           "example": { "de": "Wo ist die nächste Steckdose?", "en": "Where is the nearest outlet?", "zh": "最近的插座在哪里？" } }
+    { "german": "Steckdose",    "article": "die", "gender": "feminine",  "plural": "die Steckdosen",   "en": "power outlet",   "zh": "插座",   "level": "A2", "tags": [],              "example": { "de": "Wo ist die nächste Steckdose?", "en": "Where is the nearest outlet?", "zh": "最近的插座在哪里？" } },
+    { "german": "Kühlschrank",  "article": "der", "gender": "masculine", "plural": "die Kühlschränke", "en": "refrigerator",   "zh": "冰箱",   "level": "A1", "tags": ["appliance"],   "example": { "de": "Der Kühlschrank ist fast leer.", "en": "The refrigerator is almost empty.", "zh": "冰箱快空了。" } },
+    { "german": "Herd",         "article": "der", "gender": "masculine", "plural": "die Herde",        "en": "stove/cooker",   "zh": "炉灶",   "level": "A1", "tags": ["appliance"],   "example": { "de": "Ich koche die Suppe auf dem Herd.", "en": "I'm cooking the soup on the stove.", "zh": "我在炉灶上煮汤。" } },
+    { "german": "Dusche",       "article": "die", "gender": "feminine",  "plural": "die Duschen",      "en": "shower",         "zh": "淋浴",   "level": "A1", "tags": ["bathroom"],    "example": { "de": "Jeden Morgen nehme ich eine Dusche.", "en": "I take a shower every morning.", "zh": "我每天早上淋浴。" } },
+    { "german": "Badewanne",    "article": "die", "gender": "feminine",  "plural": "die Badewannen",   "en": "bathtub",        "zh": "浴缸",   "level": "A1", "tags": ["bathroom"],    "example": { "de": "Das Kind badet in der Badewanne.", "en": "The child is bathing in the bathtub.", "zh": "孩子在浴缸里洗澡。" } },
+    { "german": "Waschmaschine","article": "die", "gender": "feminine",  "plural": "die Waschmaschinen","en": "washing machine","zh": "洗衣机", "level": "A2", "tags": ["appliance"],   "example": { "de": "Die Waschmaschine ist im Keller.", "en": "The washing machine is in the basement.", "zh": "洗衣机在地下室。" } },
+    { "german": "Regal",        "article": "das", "gender": "neuter",    "plural": "die Regale",       "en": "shelf/bookcase", "zh": "书架",   "level": "A1", "tags": ["furniture"],   "example": { "de": "Das Regal ist voller Bücher.", "en": "The shelf is full of books.", "zh": "书架上放满了书。" } },
+    { "german": "Briefkasten",  "article": "der", "gender": "masculine", "plural": "die Briefkästen", "en": "mailbox",        "zh": "信箱",   "level": "A2", "tags": [],              "example": { "de": "Im Briefkasten liegt ein Paket.", "en": "There's a package in the mailbox.", "zh": "信箱里有一个包裹。" } },
+    { "german": "Klingel",      "article": "die", "gender": "feminine",  "plural": "die Klingeln",     "en": "doorbell",       "zh": "门铃",   "level": "A2", "tags": [],              "example": { "de": "Jemand hat die Klingel gedrückt.", "en": "Someone pressed the doorbell.", "zh": "有人按了门铃。" } }
   ],
   "dialogues": [
     {
@@ -66,6 +74,22 @@
         { "speaker": "Kai",      "text": "Stimmt! Oh, deine Tür steht offen." },
         { "speaker": "Mia",      "text": "Ach so! Ich habe meinen Schlüssel dringelassen. Danke!" },
         { "speaker": "Kai",      "text": "Kein Problem. Schöne neue Nachbarschaft!" }
+      ]
+    },
+    {
+      "id": "broken-shower",
+      "scene": { "en": "Tom calls his landlord to report a broken shower.", "zh": "Tom 打电话给房东报告淋浴坏了。" },
+      "audio": "apartment-dialogue-3.mp3",
+      "highlighted_words": ["Dusche", "Badewanne", "Heizung", "Stockwerk", "Vermieter"],
+      "lines": [
+        { "speaker": "Tom",       "text": "Guten Tag, Herr Bauer. Hier ist Tom aus dem zweiten Stockwerk." },
+        { "speaker": "Vermieter", "text": "Hallo, Tom! Was kann ich für Sie tun?" },
+        { "speaker": "Tom",       "text": "Ich habe ein Problem mit der Dusche. Das Wasser wird nicht warm." },
+        { "speaker": "Vermieter", "text": "Oh, das tut mir leid. Ist es nur die Dusche, oder auch die Badewanne?" },
+        { "speaker": "Tom",       "text": "Nur die Dusche. Die Heizung funktioniert normal." },
+        { "speaker": "Vermieter", "text": "Ich schicke morgen früh einen Klempner. Sind Sie bis zehn Uhr zu Hause?" },
+        { "speaker": "Tom",       "text": "Ja, kein Problem. Ich warte auf ihn." },
+        { "speaker": "Vermieter", "text": "Gut. Danke für die Info, und Entschuldigung für die Unannehmlichkeiten!" }
       ]
     }
   ],
@@ -153,6 +177,43 @@
         { "en": "die Schrankе",  "zh": "die Schrankе" }
       ],
       "answer": 1
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Das Wasser in der ___ ist kalt — das muss repariert werden.",
+      "answer": "Dusche"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich habe den ___ geöffnet und einen Brief vom Vermieter gefunden.",
+      "answer": "Briefkasten"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich brauche mehr Platz für meine Bücher. Ich kaufe ein neues ___.",
+      "answer": "Regal"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word is NOT a household appliance?", "zh": "哪个词不是家用电器？" },
+      "options": [
+        { "en": "Kühlschrank",   "zh": "Kühlschrank" },
+        { "en": "Waschmaschine", "zh": "Waschmaschine" },
+        { "en": "Herd",          "zh": "Herd" },
+        { "en": "Briefkasten",   "zh": "Briefkasten" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the repair dialogue, what exactly is broken?", "zh": "在维修对话中，具体坏掉的是什么？" },
+      "options": [
+        { "en": "The heating",   "zh": "暖气" },
+        { "en": "The bathtub",   "zh": "浴缸" },
+        { "en": "The shower",    "zh": "淋浴" },
+        { "en": "The elevator",  "zh": "电梯" }
+      ],
+      "answer": 2
     }
   ]
 }

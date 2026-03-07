@@ -13,12 +13,7 @@ const grammarMds = import.meta.glob<string>('/content/grammar/*/*.md', { eager: 
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
-function buildTopicData(
-  jsons: Record<string, ContentFile>,
-  mds: Record<string, string>,
-  basePath: string,
-  lang: Lang,
-) {
+function buildTopicData(jsons: Record<string, ContentFile>, mds: Record<string, string>, basePath: string, lang: Lang) {
   return Object.entries(jsons).map(([path, json]) => {
     const slug = path.replace(`${basePath}/`, '').replace('/index.json', '')
     const raw = mds[`${basePath}/${slug}/index.${lang}.md`] ?? mds[`${basePath}/${slug}/index.md`] ?? ''
@@ -54,19 +49,15 @@ export default function ExercisePage() {
   }, [allTopics, activeTag])
 
   return (
-    <div className='max-w-5xl mx-auto px-[clamp(10px,4vw,20px)] py-8'>
-      <h1 className='font-display text-[clamp(1.4rem,5vw,2.2rem)] text-text mb-4'>
-        {t('exercises.title')}
-      </h1>
+    <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] py-8'>
+      <h1 className='font-display text-[clamp(1.4rem,5vw,2.2rem)] text-text mb-4'>{t('exercises.title')}</h1>
 
       {/* Tag filter bar */}
       <div className='flex gap-2 overflow-x-auto pb-2 mb-6 no-scrollbar'>
         <button
           onClick={() => setActiveTag('all')}
           className={`shrink-0 text-xs font-black px-3 py-1 rounded-full border-2 transition-colors ${
-            activeTag === 'all'
-              ? 'bg-accent1 text-white border-accent1'
-              : 'bg-tag-bg text-tag-text border-transparent hover:border-accent1/40'
+            activeTag === 'all' ? 'bg-accent1 text-white border-accent1' : 'bg-tag-bg text-tag-text border-transparent hover:border-accent1/40'
           }`}
         >
           {t('exercises.all')}
@@ -76,9 +67,7 @@ export default function ExercisePage() {
             key={tag}
             onClick={() => setActiveTag(tag)}
             className={`shrink-0 text-xs font-black px-3 py-1 rounded-full border-2 transition-colors ${
-              activeTag === tag
-                ? 'bg-accent1 text-white border-accent1'
-                : 'bg-tag-bg text-tag-text border-transparent hover:border-accent1/40'
+              activeTag === tag ? 'bg-accent1 text-white border-accent1' : 'bg-tag-bg text-tag-text border-transparent hover:border-accent1/40'
             }`}
           >
             {tag}

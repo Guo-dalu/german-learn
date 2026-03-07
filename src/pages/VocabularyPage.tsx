@@ -133,7 +133,7 @@ export default function VocabularyPage() {
         </div>
       </div>
 
-      <div className='max-w-5xl mx-auto px-[clamp(10px,4vw,20px)] py-[clamp(8px,2vw,20px)]'>
+      <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] py-[clamp(8px,2vw,20px)]'>
         {/* 2. Word List */}
         {words.length > 0 && (
           <section className='mb-6'>
