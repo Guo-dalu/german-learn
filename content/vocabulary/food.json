@@ -1,76 +1,162 @@
 {
   "topic": "food",
-  "tags": ["A1", "food"],
+  "tags": ["A1", "A2", "food"],
+  "featured_word": "das Ei",
+  "emoji": "🍳",
   "words": [
-    { "german": "das Wasser", "article": "das", "gender": "neuter",   "en": "water",  "zh": "水",   "level": "A1" },
-    { "german": "die Milch",  "article": "die", "gender": "feminine", "en": "milk",   "zh": "牛奶", "level": "A1" },
-    { "german": "das Brot",   "article": "das", "gender": "neuter",   "en": "bread",  "zh": "面包", "level": "A1" },
-    { "german": "der Käse",   "article": "der", "gender": "masculine","en": "cheese", "zh": "奶酪", "level": "A1" },
-    { "german": "der Apfel",  "article": "der", "gender": "masculine","en": "apple",  "zh": "苹果", "level": "A1" },
-    { "german": "die Suppe",  "article": "die", "gender": "feminine", "en": "soup",   "zh": "汤",   "level": "A1" },
-    { "german": "das Ei",     "article": "das", "gender": "neuter",   "en": "egg",    "zh": "鸡蛋", "level": "A1" },
-    { "german": "das Fleisch","article": "das", "gender": "neuter",   "en": "meat",   "zh": "肉",   "level": "A1" }
+    { "german": "Wasser",    "article": "das", "gender": "neuter",    "plural": "—",              "en": "water",         "zh": "水",     "level": "A1", "tags": ["drink"] },
+    { "german": "Milch",     "article": "die", "gender": "feminine",  "plural": "—",              "en": "milk",          "zh": "牛奶",   "level": "A1", "tags": ["drink"] },
+    { "german": "Kaffee",    "article": "der", "gender": "masculine", "plural": "die Kaffees",    "en": "coffee",        "zh": "咖啡",   "level": "A1", "tags": ["drink"] },
+    { "german": "Tee",       "article": "der", "gender": "masculine", "plural": "die Tees",       "en": "tea",           "zh": "茶",     "level": "A1", "tags": ["drink"] },
+    { "german": "Saft",      "article": "der", "gender": "masculine", "plural": "die Säfte",      "en": "juice",         "zh": "果汁",   "level": "A1", "tags": ["drink"] },
+    { "german": "Brot",      "article": "das", "gender": "neuter",    "plural": "die Brote",      "en": "bread",         "zh": "面包",   "level": "A1", "tags": [] },
+    { "german": "Butter",    "article": "die", "gender": "feminine",  "plural": "—",              "en": "butter",        "zh": "黄油",   "level": "A1", "tags": [] },
+    { "german": "Ei",        "article": "das", "gender": "neuter",    "plural": "die Eier",       "en": "egg",           "zh": "鸡蛋",   "level": "A1", "tags": [] },
+    { "german": "Käse",      "article": "der", "gender": "masculine", "plural": "die Käse",       "en": "cheese",        "zh": "奶酪",   "level": "A1", "tags": [] },
+    { "german": "Fleisch",   "article": "das", "gender": "neuter",    "plural": "—",              "en": "meat",          "zh": "肉",     "level": "A1", "tags": [] },
+    { "german": "Suppe",     "article": "die", "gender": "feminine",  "plural": "die Suppen",     "en": "soup",          "zh": "汤",     "level": "A1", "tags": [] },
+    { "german": "Nudeln",    "article": "die", "gender": "feminine",  "plural": "die Nudeln",     "en": "pasta/noodles", "zh": "面条",   "level": "A1", "tags": [] },
+    { "german": "Salz",      "article": "das", "gender": "neuter",    "plural": "—",              "en": "salt",          "zh": "盐",     "level": "A1", "tags": [] },
+    { "german": "Zucker",    "article": "der", "gender": "masculine", "plural": "—",              "en": "sugar",         "zh": "糖",     "level": "A1", "tags": [] },
+    { "german": "Apfel",     "article": "der", "gender": "masculine", "plural": "die Äpfel",      "en": "apple",         "zh": "苹果",   "level": "A1", "tags": ["fruit"] },
+    { "german": "Banane",    "article": "die", "gender": "feminine",  "plural": "die Bananen",    "en": "banana",        "zh": "香蕉",   "level": "A1", "tags": ["fruit"] },
+    { "german": "Orange",    "article": "die", "gender": "feminine",  "plural": "die Orangen",    "en": "orange",        "zh": "橙子",   "level": "A1", "tags": ["fruit"] },
+    { "german": "Kartoffel", "article": "die", "gender": "feminine",  "plural": "die Kartoffeln", "en": "potato",        "zh": "土豆",   "level": "A1", "tags": ["vegetable"] },
+    { "german": "Tomate",    "article": "die", "gender": "feminine",  "plural": "die Tomaten",    "en": "tomato",        "zh": "西红柿", "level": "A1", "tags": ["vegetable"] },
+    { "german": "Zwiebel",   "article": "die", "gender": "feminine",  "plural": "die Zwiebeln",   "en": "onion",         "zh": "洋葱",   "level": "A1", "tags": ["vegetable"] },
+    { "german": "Salat",     "article": "der", "gender": "masculine", "plural": "die Salate",     "en": "salad/lettuce", "zh": "沙拉",   "level": "A1", "tags": ["vegetable"] },
+    { "german": "Frühstück",   "article": "das", "gender": "neuter",    "plural": "die Frühstücke",  "en": "breakfast",     "zh": "早餐",   "level": "A1", "tags": ["meal"] },
+    { "german": "Mittagessen", "article": "das", "gender": "neuter",    "plural": "die Mittagessen", "en": "lunch",         "zh": "午餐",   "level": "A2", "tags": ["meal"] },
+    { "german": "Abendessen",  "article": "das", "gender": "neuter",    "plural": "die Abendessen",  "en": "dinner",        "zh": "晚餐",   "level": "A2", "tags": ["meal"] },
+    { "german": "Hähnchen",    "article": "das", "gender": "neuter",    "plural": "die Hähnchen",    "en": "chicken",       "zh": "鸡肉",   "level": "A2", "tags": [] },
+    { "german": "Fisch",       "article": "der", "gender": "masculine", "plural": "die Fische",      "en": "fish",          "zh": "鱼",     "level": "A2", "tags": [] },
+    { "german": "Gemüse",      "article": "das", "gender": "neuter",    "plural": "—",               "en": "vegetables",    "zh": "蔬菜",   "level": "A2", "tags": ["vegetable"] },
+    { "german": "Obst",        "article": "das", "gender": "neuter",    "plural": "—",               "en": "fruit",         "zh": "水果",   "level": "A2", "tags": ["fruit"] },
+    { "german": "Teller",      "article": "der", "gender": "masculine", "plural": "die Teller",      "en": "plate",         "zh": "盘子",   "level": "A2", "tags": ["kitchen"] },
+    { "german": "Tasse",       "article": "die", "gender": "feminine",  "plural": "die Tassen",      "en": "cup",           "zh": "杯子",   "level": "A2", "tags": ["kitchen"] },
+    { "german": "Glas",        "article": "das", "gender": "neuter",    "plural": "die Gläser",      "en": "glass",         "zh": "玻璃杯", "level": "A2", "tags": ["kitchen"] },
+    { "german": "Flasche",     "article": "die", "gender": "feminine",  "plural": "die Flaschen",    "en": "bottle",        "zh": "瓶子",   "level": "A2", "tags": ["kitchen"] },
+    { "german": "Messer",      "article": "das", "gender": "neuter",    "plural": "die Messer",      "en": "knife",         "zh": "刀",     "level": "A2", "tags": ["kitchen"] },
+    { "german": "Gabel",       "article": "die", "gender": "feminine",  "plural": "die Gabeln",      "en": "fork",          "zh": "叉子",   "level": "A2", "tags": ["kitchen"] },
+    { "german": "Löffel",      "article": "der", "gender": "masculine", "plural": "die Löffel",      "en": "spoon",         "zh": "勺子",   "level": "A2", "tags": ["kitchen"] },
+    { "german": "Topf",        "article": "der", "gender": "masculine", "plural": "die Töpfe",       "en": "pot",           "zh": "锅",     "level": "A2", "tags": ["kitchen"] },
+    { "german": "Pfanne",      "article": "die", "gender": "feminine",  "plural": "die Pfannen",     "en": "frying pan",    "zh": "平底锅", "level": "A2", "tags": ["kitchen"] },
+    { "german": "Kühlschrank", "article": "der", "gender": "masculine", "plural": "die Kühlschränke","en": "fridge",        "zh": "冰箱",   "level": "A2", "tags": ["kitchen"] },
+    { "german": "Ofen",        "article": "der", "gender": "masculine", "plural": "die Öfen",        "en": "oven",          "zh": "烤箱",   "level": "A2", "tags": ["kitchen"] },
+    { "german": "Rezept",      "article": "das", "gender": "neuter",    "plural": "die Rezepte",     "en": "recipe",        "zh": "食谱",   "level": "B1", "tags": [] },
+    { "german": "Mahlzeit",    "article": "die", "gender": "feminine",  "plural": "die Mahlzeiten",  "en": "meal",          "zh": "餐",     "level": "B1", "tags": ["meal"] },
+    { "german": "Hunger",      "article": "der", "gender": "masculine", "plural": "—",               "en": "hunger",        "zh": "饥饿",   "level": "B1", "tags": [] },
+    { "german": "Durst",       "article": "der", "gender": "masculine", "plural": "—",               "en": "thirst",        "zh": "口渴",   "level": "B1", "tags": [] }
+  ],
+  "dialogues": [
+    {
+      "id": "supermarket",
+      "scene": { "en": "Anna and Thomas run into each other at the supermarket.", "zh": "Anna 和 Thomas 在超市相遇。" },
+      "audio": "food-dialogue-1.mp3",
+      "highlighted_words": ["Brot", "Milch", "Eier", "Käse", "Fleisch", "Suppe", "Zwiebel", "Kartoffeln", "Apfel"],
+      "lines": [
+        { "speaker": "Thomas", "text": "Hallo Anna! Was kaufst du heute?" },
+        { "speaker": "Anna",   "text": "Ich kaufe Brot, Milch und Eier. Und du?" },
+        { "speaker": "Thomas", "text": "Ich brauche Käse und Fleisch. Ich koche heute Abend." },
+        { "speaker": "Anna",   "text": "Oh, ich esse auch gern Käse! Hast du eine Suppe geplant?" },
+        { "speaker": "Thomas", "text": "Nein, aber die Idee ist gut. Vielleicht kaufe ich noch eine Zwiebel und Kartoffeln." },
+        { "speaker": "Anna",   "text": "Der Apfel hier sieht lecker aus!" },
+        { "speaker": "Thomas", "text": "Ja! Das Obst ist heute frisch. Guten Einkauf!" },
+        { "speaker": "Anna",   "text": "Danke, dir auch!" }
+      ]
+    },
+    {
+      "id": "cafe",
+      "scene": { "en": "Lisa orders breakfast at a café.", "zh": "Lisa 在咖啡馆点早餐。" },
+      "audio": "food-dialogue-2.mp3",
+      "highlighted_words": ["Kaffee", "Milch", "Saft", "Ei", "Butter", "Brot", "Banane", "Orange"],
+      "lines": [
+        { "speaker": "Kellner", "text": "Guten Morgen! Was möchten Sie?" },
+        { "speaker": "Lisa",    "text": "Guten Morgen! Ich hätte gern einen Kaffee und ein Croissant." },
+        { "speaker": "Kellner", "text": "Mit Milch oder schwarz?" },
+        { "speaker": "Lisa",    "text": "Mit Milch, bitte. Und haben Sie frischen Orangensaft?" },
+        { "speaker": "Kellner", "text": "Ja, natürlich. Möchten Sie auch etwas essen?" },
+        { "speaker": "Lisa",    "text": "Ja, ein Ei mit Butter und Brot, bitte." },
+        { "speaker": "Kellner", "text": "Sehr gern. Und zum Nachtisch? Wir haben frische Bananen und Orangen." },
+        { "speaker": "Lisa",    "text": "Eine Banane, danke. Das reicht." }
+      ]
+    }
   ],
   "exercises": [
     {
-      "type": "fill-in",
-      "sentence": "das ___ ist kalt",
-      "answer": "Wasser",
-      "hint": { "en": "water", "zh": "水" }
-    },
-    {
-      "type": "fill-in",
-      "sentence": "Ich esse das ___ mit Käse",
-      "answer": "Brot",
-      "hint": { "en": "bread", "zh": "面包" }
-    },
-    {
-      "type": "fill-in",
-      "sentence": "der ___ ist lecker",
-      "answer": "Käse",
-      "hint": { "en": "cheese", "zh": "奶酪" }
-    },
-    {
-      "type": "multiple-choice",
-      "question": { "en": "What is 'die Milch'?", "zh": "'die Milch' 是什么意思？" },
-      "options": [
-        { "en": "water",  "zh": "水"   },
-        { "en": "milk",   "zh": "牛奶" },
-        { "en": "bread",  "zh": "面包" },
-        { "en": "cheese", "zh": "奶酪" }
-      ],
-      "answer": 1
-    },
-    {
-      "type": "multiple-choice",
-      "question": { "en": "Which article does 'Brot' use?", "zh": "'Brot' 用哪个冠词？" },
-      "options": [
-        { "en": "der (masculine)", "zh": "der（阳性）" },
-        { "en": "die (feminine)",  "zh": "die（阴性）" },
-        { "en": "das (neuter)",    "zh": "das（中性）" },
-        { "en": "keine (none)",    "zh": "keine（无）"  }
-      ],
-      "answer": 2
-    },
-    {
-      "type": "multiple-choice",
-      "question": { "en": "How do you say 'I eat an apple'?", "zh": "如何说\"我吃一个苹果\"？" },
-      "options": [
-        { "en": "Ich trinke einen Apfel", "zh": "Ich trinke einen Apfel" },
-        { "en": "Ich esse einen Apfel",   "zh": "Ich esse einen Apfel"   },
-        { "en": "Ich koche einen Apfel",  "zh": "Ich koche einen Apfel"  },
-        { "en": "Ich kaufe einen Apfel",  "zh": "Ich kaufe einen Apfel"  }
-      ],
-      "answer": 1
-    },
-    {
       "type": "matching",
       "pairs": [
-        { "german": "das Brot",  "en": "bread",  "zh": "面包" },
-        { "german": "der Käse",  "en": "cheese", "zh": "奶酪" },
-        { "german": "die Milch", "en": "milk",   "zh": "牛奶" },
-        { "german": "der Apfel", "en": "apple",  "zh": "苹果" }
+        { "german": "die Zwiebel",   "en": "onion",     "zh": "洋葱" },
+        { "german": "das Frühstück", "en": "breakfast", "zh": "早餐" },
+        { "german": "der Saft",      "en": "juice",     "zh": "果汁" },
+        { "german": "die Nudeln",    "en": "pasta",     "zh": "面条" },
+        { "german": "der Salat",     "en": "salad",     "zh": "沙拉" },
+        { "german": "die Kartoffel", "en": "potato",    "zh": "土豆" }
       ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Zum Frühstück trinke ich immer ___, keinen Tee.",
+      "answer": "Kaffee"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Die Suppe braucht mehr ___, sie schmeckt zu fade.",
+      "answer": "Salz"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Er isst jeden Tag ___ mit Tomatensoße.",
+      "answer": "Nudeln"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ohne ___ schmeckt der Kaffee zu bitter.",
+      "answer": "Zucker"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence is grammatically correct?", "zh": "哪句话语法正确？" },
+      "options": [
+        { "en": "Die Brot ist frisch.",  "zh": "Die Brot ist frisch." },
+        { "en": "Das Brot ist frisch.",  "zh": "Das Brot ist frisch." },
+        { "en": "Der Brot ist frisch.",  "zh": "Der Brot ist frisch." },
+        { "en": "Ein Brot sind frisch.", "zh": "Ein Brot sind frisch." }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Anna buys three things at the supermarket. Which group is correct?", "zh": "Anna 在超市买了三样东西，哪组正确？" },
+      "options": [
+        { "en": "Brot, Milch, Eier",    "zh": "Brot, Milch, Eier" },
+        { "en": "Käse, Fleisch, Suppe", "zh": "Käse, Fleisch, Suppe" },
+        { "en": "Kaffee, Ei, Butter",   "zh": "Kaffee, Ei, Butter" },
+        { "en": "Apfel, Banane, Saft",  "zh": "Apfel, Banane, Saft" }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Milch",     "zh": "Milch" },
+        { "en": "Saft",      "zh": "Saft" },
+        { "en": "Kaffee",    "zh": "Kaffee" },
+        { "en": "Kartoffel", "zh": "Kartoffel" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the plural of 'die Kartoffel'?", "zh": "'die Kartoffel' 的复数是？" },
+      "options": [
+        { "en": "die Kartoffels", "zh": "die Kartoffels" },
+        { "en": "die Kartoffeln", "zh": "die Kartoffeln" },
+        { "en": "die Kartoffele", "zh": "die Kartoffele" },
+        { "en": "die Kartoffelе", "zh": "die Kartoffelе" }
+      ],
+      "answer": 1
     }
   ]
 }

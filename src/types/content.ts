@@ -4,9 +4,11 @@ export interface Word {
   german: string
   article: string
   gender: 'masculine' | 'feminine' | 'neuter'
+  plural: string
   en: string
   zh: string
   level: string
+  tags: string[]
 }
 
 export interface LocalizedString {
@@ -14,11 +16,23 @@ export interface LocalizedString {
   zh: string
 }
 
+export interface DialogueLine {
+  speaker: string
+  text: string
+}
+
+export interface Dialogue {
+  id: string
+  scene: LocalizedString
+  audio?: string
+  highlighted_words: string[]
+  lines: DialogueLine[]
+}
+
 export interface FillInExercise {
   type: 'fill-in'
   sentence: string
   answer: string
-  hint: LocalizedString
 }
 
 export interface MultipleChoiceExercise {
@@ -38,6 +52,9 @@ export type Exercise = FillInExercise | MultipleChoiceExercise | MatchingExercis
 export interface ContentFile {
   topic: string
   tags: string[]
+  featured_word?: string
+  emoji?: string
   words?: Word[]
+  dialogues?: Dialogue[]
   exercises: Exercise[]
 }

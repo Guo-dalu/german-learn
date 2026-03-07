@@ -8,7 +8,7 @@ interface Props {
   lang: Lang
 }
 
-export default function FillInBlank({ exercise, lang }: Props) {
+export default function FillInBlank({ exercise }: Props) {
   const { t } = useTranslation()
   const [value, setValue] = useState('')
   const [status, setStatus] = useState<'idle' | 'correct' | 'wrong'>('idle')
@@ -55,9 +55,6 @@ export default function FillInBlank({ exercise, lang }: Props) {
           disabled={revealed}
         />
         {after}
-        <span className="block text-xs mt-1 text-text2">
-          hint: <em>{exercise.hint[lang]}</em>
-        </span>
       </div>
 
       <div className="flex items-center gap-3 flex-wrap">
