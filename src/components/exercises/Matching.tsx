@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Card from '../Card'
 import type { Lang, MatchingExercise } from '../../types/content'
@@ -12,8 +12,8 @@ export default function Matching({ exercise, lang }: Props) {
   const { t } = useTranslation()
   const { pairs } = exercise
 
-  // Shuffle the right column once on mount
-  const shuffled = useMemo(() => [...pairs].sort(() => Math.random() - 0.5), [pairs])
+  // Shuffle the right column once on mount (lazy initializer avoids re-shuffle on re-render)
+  const [shuffled] = useState(() => [...pairs].sort(() => Math.random() - 0.5))
 
   const [selectedGerman, setSelectedGerman] = useState<string | null>(null)
   const [matched, setMatched] = useState<Set<string>>(new Set())

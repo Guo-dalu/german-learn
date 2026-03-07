@@ -16,5 +16,16 @@
   "home": {
     "tagline": "用有趣的方式学德语",
     "subtitle": "彩色课程 · 互动练习 · 真实例句"
+  },
+  "vocab": {
+    "allTopics": "所有主题",
+    "words": "个词"
+  },
+  "grammar": {
+    "allTopics": "所有主题"
+  },
+  "exercises": {
+    "all": "全部",
+    "title": "练习题"
   }
 }

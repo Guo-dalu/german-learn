@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import remarkGfm from 'remark-gfm'
 import Card from '../components/Card'
-import Tag from '../components/Tag'
 import FillInBlanks from '../components/exercises/FillInBlanks'
 import Matching from '../components/exercises/Matching'
 import MultipleChoice from '../components/exercises/MultipleChoice'
+import SectionLayout from '../components/SectionLayout'
+import Tag from '../components/Tag'
 import { GENDER_CLASS } from '../constants'
-import type { ContentFile, Dialogue, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise, Phrase, Word } from '../types/content'
 import { parseFrontmatter } from '../utils/content'
+import type { ContentFile, Dialogue, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise, Phrase, Word } from '../types/content'
 
 const mdModules = import.meta.glob('/content/vocabulary/*.md', { query: '?raw', import: 'default' })
 const jsonModules = import.meta.glob<ContentFile>('/content/vocabulary/*.json', { import: 'default' })
@@ -62,7 +63,7 @@ function DialogueSection({ dialogue, words, lang }: { dialogue: Dialogue; words:
 
 export default function VocabularyPage() {
   const { topic } = useParams<{ topic: string }>()
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
   const lang = i18n.language as Lang
 
   const [title, setTitle] = useState('')
@@ -106,7 +107,14 @@ export default function VocabularyPage() {
   ]
 
   return (
-    <div>
+    <SectionLayout section='vocabulary' currentSlug={topic ?? ''}>
+      {/* Mobile breadcrumb */}
+      <div className='md:hidden px-4 pt-3'>
+        <Link to='/vocabulary' className='text-xs font-black text-text2 uppercase tracking-wider hover:text-accent1 transition-colors'>
+          ← {t('vocab.allTopics')}
+        </Link>
+      </div>
+
       {/* 1. Header */}
       <div className='relative overflow-hidden bg-bg2 border-b-2 border-border p-4'>
         {stickers.slice(0, 4).map((s, i) => (
@@ -224,6 +232,6 @@ export default function VocabularyPage() {
       <div className='mt-6 py-2.5 text-center bg-accent4'>
         <span className='font-display text-white text-[clamp(0.85rem,2.5vw,1rem)] tracking-wider'>✦ Keep going · Weitermachen · 你能做到 ✦</span>
       </div>
-    </div>
+    </SectionLayout>
   )
 }

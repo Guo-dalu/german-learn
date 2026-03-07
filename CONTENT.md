@@ -112,3 +112,33 @@ Each story = `{title}.md` + `{title}.zh.md`
 - Level tags: `A1`, `A2`, `B1`, `B2`
 - Topic tags: `food`, `travel`, `home`, `work`, `numbers`, `time`, `family`
 - Grammar tags: `articles`, `cases`, `verbs`, `adjectives`, `plurals`
+
+---
+
+## AI Content Generation
+
+To generate a new topic with an AI agent, provide these files as context:
+
+**For vocabulary:**
+- `CONTENT.md` (this file)
+- `content/vocabulary/food.md`
+- `content/vocabulary/food.zh.md`
+- `content/vocabulary/food.json`
+
+**For grammar:**
+- `CONTENT.md` (this file)
+- `content/grammar/articles.md`
+- `content/grammar/articles.zh.md`
+- `content/grammar/articles.json`
+
+Then prompt:
+
+```
+Using the spec in CONTENT.md and the example files as reference, create a new
+vocabulary topic: "{topic}" at level {A1/A2/B1}.
+
+Produce 3 files: {topic}.md, {topic}.zh.md, {topic}.json.
+Follow the exact structure of the example. German must be accurate and natural.
+```
+
+The spec + one complete example is sufficient context. No other files needed.

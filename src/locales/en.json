@@ -16,5 +16,16 @@
   "home": {
     "tagline": "Learn German the fun way",
     "subtitle": "Colorful lessons · Interactive exercises · Real sentences"
+  },
+  "vocab": {
+    "allTopics": "All Topics",
+    "words": "words"
+  },
+  "grammar": {
+    "allTopics": "All Topics"
+  },
+  "exercises": {
+    "all": "All",
+    "title": "Exercises"
   }
 }
