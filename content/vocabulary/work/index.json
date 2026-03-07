@@ -1,0 +1,152 @@
+{
+  "topic": "work",
+  "tags": ["A2", "B1", "work"],
+  "featured_word": "der Beruf",
+  "emoji": "💼",
+  "stickers": ["🖥️", "📋", "☕", "🏢"],
+  "words": [
+    { "german": "Arbeit",       "article": "die", "gender": "feminine",  "plural": "—",                "en": "work/job",       "zh": "工作",   "level": "A2", "tags": [],           "example": { "de": "Die Arbeit beginnt um acht Uhr.", "en": "Work starts at eight o'clock.", "zh": "工作八点开始。" } },
+    { "german": "Beruf",        "article": "der", "gender": "masculine", "plural": "die Berufe",       "en": "profession",     "zh": "职业",   "level": "A2", "tags": [],           "example": { "de": "Was ist dein Beruf?", "en": "What is your profession?", "zh": "你的职业是什么？" } },
+    { "german": "Büro",         "article": "das", "gender": "neuter",    "plural": "die Büros",        "en": "office",         "zh": "办公室", "level": "A2", "tags": ["place"],    "example": { "de": "Ich arbeite im Büro von neun bis fünf.", "en": "I work in the office from nine to five.", "zh": "我在办公室从九点工作到五点。" } },
+    { "german": "Chef",         "article": "der", "gender": "masculine", "plural": "die Chefs",        "en": "boss",           "zh": "老板",   "level": "A2", "tags": ["person"],   "example": { "de": "Mein Chef ist oft im Ausland.", "en": "My boss is often abroad.", "zh": "我老板经常在国外。" } },
+    { "german": "Kollege",      "article": "der", "gender": "masculine", "plural": "die Kollegen",     "en": "colleague",      "zh": "同事",   "level": "A2", "tags": ["person"],   "example": { "de": "Meine Kollegen sind sehr hilfsbereit.", "en": "My colleagues are very helpful.", "zh": "我的同事很乐于助人。" } },
+    { "german": "Besprechung",  "article": "die", "gender": "feminine",  "plural": "die Besprechungen","en": "meeting",        "zh": "会议",   "level": "A2", "tags": [],           "example": { "de": "Die Besprechung dauert eine Stunde.", "en": "The meeting lasts one hour.", "zh": "会议持续一个小时。" } },
+    { "german": "E-Mail",       "article": "die", "gender": "feminine",  "plural": "die E-Mails",      "en": "email",          "zh": "电子邮件","level": "A2", "tags": [],           "example": { "de": "Ich muss noch zehn E-Mails beantworten.", "en": "I still have to answer ten emails.", "zh": "我还要回复十封电子邮件。" } },
+    { "german": "Gehalt",       "article": "das", "gender": "neuter",    "plural": "die Gehälter",     "en": "salary",         "zh": "薪水",   "level": "A2", "tags": [],           "example": { "de": "Das Gehalt wird monatlich überwiesen.", "en": "The salary is transferred monthly.", "zh": "薪水每月转账。" } },
+    { "german": "Stelle",       "article": "die", "gender": "feminine",  "plural": "die Stellen",      "en": "position/job opening","zh": "职位","level": "A2", "tags": [],          "example": { "de": "Ich bewerbe mich auf diese Stelle.", "en": "I am applying for this position.", "zh": "我在申请这个职位。" } },
+    { "german": "Bewerbung",    "article": "die", "gender": "feminine",  "plural": "die Bewerbungen",  "en": "application",    "zh": "申请",   "level": "A2", "tags": [],           "example": { "de": "Ich schicke meine Bewerbung heute ab.", "en": "I'm sending my application today.", "zh": "我今天发送申请。" } },
+    { "german": "Lebenslauf",   "article": "der", "gender": "masculine", "plural": "die Lebensläufe",  "en": "CV/résumé",      "zh": "简历",   "level": "A2", "tags": [],           "example": { "de": "Schick mir bitte deinen Lebenslauf.", "en": "Please send me your CV.", "zh": "请把你的简历发给我。" } },
+    { "german": "Vorstellungsgespräch","article": "das","gender": "neuter","plural": "die Vorstellungsgespräche","en": "job interview","zh": "面试","level": "A2", "tags": [],     "example": { "de": "Das Vorstellungsgespräch war sehr schwierig.", "en": "The job interview was very difficult.", "zh": "面试非常难。" } },
+    { "german": "Urlaub",       "article": "der", "gender": "masculine", "plural": "die Urlaube",      "en": "vacation/leave", "zh": "假期",   "level": "A2", "tags": [],           "example": { "de": "Ich habe nächste Woche Urlaub.", "en": "I have vacation next week.", "zh": "我下周休假。" } },
+    { "german": "Überstunden",  "article": "die", "gender": "feminine",  "plural": "die Überstunden",  "en": "overtime",       "zh": "加班",   "level": "A2", "tags": [],           "example": { "de": "Diese Woche mache ich viele Überstunden.", "en": "I'm working a lot of overtime this week.", "zh": "这周我加了很多班。" } },
+    { "german": "Pause",        "article": "die", "gender": "feminine",  "plural": "die Pausen",       "en": "break",          "zh": "休息",   "level": "A2", "tags": [],           "example": { "de": "Um zwölf machen wir Pause.", "en": "We take a break at twelve.", "zh": "十二点我们休息。" } },
+    { "german": "Homeoffice",   "article": "das", "gender": "neuter",    "plural": "—",                "en": "home office",    "zh": "居家办公","level": "A2", "tags": [],           "example": { "de": "Ich arbeite Dienstag im Homeoffice.", "en": "I work from home on Tuesday.", "zh": "我周二居家办公。" } },
+    { "german": "Aufgabe",      "article": "die", "gender": "feminine",  "plural": "die Aufgaben",     "en": "task/assignment", "zh": "任务",  "level": "B1", "tags": [],           "example": { "de": "Ich habe heute viele Aufgaben.", "en": "I have many tasks today.", "zh": "我今天有很多任务。" } },
+    { "german": "Deadline",     "article": "die", "gender": "feminine",  "plural": "die Deadlines",    "en": "deadline",       "zh": "截止日期","level": "B1", "tags": [],           "example": { "de": "Die Deadline ist morgen um Mitternacht.", "en": "The deadline is tomorrow at midnight.", "zh": "截止日期是明天午夜。" } },
+    { "german": "Abteilung",    "article": "die", "gender": "feminine",  "plural": "die Abteilungen",  "en": "department",     "zh": "部门",   "level": "B1", "tags": ["place"],    "example": { "de": "Ich arbeite in der Marketing-Abteilung.", "en": "I work in the marketing department.", "zh": "我在市场部工作。" } },
+    { "german": "Vertrag",      "article": "der", "gender": "masculine", "plural": "die Verträge",     "en": "contract",       "zh": "合同",   "level": "B1", "tags": [],           "example": { "de": "Ich habe einen unbefristeten Vertrag.", "en": "I have a permanent contract.", "zh": "我有一份无固定期限合同。" } },
+    { "german": "Kündigung",    "article": "die", "gender": "feminine",  "plural": "die Kündigungen",  "en": "resignation/termination","zh": "辞职/解雇","level": "B1","tags": [],   "example": { "de": "Er hat seine Kündigung eingereicht.", "en": "He handed in his resignation.", "zh": "他递交了辞职信。" } },
+    { "german": "Erfahrung",    "article": "die", "gender": "feminine",  "plural": "die Erfahrungen",  "en": "experience",     "zh": "经验",   "level": "B1", "tags": [],           "example": { "de": "Sie hat fünf Jahre Erfahrung in diesem Bereich.", "en": "She has five years of experience in this field.", "zh": "她在这个领域有五年经验。" } },
+    { "german": "Bericht",      "article": "der", "gender": "masculine", "plural": "die Berichte",     "en": "report",         "zh": "报告",   "level": "B1", "tags": [],           "example": { "de": "Ich muss bis Freitag einen Bericht schreiben.", "en": "I have to write a report by Friday.", "zh": "我必须在周五前写完一份报告。" } },
+    { "german": "Projekt",      "article": "das", "gender": "neuter",    "plural": "die Projekte",     "en": "project",        "zh": "项目",   "level": "B1", "tags": [],           "example": { "de": "Das Projekt läuft seit drei Monaten.", "en": "The project has been running for three months.", "zh": "这个项目已经进行了三个月。" } },
+    { "german": "Unternehmen",  "article": "das", "gender": "neuter",    "plural": "die Unternehmen",  "en": "company/enterprise","zh": "企业/公司","level": "B1","tags": ["place"],  "example": { "de": "Das Unternehmen hat 200 Mitarbeiter.", "en": "The company has 200 employees.", "zh": "这家企业有200名员工。" } }
+  ],
+  "dialogues": [
+    {
+      "id": "monday-morning",
+      "scene": { "en": "Nina and Felix catch up at the office on Monday morning.", "zh": "Nina 和 Felix 周一早上在办公室聊天。" },
+      "audio": "work-dialogue-1.mp3",
+      "highlighted_words": ["Büro", "Besprechung", "Überstunden", "Pause", "Homeoffice", "Deadline", "Aufgaben"],
+      "lines": [
+        { "speaker": "Felix", "text": "Guten Morgen, Nina! Wie war dein Wochenende?" },
+        { "speaker": "Nina",  "text": "Leider nicht so gut. Ich habe am Samstag Überstunden gemacht." },
+        { "speaker": "Felix", "text": "Wirklich? Wegen der Deadline am Montag?" },
+        { "speaker": "Nina",  "text": "Genau. Aber der Bericht ist jetzt fertig. Und du?" },
+        { "speaker": "Felix", "text": "Ich war im Homeoffice — sehr produktiv! Wann ist die Besprechung heute?" },
+        { "speaker": "Nina",  "text": "Um elf. Danach machen wir Mittagspause?" },
+        { "speaker": "Felix", "text": "Ja, gerne! Ich habe noch so viele Aufgaben heute." }
+      ]
+    },
+    {
+      "id": "job-interview",
+      "scene": { "en": "Tim is interviewed for a new position at a company.", "zh": "Tim 正在接受一家公司新职位的面试。" },
+      "audio": "work-dialogue-2.mp3",
+      "highlighted_words": ["Bewerbung", "Lebenslauf", "Erfahrung", "Stelle", "Gehalt", "Vertrag", "Abteilung"],
+      "lines": [
+        { "speaker": "Personalerin", "text": "Herr Kraft, vielen Dank für Ihre Bewerbung. Ihr Lebenslauf ist sehr beeindruckend." },
+        { "speaker": "Tim",          "text": "Danke schön. Ich habe fünf Jahre Erfahrung in der IT-Branche." },
+        { "speaker": "Personalerin", "text": "Warum interessieren Sie sich für diese Stelle?" },
+        { "speaker": "Tim",          "text": "Das Unternehmen hat eine tolle Reputation, und die Projekte sind spannend." },
+        { "speaker": "Personalerin", "text": "In welcher Abteilung möchten Sie arbeiten?" },
+        { "speaker": "Tim",          "text": "Am liebsten in der Entwicklung. Und wie ist das Gehalt?" },
+        { "speaker": "Personalerin", "text": "Wir besprechen das Gehalt im Vertrag. Können Sie nächste Woche anfangen?" }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Ich arbeite als ...", "en": "I work as a ...", "zh": "我是……（职业）" },
+    { "german": "Ich bewerbe mich um die Stelle.", "en": "I'm applying for the position.", "zh": "我在申请这个职位。" },
+    { "german": "Wann ist die nächste Besprechung?", "en": "When is the next meeting?", "zh": "下次会议是什么时候？" },
+    { "german": "Ich bin heute im Homeoffice.", "en": "I'm working from home today.", "zh": "我今天居家办公。" },
+    { "german": "Die Deadline ist morgen.", "en": "The deadline is tomorrow.", "zh": "截止日期是明天。" },
+    { "german": "Ich nehme kurz Pause.", "en": "I'll take a quick break.", "zh": "我休息一下。" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "der Lebenslauf",  "en": "CV/résumé",    "zh": "简历" },
+        { "german": "die Kündigung",   "en": "resignation",  "zh": "辞职" },
+        { "german": "das Gehalt",      "en": "salary",       "zh": "薪水" },
+        { "german": "die Überstunden", "en": "overtime",     "zh": "加班" },
+        { "german": "der Vertrag",     "en": "contract",     "zh": "合同" },
+        { "german": "die Abteilung",   "en": "department",   "zh": "部门" },
+        { "german": "die Erfahrung",   "en": "experience",   "zh": "经验" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich bewerbe mich auf diese ___ — das Gehalt und die Aufgaben passen gut zu mir.",
+      "answer": "Stelle"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Die ___ beginnt um elf Uhr — alle Kollegen müssen dabei sein.",
+      "answer": "Besprechung"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Der Bericht muss bis Freitag fertig sein — die ___ ist sehr eng.",
+      "answer": "Deadline"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Nach drei Jahren hat sie ihren ___ unterschrieben — jetzt hat sie eine feste Stelle.",
+      "answer": "Vertrag"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence correctly uses 'arbeiten bei' vs 'arbeiten als'?", "zh": "哪句话正确使用了 'arbeiten bei' 和 'arbeiten als'？" },
+      "options": [
+        { "en": "Ich arbeite als Siemens.",         "zh": "Ich arbeite als Siemens." },
+        { "en": "Ich arbeite bei Ingenieur.",        "zh": "Ich arbeite bei Ingenieur." },
+        { "en": "Ich arbeite bei Siemens als Ingenieur.", "zh": "Ich arbeite bei Siemens als Ingenieur." },
+        { "en": "Ich arbeite als Siemens bei Ingenieur.", "zh": "Ich arbeite als Siemens bei Ingenieur." }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the interview dialogue, why does Tim want to work at this company?", "zh": "在面试对话中，Tim 为什么想在这家公司工作？" },
+      "options": [
+        { "en": "The salary is very high.",                    "zh": "薪水很高。" },
+        { "en": "He knows the boss personally.",              "zh": "他认识老板。" },
+        { "en": "The company's reputation and projects.",     "zh": "公司的声誉和项目。" },
+        { "en": "The office is close to his home.",           "zh": "办公室离家近。" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Bewerbung",    "zh": "Bewerbung" },
+        { "en": "Lebenslauf",   "zh": "Lebenslauf" },
+        { "en": "Vorstellungsgespräch", "zh": "Vorstellungsgespräch" },
+        { "en": "Homeoffice",   "zh": "Homeoffice" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the plural of 'das Gehalt'?", "zh": "'das Gehalt' 的复数是？" },
+      "options": [
+        { "en": "die Gehalts",  "zh": "die Gehalts" },
+        { "en": "die Gehalte",  "zh": "die Gehalte" },
+        { "en": "die Gehälter", "zh": "die Gehälter" },
+        { "en": "die Gehaltе",  "zh": "die Gehaltе" }
+      ],
+      "answer": 2
+    }
+  ]
+}

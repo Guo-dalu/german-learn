@@ -1,0 +1,158 @@
+{
+  "topic": "apartment",
+  "tags": ["A1", "A2", "home"],
+  "featured_word": "die Wohnung",
+  "emoji": "🏠",
+  "stickers": ["🛋️", "🪴", "🚿", "🔑"],
+  "words": [
+    { "german": "Wohnung",      "article": "die", "gender": "feminine",  "plural": "die Wohnungen",     "en": "apartment",      "zh": "公寓",   "level": "A1", "tags": [],           "example": { "de": "Ich suche eine Wohnung in der Stadt.", "en": "I'm looking for an apartment in the city.", "zh": "我在城里找公寓。" } },
+    { "german": "Zimmer",       "article": "das", "gender": "neuter",    "plural": "die Zimmer",        "en": "room",           "zh": "房间",   "level": "A1", "tags": [],           "example": { "de": "Die Wohnung hat drei Zimmer.", "en": "The apartment has three rooms.", "zh": "这套公寓有三个房间。" } },
+    { "german": "Küche",        "article": "die", "gender": "feminine",  "plural": "die Küchen",        "en": "kitchen",        "zh": "厨房",   "level": "A1", "tags": ["room"],     "example": { "de": "Die Küche ist modern und hell.", "en": "The kitchen is modern and bright.", "zh": "厨房又现代又明亮。" } },
+    { "german": "Badezimmer",   "article": "das", "gender": "neuter",    "plural": "die Badezimmer",   "en": "bathroom",       "zh": "浴室",   "level": "A1", "tags": ["room"],     "example": { "de": "Das Badezimmer hat eine Badewanne.", "en": "The bathroom has a bathtub.", "zh": "浴室里有浴缸。" } },
+    { "german": "Wohnzimmer",   "article": "das", "gender": "neuter",    "plural": "die Wohnzimmer",   "en": "living room",    "zh": "客厅",   "level": "A1", "tags": ["room"],     "example": { "de": "Wir sitzen im Wohnzimmer.", "en": "We sit in the living room.", "zh": "我们坐在客厅里。" } },
+    { "german": "Schlafzimmer", "article": "das", "gender": "neuter",    "plural": "die Schlafzimmer", "en": "bedroom",        "zh": "卧室",   "level": "A1", "tags": ["room"],     "example": { "de": "Das Schlafzimmer ist ruhig und dunkel.", "en": "The bedroom is quiet and dark.", "zh": "卧室安静而黑暗。" } },
+    { "german": "Toilette",     "article": "die", "gender": "feminine",  "plural": "die Toiletten",    "en": "toilet/WC",      "zh": "厕所",   "level": "A1", "tags": ["room"],     "example": { "de": "Die Toilette ist neben dem Badezimmer.", "en": "The toilet is next to the bathroom.", "zh": "厕所在浴室旁边。" } },
+    { "german": "Flur",         "article": "der", "gender": "masculine", "plural": "die Flure",        "en": "hallway",        "zh": "走廊",   "level": "A1", "tags": ["room"],     "example": { "de": "Im Flur hängen unsere Jacken.", "en": "Our jackets hang in the hallway.", "zh": "我们的外套挂在走廊里。" } },
+    { "german": "Fenster",      "article": "das", "gender": "neuter",    "plural": "die Fenster",      "en": "window",         "zh": "窗户",   "level": "A1", "tags": [],           "example": { "de": "Ich öffne das Fenster, es ist heiß.", "en": "I open the window, it's hot.", "zh": "我打开窗户，太热了。" } },
+    { "german": "Tür",          "article": "die", "gender": "feminine",  "plural": "die Türen",        "en": "door",           "zh": "门",     "level": "A1", "tags": [],           "example": { "de": "Bitte schließ die Tür.", "en": "Please close the door.", "zh": "请把门关上。" } },
+    { "german": "Bett",         "article": "das", "gender": "neuter",    "plural": "die Betten",       "en": "bed",            "zh": "床",     "level": "A1", "tags": ["furniture"], "example": { "de": "Das Bett ist sehr bequem.", "en": "The bed is very comfortable.", "zh": "床非常舒服。" } },
+    { "german": "Sofa",         "article": "das", "gender": "neuter",    "plural": "die Sofas",        "en": "sofa",           "zh": "沙发",   "level": "A1", "tags": ["furniture"], "example": { "de": "Wir schlafen auf dem Sofa.", "en": "We sleep on the sofa.", "zh": "我们睡在沙发上。" } },
+    { "german": "Tisch",        "article": "der", "gender": "masculine", "plural": "die Tische",       "en": "table",          "zh": "桌子",   "level": "A1", "tags": ["furniture"], "example": { "de": "Der Tisch steht in der Küche.", "en": "The table stands in the kitchen.", "zh": "桌子放在厨房里。" } },
+    { "german": "Stuhl",        "article": "der", "gender": "masculine", "plural": "die Stühle",       "en": "chair",          "zh": "椅子",   "level": "A1", "tags": ["furniture"], "example": { "de": "Setz dich auf den Stuhl!", "en": "Sit down on the chair!", "zh": "坐到椅子上！" } },
+    { "german": "Schrank",      "article": "der", "gender": "masculine", "plural": "die Schränke",     "en": "wardrobe/cabinet","zh": "柜子",  "level": "A1", "tags": ["furniture"], "example": { "de": "Die Kleider sind im Schrank.", "en": "The clothes are in the wardrobe.", "zh": "衣服在柜子里。" } },
+    { "german": "Lampe",        "article": "die", "gender": "feminine",  "plural": "die Lampen",       "en": "lamp",           "zh": "灯",     "level": "A1", "tags": ["furniture"], "example": { "de": "Die Lampe gibt wenig Licht.", "en": "The lamp gives little light.", "zh": "这盏灯光线很暗。" } },
+    { "german": "Boden",        "article": "der", "gender": "masculine", "plural": "die Böden",        "en": "floor",          "zh": "地板",   "level": "A1", "tags": [],           "example": { "de": "Der Boden ist kalt im Winter.", "en": "The floor is cold in winter.", "zh": "冬天地板很冷。" } },
+    { "german": "Wand",         "article": "die", "gender": "feminine",  "plural": "die Wände",        "en": "wall",           "zh": "墙",     "level": "A1", "tags": [],           "example": { "de": "An der Wand hängt ein Bild.", "en": "A picture hangs on the wall.", "zh": "墙上挂着一幅画。" } },
+    { "german": "Decke",        "article": "die", "gender": "feminine",  "plural": "die Decken",       "en": "ceiling",        "zh": "天花板", "level": "A1", "tags": [],           "example": { "de": "Die Decke ist sehr hoch.", "en": "The ceiling is very high.", "zh": "天花板很高。" } },
+    { "german": "Schlüssel",    "article": "der", "gender": "masculine", "plural": "die Schlüssel",    "en": "key",            "zh": "钥匙",   "level": "A1", "tags": [],           "example": { "de": "Ich finde meinen Schlüssel nicht.", "en": "I can't find my key.", "zh": "我找不到我的钥匙。" } },
+    { "german": "Miete",        "article": "die", "gender": "feminine",  "plural": "die Mieten",       "en": "rent",           "zh": "房租",   "level": "A2", "tags": [],           "example": { "de": "Die Miete ist sehr teuer in München.", "en": "The rent is very expensive in Munich.", "zh": "慕尼黑的房租很贵。" } },
+    { "german": "Vermieter",    "article": "der", "gender": "masculine", "plural": "die Vermieter",    "en": "landlord",       "zh": "房东",   "level": "A2", "tags": [],           "example": { "de": "Der Vermieter wohnt im Erdgeschoss.", "en": "The landlord lives on the ground floor.", "zh": "房东住在一楼。" } },
+    { "german": "Nachbar",      "article": "der", "gender": "masculine", "plural": "die Nachbarn",     "en": "neighbor",       "zh": "邻居",   "level": "A2", "tags": [],           "example": { "de": "Mein Nachbar ist sehr nett.", "en": "My neighbor is very nice.", "zh": "我的邻居很友善。" } },
+    { "german": "Stockwerk",    "article": "das", "gender": "neuter",    "plural": "die Stockwerke",   "en": "floor/storey",   "zh": "楼层",   "level": "A2", "tags": [],           "example": { "de": "Wir wohnen im dritten Stockwerk.", "en": "We live on the third floor.", "zh": "我们住在三楼。" } },
+    { "german": "Aufzug",       "article": "der", "gender": "masculine", "plural": "die Aufzüge",      "en": "elevator",       "zh": "电梯",   "level": "A2", "tags": [],           "example": { "de": "Der Aufzug ist leider kaputt.", "en": "The elevator is unfortunately broken.", "zh": "电梯坏了。" } },
+    { "german": "Treppe",       "article": "die", "gender": "feminine",  "plural": "die Treppen",      "en": "stairs",         "zh": "楼梯",   "level": "A2", "tags": [],           "example": { "de": "Ich nehme immer die Treppe.", "en": "I always take the stairs.", "zh": "我总是走楼梯。" } },
+    { "german": "Keller",       "article": "der", "gender": "masculine", "plural": "die Keller",       "en": "basement/cellar","zh": "地下室", "level": "A2", "tags": [],           "example": { "de": "Fahrräder stehen im Keller.", "en": "Bikes are stored in the basement.", "zh": "自行车放在地下室。" } },
+    { "german": "Balkon",       "article": "der", "gender": "masculine", "plural": "die Balkone",      "en": "balcony",        "zh": "阳台",   "level": "A2", "tags": [],           "example": { "de": "Wir frühstücken auf dem Balkon.", "en": "We have breakfast on the balcony.", "zh": "我们在阳台上吃早饭。" } },
+    { "german": "Heizung",      "article": "die", "gender": "feminine",  "plural": "die Heizungen",    "en": "heating",        "zh": "暖气",   "level": "A2", "tags": [],           "example": { "de": "Die Heizung funktioniert nicht gut.", "en": "The heating doesn't work well.", "zh": "暖气不太好使。" } },
+    { "german": "Steckdose",    "article": "die", "gender": "feminine",  "plural": "die Steckdosen",   "en": "power outlet",   "zh": "插座",   "level": "A2", "tags": [],           "example": { "de": "Wo ist die nächste Steckdose?", "en": "Where is the nearest outlet?", "zh": "最近的插座在哪里？" } }
+  ],
+  "dialogues": [
+    {
+      "id": "apartment-viewing",
+      "scene": { "en": "Sarah views an apartment with the landlord.", "zh": "Sarah 和房东一起看公寓。" },
+      "audio": "apartment-dialogue-1.mp3",
+      "highlighted_words": ["Wohnung", "Zimmer", "Küche", "Badezimmer", "Wohnzimmer", "Schlafzimmer", "Balkon", "Miete"],
+      "lines": [
+        { "speaker": "Vermieter", "text": "Willkommen! Das ist die Wohnung. Sie hat drei Zimmer." },
+        { "speaker": "Sarah",     "text": "Sehr schön! Wo ist die Küche?" },
+        { "speaker": "Vermieter", "text": "Die Küche ist hier links, und das Badezimmer ist gegenüber." },
+        { "speaker": "Sarah",     "text": "Das Wohnzimmer ist groß! Und das Schlafzimmer?" },
+        { "speaker": "Vermieter", "text": "Das Schlafzimmer ist am Ende des Flurs. Es hat auch einen Balkon." },
+        { "speaker": "Sarah",     "text": "Wunderbar. Wie hoch ist die Miete?" },
+        { "speaker": "Vermieter", "text": "Achthundert Euro pro Monat, warm." },
+        { "speaker": "Sarah",     "text": "Das ist fair. Ich melde mich morgen!" }
+      ]
+    },
+    {
+      "id": "new-neighbor",
+      "scene": { "en": "Kai meets his new neighbor in the hallway.", "zh": "Kai 在走廊遇到新邻居。" },
+      "audio": "apartment-dialogue-2.mp3",
+      "highlighted_words": ["Flur", "Stockwerk", "Aufzug", "Treppe", "Schlüssel", "Tür"],
+      "lines": [
+        { "speaker": "Kai",      "text": "Hallo! Bist du neu hier im Haus?" },
+        { "speaker": "Mia",      "text": "Ja, ich bin eingezogen! Ich bin Mia. Ich wohne im zweiten Stockwerk." },
+        { "speaker": "Kai",      "text": "Ich auch! Ich bin Kai. Nimmst du den Aufzug oder die Treppe?" },
+        { "speaker": "Mia",      "text": "Meistens die Treppe. Der Aufzug ist so langsam." },
+        { "speaker": "Kai",      "text": "Stimmt! Oh, deine Tür steht offen." },
+        { "speaker": "Mia",      "text": "Ach so! Ich habe meinen Schlüssel dringelassen. Danke!" },
+        { "speaker": "Kai",      "text": "Kein Problem. Schöne neue Nachbarschaft!" }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Ich suche eine Wohnung.", "en": "I'm looking for an apartment.", "zh": "我在找公寓。" },
+    { "german": "Wie hoch ist die Miete?", "en": "How much is the rent?", "zh": "租金是多少？" },
+    { "german": "Ist die Wohnung noch frei?", "en": "Is the apartment still available?", "zh": "这套公寓还空着吗？" },
+    { "german": "Darf ich das Fenster öffnen?", "en": "May I open the window?", "zh": "我可以开窗户吗？" },
+    { "german": "Die Heizung funktioniert nicht.", "en": "The heating isn't working.", "zh": "暖气坏了。" },
+    { "german": "In welchem Stock wohnen Sie?", "en": "On which floor do you live?", "zh": "您住在几楼？" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "der Schlüssel", "en": "key",       "zh": "钥匙" },
+        { "german": "die Miete",     "en": "rent",      "zh": "房租" },
+        { "german": "der Balkon",    "en": "balcony",   "zh": "阳台" },
+        { "german": "die Treppe",    "en": "stairs",    "zh": "楼梯" },
+        { "german": "der Nachbar",   "en": "neighbor",  "zh": "邻居" },
+        { "german": "die Heizung",   "en": "heating",   "zh": "暖气" },
+        { "german": "das Stockwerk", "en": "floor/storey", "zh": "楼层" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Die Wohnung hat keinen Aufzug, deshalb nehme ich jeden Tag die ___.",
+      "answer": "Treppe"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Im Winter ist die ___ kaputt — es ist sehr kalt in der Wohnung.",
+      "answer": "Heizung"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich kann die Tür nicht aufmachen — ich habe meinen ___ vergessen.",
+      "answer": "Schlüssel"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Wir frühstücken gern draußen auf dem ___.",
+      "answer": "Balkon"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence uses the correct article for 'Küche'?", "zh": "哪句话 'Küche' 的冠词正确？" },
+      "options": [
+        { "en": "Der Küche ist groß.",  "zh": "Der Küche ist groß." },
+        { "en": "Das Küche ist groß.",  "zh": "Das Küche ist groß." },
+        { "en": "Die Küche ist groß.",  "zh": "Die Küche ist groß." },
+        { "en": "Ein Küche ist groß.",  "zh": "Ein Küche ist groß." }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the dialogue, why does Mia prefer the stairs?", "zh": "在对话中，Mia 为什么更喜欢走楼梯？" },
+      "options": [
+        { "en": "The elevator is broken.", "zh": "电梯坏了。" },
+        { "en": "The elevator is too slow.", "zh": "电梯太慢了。" },
+        { "en": "There is no elevator.",    "zh": "没有电梯。" },
+        { "en": "She forgot her key.",      "zh": "她忘了钥匙。" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Wohnzimmer", "zh": "Wohnzimmer" },
+        { "en": "Schlafzimmer", "zh": "Schlafzimmer" },
+        { "en": "Badezimmer",   "zh": "Badezimmer" },
+        { "en": "Schlüssel",    "zh": "Schlüssel" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the plural of 'der Schrank'?", "zh": "'der Schrank' 的复数是？" },
+      "options": [
+        { "en": "die Schranke",  "zh": "die Schranke" },
+        { "en": "die Schränke",  "zh": "die Schränke" },
+        { "en": "die Schranken", "zh": "die Schranken" },
+        { "en": "die Schrankе",  "zh": "die Schrankе" }
+      ],
+      "answer": 1
+    }
+  ]
+}

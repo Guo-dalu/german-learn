@@ -1,0 +1,424 @@
+{
+  "topic": "health",
+  "tags": ["A2", "B1", "health"],
+  "featured_word": "der Arzt",
+  "emoji": "🏥",
+  "stickers": ["💊", "🩺", "🤧", "🩹"],
+  "words": [
+    {
+      "german": "Arzt",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Ärzte",
+      "en": "doctor",
+      "zh": "医生",
+      "level": "A2",
+      "tags": ["person"],
+      "example": { "de": "Ich muss morgen zum Arzt gehen.", "en": "I have to go to the doctor tomorrow.", "zh": "我明天要去看医生。" }
+    },
+    {
+      "german": "Krankenhaus",
+      "article": "das",
+      "gender": "neuter",
+      "plural": "die Krankenhäuser",
+      "en": "hospital",
+      "zh": "医院",
+      "level": "A2",
+      "tags": ["place"],
+      "example": { "de": "Er liegt seit drei Tagen im Krankenhaus.", "en": "He has been in the hospital for three days.", "zh": "他已经住院三天了。" }
+    },
+    {
+      "german": "Apotheke",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Apotheken",
+      "en": "pharmacy",
+      "zh": "药店",
+      "level": "A2",
+      "tags": ["place"],
+      "example": { "de": "Die Apotheke ist um die Ecke.", "en": "The pharmacy is around the corner.", "zh": "药店就在转角处。" }
+    },
+    {
+      "german": "Schmerz",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Schmerzen",
+      "en": "pain",
+      "zh": "疼痛",
+      "level": "A2",
+      "tags": ["symptom"],
+      "example": { "de": "Ich habe starke Schmerzen im Rücken.", "en": "I have strong pain in my back.", "zh": "我背部很痛。" }
+    },
+    {
+      "german": "Fieber",
+      "article": "das",
+      "gender": "neuter",
+      "plural": "—",
+      "en": "fever",
+      "zh": "发烧",
+      "level": "A2",
+      "tags": ["symptom"],
+      "example": { "de": "Das Kind hat hohes Fieber.", "en": "The child has a high fever.", "zh": "孩子发高烧。" }
+    },
+    {
+      "german": "Husten",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "—",
+      "en": "cough",
+      "zh": "咳嗽",
+      "level": "A2",
+      "tags": ["symptom"],
+      "example": { "de": "Der Husten ist schon seit einer Woche da.", "en": "The cough has been there for a week already.", "zh": "咳嗽已经一周了。" }
+    },
+    {
+      "german": "Schnupfen",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "—",
+      "en": "runny nose/cold",
+      "zh": "流鼻涕",
+      "level": "A2",
+      "tags": ["symptom"],
+      "example": { "de": "Im Winter bekomme ich oft Schnupfen.", "en": "In winter I often get a runny nose.", "zh": "冬天我经常流鼻涕。" }
+    },
+    {
+      "german": "Erkältung",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Erkältungen",
+      "en": "cold (illness)",
+      "zh": "感冒",
+      "level": "A2",
+      "tags": ["illness"],
+      "example": { "de": "Ich habe eine schlimme Erkältung.", "en": "I have a bad cold.", "zh": "我感冒很严重。" }
+    },
+    {
+      "german": "Grippe",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "—",
+      "en": "flu",
+      "zh": "流感",
+      "level": "A2",
+      "tags": ["illness"],
+      "example": { "de": "Die Grippe geht gerade um.", "en": "The flu is going around right now.", "zh": "现在流感正在流行。" }
+    },
+    {
+      "german": "Tablette",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Tabletten",
+      "en": "tablet/pill",
+      "zh": "药片",
+      "level": "A2",
+      "tags": ["medicine"],
+      "example": { "de": "Nimm zwei Tabletten pro Tag.", "en": "Take two tablets per day.", "zh": "每天服两片药。" }
+    },
+    {
+      "german": "Rezept",
+      "article": "das",
+      "gender": "neuter",
+      "plural": "die Rezepte",
+      "en": "prescription",
+      "zh": "处方",
+      "level": "A2",
+      "tags": ["medicine"],
+      "example": { "de": "Dieses Medikament braucht ein Rezept.", "en": "This medication requires a prescription.", "zh": "这种药需要处方。" }
+    },
+    {
+      "german": "Termin",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Termine",
+      "en": "appointment",
+      "zh": "预约",
+      "level": "A2",
+      "tags": [],
+      "example": { "de": "Ich habe einen Termin beim Arzt.", "en": "I have an appointment with the doctor.", "zh": "我预约了医生。" }
+    },
+    {
+      "german": "Kopf",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Köpfe",
+      "en": "head",
+      "zh": "头",
+      "level": "A2",
+      "tags": ["body"],
+      "example": { "de": "Ich habe seit heute Morgen Kopfschmerzen.", "en": "I've had a headache since this morning.", "zh": "我从今早就头痛。" }
+    },
+    {
+      "german": "Bauch",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Bäuche",
+      "en": "stomach/belly",
+      "zh": "肚子",
+      "level": "A2",
+      "tags": ["body"],
+      "example": { "de": "Mir tut der Bauch weh.", "en": "My stomach hurts.", "zh": "我肚子疼。" }
+    },
+    {
+      "german": "Rücken",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Rücken",
+      "en": "back",
+      "zh": "背",
+      "level": "A2",
+      "tags": ["body"],
+      "example": {
+        "de": "Ich habe Rückenschmerzen vom langen Sitzen.",
+        "en": "I have back pain from sitting for too long.",
+        "zh": "我因为久坐背疼。"
+      }
+    },
+    {
+      "german": "Hals",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Hälse",
+      "en": "throat/neck",
+      "zh": "喉咙/脖子",
+      "level": "A2",
+      "tags": ["body"],
+      "example": {
+        "de": "Mein Hals tut weh, ich kann kaum schlucken.",
+        "en": "My throat hurts, I can barely swallow.",
+        "zh": "我喉咙痛，几乎无法吞咽。"
+      }
+    },
+    {
+      "german": "Arm",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "die Arme",
+      "en": "arm",
+      "zh": "手臂",
+      "level": "A2",
+      "tags": ["body"],
+      "example": { "de": "Er hat sich den Arm gebrochen.", "en": "He broke his arm.", "zh": "他把手臂摔断了。" }
+    },
+    {
+      "german": "Bein",
+      "article": "das",
+      "gender": "neuter",
+      "plural": "die Beine",
+      "en": "leg",
+      "zh": "腿",
+      "level": "A2",
+      "tags": ["body"],
+      "example": { "de": "Mein Bein schläft ein.", "en": "My leg is falling asleep.", "zh": "我的腿麻了。" }
+    },
+    {
+      "german": "Krankenkasse",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Krankenkassen",
+      "en": "health insurance",
+      "zh": "医保",
+      "level": "B1",
+      "tags": [],
+      "example": {
+        "de": "Bist du bei einer Krankenkasse versichert?",
+        "en": "Are you insured with a health insurance provider?",
+        "zh": "你有医保吗？"
+      }
+    },
+    {
+      "german": "Allergie",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Allergien",
+      "en": "allergy",
+      "zh": "过敏",
+      "level": "B1",
+      "tags": ["illness"],
+      "example": { "de": "Ich habe eine Allergie gegen Nüsse.", "en": "I have an allergy to nuts.", "zh": "我对坚果过敏。" }
+    },
+    {
+      "german": "Untersuchung",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Untersuchungen",
+      "en": "examination/checkup",
+      "zh": "检查",
+      "level": "B1",
+      "tags": [],
+      "example": {
+        "de": "Die Untersuchung dauert etwa zwanzig Minuten.",
+        "en": "The examination takes about twenty minutes.",
+        "zh": "检查大约需要二十分钟。"
+      }
+    },
+    {
+      "german": "Krankmeldung",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Krankmeldungen",
+      "en": "sick note",
+      "zh": "病假条",
+      "level": "B1",
+      "tags": [],
+      "example": { "de": "Ich brauche eine Krankmeldung für die Arbeit.", "en": "I need a sick note for work.", "zh": "我需要一张病假条。" }
+    },
+    {
+      "german": "Operation",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Operationen",
+      "en": "operation/surgery",
+      "zh": "手术",
+      "level": "B1",
+      "tags": [],
+      "example": { "de": "Die Operation war erfolgreich.", "en": "The operation was successful.", "zh": "手术很成功。" }
+    },
+    {
+      "german": "Blutdruck",
+      "article": "der",
+      "gender": "masculine",
+      "plural": "—",
+      "en": "blood pressure",
+      "zh": "血压",
+      "level": "B1",
+      "tags": [],
+      "example": { "de": "Mein Blutdruck ist zu hoch.", "en": "My blood pressure is too high.", "zh": "我的血压太高了。" }
+    },
+    {
+      "german": "Spritze",
+      "article": "die",
+      "gender": "feminine",
+      "plural": "die Spritzen",
+      "en": "injection/shot",
+      "zh": "注射/打针",
+      "level": "B1",
+      "tags": ["medicine"],
+      "example": {
+        "de": "Der Arzt gibt mir eine Spritze gegen den Schmerz.",
+        "en": "The doctor gives me an injection for the pain.",
+        "zh": "医生给我打了一针止痛。"
+      }
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "at-the-doctor",
+      "scene": { "en": "Sophie visits the doctor with a bad cold.", "zh": "Sophie 因严重感冒去看医生。" },
+      "audio": "health-dialogue-1.mp3",
+      "highlighted_words": ["Erkältung", "Fieber", "Hals", "Husten", "Tabletten", "Rezept", "Termin"],
+      "lines": [
+        { "speaker": "Arzt", "text": "Guten Tag, Frau Weber. Was fehlt Ihnen?" },
+        { "speaker": "Sophie", "text": "Mir geht es nicht gut. Ich habe eine schlimme Erkältung — Fieber, Husten und Halsschmerzen." },
+        { "speaker": "Arzt", "text": "Seit wann haben Sie die Beschwerden?" },
+        { "speaker": "Sophie", "text": "Seit drei Tagen. Das Fieber ist heute Morgen auf 39 Grad gestiegen." },
+        { "speaker": "Arzt", "text": "Ich untersuche Sie kurz. Öffnen Sie bitte den Mund." },
+        { "speaker": "Sophie", "text": "Aah..." },
+        { "speaker": "Arzt", "text": "Der Hals ist sehr gerötet. Ich schreibe Ihnen ein Rezept für Antibiotika und Tabletten gegen das Fieber." },
+        { "speaker": "Sophie", "text": "Brauche ich eine Krankmeldung für die Arbeit?" },
+        { "speaker": "Arzt", "text": "Ja, ich schreibe Sie für fünf Tage krank. Viel Erholung!" }
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "scene": { "en": "Marco picks up medicine at the pharmacy.", "zh": "Marco 在药店取药。" },
+      "audio": "health-dialogue-2.mp3",
+      "highlighted_words": ["Apotheke", "Rezept", "Tabletten", "Allergie", "Schnupfen"],
+      "lines": [
+        { "speaker": "Marco", "text": "Guten Tag! Ich habe hier ein Rezept vom Arzt." },
+        { "speaker": "Apothekerin", "text": "Einen Moment... Hier sind Ihre Antibiotika. Dreimal täglich eine Tablette nach dem Essen." },
+        { "speaker": "Marco", "text": "Danke. Haben Sie auch etwas gegen Schnupfen ohne Rezept?" },
+        { "speaker": "Apothekerin", "text": "Natürlich. Haben Sie Allergien gegen bestimmte Wirkstoffe?" },
+        { "speaker": "Marco", "text": "Nein, keine Allergie." },
+        { "speaker": "Apothekerin", "text": "Dann empfehle ich diese Nasenspritzen — zweimal täglich." },
+        { "speaker": "Marco", "text": "Super, ich nehme sie. Was macht das zusammen?" }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Ich habe Kopfschmerzen.", "en": "I have a headache.", "zh": "我头痛。" },
+    { "german": "Mir ist schlecht.", "en": "I feel sick/nauseous.", "zh": "我感到恶心。" },
+    { "german": "Ich möchte einen Termin beim Arzt.", "en": "I would like an appointment with the doctor.", "zh": "我想预约医生。" },
+    { "german": "Ich bin gegen ... allergisch.", "en": "I am allergic to ...", "zh": "我对……过敏。" },
+    { "german": "Haben Sie das auch ohne Rezept?", "en": "Do you have that without a prescription too?", "zh": "这个也有不需要处方的吗？" },
+    { "german": "Ich brauche eine Krankmeldung.", "en": "I need a sick note.", "zh": "我需要一张病假条。" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "das Fieber", "en": "fever", "zh": "发烧" },
+        { "german": "die Erkältung", "en": "cold (illness)", "zh": "感冒" },
+        { "german": "das Rezept", "en": "prescription", "zh": "处方" },
+        { "german": "die Krankmeldung", "en": "sick note", "zh": "病假条" },
+        { "german": "die Allergie", "en": "allergy", "zh": "过敏" },
+        { "german": "der Blutdruck", "en": "blood pressure", "zh": "血压" },
+        { "german": "die Untersuchung", "en": "checkup", "zh": "检查" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich habe seit einer Woche ___ — mein Hals ist ganz rot.",
+      "answer": "Halsschmerzen"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ohne ___ bekomme ich dieses Medikament nicht in der Apotheke.",
+      "answer": "Rezept"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Nach der ___ sagte der Arzt, dass alles in Ordnung ist.",
+      "answer": "Untersuchung"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich bin gegen Katzen ___ — meine Augen tränen sofort.",
+      "answer": "allergisch"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence correctly expresses 'my stomach hurts' in German?", "zh": "哪句话正确表达了 我肚子疼？" },
+      "options": [
+        { "en": "Ich habe Bauch weh.", "zh": "Ich habe Bauch weh." },
+        { "en": "Mir tut der Bauch weh.", "zh": "Mir tut der Bauch weh." },
+        { "en": "Mich tut der Bauch weh.", "zh": "Mich tut der Bauch weh." },
+        { "en": "Ich bin Bauch weh.", "zh": "Ich bin Bauch weh." }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the doctor's dialogue, what does Sophie receive at the end?", "zh": "在看诊对话中，Sophie 最后得到了什么？" },
+      "options": [
+        { "en": "A prescription and a one-day sick note.", "zh": "一张处方和一天病假条。" },
+        { "en": "A prescription and a five-day sick note.", "zh": "一张处方和五天病假条。" },
+        { "en": "Only a sick note, no prescription.", "zh": "只有病假条，没有处方。" },
+        { "en": "An injection and a sick note.", "zh": "一针注射和一张病假条。" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Fieber", "zh": "Fieber" },
+        { "en": "Husten", "zh": "Husten" },
+        { "en": "Schnupfen", "zh": "Schnupfen" },
+        { "en": "Apotheke", "zh": "Apotheke" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the plural of 'das Krankenhaus'?", "zh": "'das Krankenhaus' 的复数是？" },
+      "options": [
+        { "en": "die Krankenhause", "zh": "die Krankenhause" },
+        { "en": "die Krankenhäuse", "zh": "die Krankenhäuse" },
+        { "en": "die Krankenhäuser", "zh": "die Krankenhäuser" },
+        { "en": "die Krankenhauser", "zh": "die Krankenhauser" }
+      ],
+      "answer": 2
+    }
+  ]
+}

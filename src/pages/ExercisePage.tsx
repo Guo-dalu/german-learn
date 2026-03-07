@@ -6,10 +6,10 @@ import MultipleChoice from '../components/exercises/MultipleChoice'
 import { parseFrontmatter } from '../utils/content'
 import type { ContentFile, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise } from '../types/content'
 
-const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*.json', { eager: true, import: 'default' })
-const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*.json', { eager: true, import: 'default' })
-const vocabMds = import.meta.glob<string>('/content/vocabulary/*.md', { eager: true, query: '?raw', import: 'default' })
-const grammarMds = import.meta.glob<string>('/content/grammar/*.md', { eager: true, query: '?raw', import: 'default' })
+const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*/index.json', { eager: true, import: 'default' })
+const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*/index.json', { eager: true, import: 'default' })
+const vocabMds = import.meta.glob<string>('/content/vocabulary/*/*.md', { eager: true, query: '?raw', import: 'default' })
+const grammarMds = import.meta.glob<string>('/content/grammar/*/*.md', { eager: true, query: '?raw', import: 'default' })
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
@@ -20,8 +20,8 @@ function buildTopicData(
   lang: Lang,
 ) {
   return Object.entries(jsons).map(([path, json]) => {
-    const slug = path.replace(`${basePath}/`, '').replace('.json', '')
-    const raw = mds[`${basePath}/${slug}.${lang}.md`] ?? mds[`${basePath}/${slug}.md`] ?? ''
+    const slug = path.replace(`${basePath}/`, '').replace('/index.json', '')
+    const raw = mds[`${basePath}/${slug}/index.${lang}.md`] ?? mds[`${basePath}/${slug}/index.md`] ?? ''
     const { title } = parseFrontmatter(raw)
     return { slug, title: title || slug, emoji: json.emoji ?? '📖', tags: json.tags ?? [], exercises: json.exercises ?? [] }
   })

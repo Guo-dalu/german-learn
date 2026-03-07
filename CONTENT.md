@@ -20,14 +20,14 @@ Each topic = `{topic}.md` + `{topic}.zh.md` + `{topic}.json`
 
 1. **Header** — title, tags, emoji
 2. **Word List** — all words with article · plural · translation
-3. **Dialogue** — 1–2 real-life scenes, vocab highlighted by gender color, ElevenLabs audio
+3. **Dialogue** — 2–3 real-life scenes, vocab highlighted by gender color, ElevenLabs audio
 4. **Phrasebook** — 4–6 directly usable phrases from this topic
 5. **Language Notes** — max 4 bullet points (from `.md` body)
 6. **Exercises** — matching → fill-in → multiple-choice
 
 ### Word list rules
 
-- Minimum **20 words** per topic
+- **20–50 words** per topic — scope drives the count. Narrow topics sit near 20; broad ones (travel, health) near 40+.
 - Each word must have: `german`, `article`, `gender`, `plural`, `en`, `zh`, `level`, `tags`
 - `gender`: `"masculine"` | `"feminine"` | `"neuter"`
 - `level`: `"A1"` | `"A2"` | `"B1"` | `"B2"`
@@ -35,7 +35,7 @@ Each topic = `{topic}.md` + `{topic}.zh.md` + `{topic}.json`
 
 ### Dialogue rules
 
-- 1–2 scenes per topic
+- **2–3 scenes per topic** — breadth drives the count. Each scene must cover a distinct sub-situation.
 - `highlighted_words`: bare nouns (no article) that appear in dialogue lines — colored by gender
 - `audio`: ElevenLabs file reference (optional, placeholder ok)
 - Lines should use realistic, natural German

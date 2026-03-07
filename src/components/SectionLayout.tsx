@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import { parseFrontmatter } from '../utils/content'
 import type { ContentFile, Lang } from '../types/content'
 
-const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*.json', { eager: true, import: 'default' })
-const vocabMds = import.meta.glob<string>('/content/vocabulary/*.md', { eager: true, query: '?raw', import: 'default' })
-const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*.json', { eager: true, import: 'default' })
-const grammarMds = import.meta.glob<string>('/content/grammar/*.md', { eager: true, query: '?raw', import: 'default' })
+const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*/index.json', { eager: true, import: 'default' })
+const vocabMds = import.meta.glob<string>('/content/vocabulary/*/*.md', { eager: true, query: '?raw', import: 'default' })
+const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*/index.json', { eager: true, import: 'default' })
+const grammarMds = import.meta.glob<string>('/content/grammar/*/*.md', { eager: true, query: '?raw', import: 'default' })
 
 function buildTopics(
   jsons: Record<string, ContentFile>,
@@ -16,8 +16,8 @@ function buildTopics(
   lang: Lang,
 ) {
   return Object.entries(jsons).map(([path, json]) => {
-    const slug = path.replace(`${basePath}/`, '').replace('.json', '')
-    const raw = mds[`${basePath}/${slug}.${lang}.md`] ?? mds[`${basePath}/${slug}.md`] ?? ''
+    const slug = path.replace(`${basePath}/`, '').replace('/index.json', '')
+    const raw = mds[`${basePath}/${slug}/index.${lang}.md`] ?? mds[`${basePath}/${slug}/index.md`] ?? ''
     const { title } = parseFrontmatter(raw)
     return { slug, emoji: json.emoji ?? '📖', title: title || slug }
   })

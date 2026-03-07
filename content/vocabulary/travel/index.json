@@ -1,0 +1,152 @@
+{
+  "topic": "travel",
+  "tags": ["A2", "B1", "travel"],
+  "featured_word": "der Zug",
+  "emoji": "✈️",
+  "stickers": ["🚂", "🧳", "🗺️", "🎫"],
+  "words": [
+    { "german": "Reise",        "article": "die", "gender": "feminine",  "plural": "die Reisen",       "en": "trip/journey",   "zh": "旅行",   "level": "A2", "tags": [],              "example": { "de": "Die Reise nach Wien war wunderschön.", "en": "The trip to Vienna was wonderful.", "zh": "去维也纳的旅行很美好。" } },
+    { "german": "Zug",          "article": "der", "gender": "masculine", "plural": "die Züge",         "en": "train",          "zh": "火车",   "level": "A2", "tags": ["transport"],   "example": { "de": "Der Zug fährt um neun Uhr ab.", "en": "The train departs at nine o'clock.", "zh": "火车九点出发。" } },
+    { "german": "Flugzeug",     "article": "das", "gender": "neuter",    "plural": "die Flugzeuge",    "en": "airplane",       "zh": "飞机",   "level": "A2", "tags": ["transport"],   "example": { "de": "Das Flugzeug landet in einer Stunde.", "en": "The plane lands in one hour.", "zh": "飞机一小时后降落。" } },
+    { "german": "Bus",          "article": "der", "gender": "masculine", "plural": "die Busse",        "en": "bus",            "zh": "公共汽车","level": "A2", "tags": ["transport"],   "example": { "de": "Ich nehme den Bus zum Bahnhof.", "en": "I take the bus to the train station.", "zh": "我坐公共汽车去火车站。" } },
+    { "german": "Bahnhof",      "article": "der", "gender": "masculine", "plural": "die Bahnhöfe",     "en": "train station",  "zh": "火车站", "level": "A2", "tags": [],              "example": { "de": "Wo ist der nächste Bahnhof?", "en": "Where is the nearest train station?", "zh": "最近的火车站在哪里？" } },
+    { "german": "Flughafen",    "article": "der", "gender": "masculine", "plural": "die Flughäfen",    "en": "airport",        "zh": "机场",   "level": "A2", "tags": [],              "example": { "de": "Wir müssen früh zum Flughafen.", "en": "We have to go to the airport early.", "zh": "我们得早点去机场。" } },
+    { "german": "Fahrkarte",    "article": "die", "gender": "feminine",  "plural": "die Fahrkarten",   "en": "ticket (train/bus)","zh": "车票", "level": "A2", "tags": [],              "example": { "de": "Ich kaufe die Fahrkarte am Automaten.", "en": "I buy the ticket at the machine.", "zh": "我在自动售票机买票。" } },
+    { "german": "Koffer",       "article": "der", "gender": "masculine", "plural": "die Koffer",       "en": "suitcase",       "zh": "行李箱", "level": "A2", "tags": [],              "example": { "de": "Mein Koffer ist zu schwer.", "en": "My suitcase is too heavy.", "zh": "我的行李箱太重了。" } },
+    { "german": "Rucksack",     "article": "der", "gender": "masculine", "plural": "die Rucksäcke",    "en": "backpack",       "zh": "背包",   "level": "A2", "tags": [],              "example": { "de": "Ich reise immer mit dem Rucksack.", "en": "I always travel with a backpack.", "zh": "我总是背着背包旅行。" } },
+    { "german": "Pass",          "article": "der", "gender": "masculine", "plural": "die Pässe",        "en": "passport",       "zh": "护照",   "level": "A2", "tags": [],              "example": { "de": "Vergiss deinen Pass nicht!", "en": "Don't forget your passport!", "zh": "别忘了带护照！" } },
+    { "german": "Hotel",        "article": "das", "gender": "neuter",    "plural": "die Hotels",       "en": "hotel",          "zh": "酒店",   "level": "A2", "tags": ["accommodation"],"example": { "de": "Das Hotel liegt direkt am Strand.", "en": "The hotel is right on the beach.", "zh": "酒店就在海滩旁边。" } },
+    { "german": "Zimmer",       "article": "das", "gender": "neuter",    "plural": "die Zimmer",       "en": "room",           "zh": "房间",   "level": "A2", "tags": ["accommodation"],"example": { "de": "Ich möchte ein Einzelzimmer buchen.", "en": "I would like to book a single room.", "zh": "我想预订一间单人房。" } },
+    { "german": "Reservierung", "article": "die", "gender": "feminine",  "plural": "die Reservierungen","en": "reservation",   "zh": "预订",   "level": "A2", "tags": ["accommodation"],"example": { "de": "Ich habe eine Reservierung auf den Namen Müller.", "en": "I have a reservation under the name Müller.", "zh": "我有一个以穆勒名字预订的房间。" } },
+    { "german": "Abfahrt",      "article": "die", "gender": "feminine",  "plural": "die Abfahrten",    "en": "departure",      "zh": "出发",   "level": "A2", "tags": [],              "example": { "de": "Die Abfahrt ist um 14 Uhr.", "en": "The departure is at 2 PM.", "zh": "出发时间是下午两点。" } },
+    { "german": "Ankunft",      "article": "die", "gender": "feminine",  "plural": "die Ankünfte",     "en": "arrival",        "zh": "到达",   "level": "A2", "tags": [],              "example": { "de": "Die Ankunft verzögert sich um eine Stunde.", "en": "The arrival is delayed by one hour.", "zh": "到达时间延迟了一个小时。" } },
+    { "german": "Verspätung",   "article": "die", "gender": "feminine",  "plural": "die Verspätungen", "en": "delay",          "zh": "晚点",   "level": "A2", "tags": [],              "example": { "de": "Der Zug hat zwanzig Minuten Verspätung.", "en": "The train is twenty minutes late.", "zh": "火车晚点二十分钟。" } },
+    { "german": "Gleis",        "article": "das", "gender": "neuter",    "plural": "die Gleise",       "en": "platform/track", "zh": "站台",   "level": "A2", "tags": [],              "example": { "de": "Der Zug fährt von Gleis sieben ab.", "en": "The train departs from platform seven.", "zh": "火车从七号站台出发。" } },
+    { "german": "Direktzug",    "article": "der", "gender": "masculine", "plural": "die Direktzüge",   "en": "direct train",   "zh": "直达列车","level": "A2", "tags": ["transport"],   "example": { "de": "Es gibt keinen Direktzug — Sie müssen umsteigen.", "en": "There is no direct train — you have to change.", "zh": "没有直达列车，您需要换乘。" } },
+    { "german": "Ausland",      "article": "das", "gender": "neuter",    "plural": "—",                "en": "abroad/foreign country","zh": "国外","level": "B1", "tags": [],             "example": { "de": "Ich war noch nie im Ausland.", "en": "I have never been abroad.", "zh": "我从未出过国。" } },
+    { "german": "Grenze",       "article": "die", "gender": "feminine",  "plural": "die Grenzen",      "en": "border",         "zh": "边境",   "level": "B1", "tags": [],              "example": { "de": "An der Grenze wird der Pass kontrolliert.", "en": "The passport is checked at the border.", "zh": "在边境要检查护照。" } },
+    { "german": "Zoll",         "article": "der", "gender": "masculine", "plural": "die Zölle",        "en": "customs",        "zh": "海关",   "level": "B1", "tags": [],              "example": { "de": "Am Zoll muss ich meinen Koffer öffnen.", "en": "I have to open my suitcase at customs.", "zh": "在海关我必须打开行李箱。" } },
+    { "german": "Gepäck",       "article": "das", "gender": "neuter",    "plural": "—",                "en": "luggage/baggage", "zh": "行李",  "level": "B1", "tags": [],              "example": { "de": "Mein Gepäck ist nicht angekommen.", "en": "My luggage hasn't arrived.", "zh": "我的行李没有到。" } },
+    { "german": "Reiseführer",  "article": "der", "gender": "masculine", "plural": "die Reiseführer",  "en": "travel guide",   "zh": "旅行指南","level": "B1", "tags": [],             "example": { "de": "Der Reiseführer empfiehlt dieses Restaurant.", "en": "The travel guide recommends this restaurant.", "zh": "旅行指南推荐这家餐厅。" } },
+    { "german": "Sehenswürdigkeit","article": "die","gender": "feminine","plural": "die Sehenswürdigkeiten","en": "sight/attraction","zh": "景点","level": "B1", "tags": [],          "example": { "de": "Berlin hat viele Sehenswürdigkeiten.", "en": "Berlin has many attractions.", "zh": "柏林有很多景点。" } },
+    { "german": "Unterkunft",   "article": "die", "gender": "feminine",  "plural": "die Unterkünfte",  "en": "accommodation",  "zh": "住宿",   "level": "B1", "tags": ["accommodation"],"example": { "de": "Wir suchen noch eine günstige Unterkunft.", "en": "We're still looking for affordable accommodation.", "zh": "我们还在找便宜的住宿。" } }
+  ],
+  "dialogues": [
+    {
+      "id": "train-station",
+      "scene": { "en": "Jonas buys a train ticket and asks about the platform.", "zh": "Jonas 买火车票并询问站台信息。" },
+      "audio": "travel-dialogue-1.mp3",
+      "highlighted_words": ["Fahrkarte", "Zug", "Gleis", "Bahnhof", "Abfahrt", "Verspätung"],
+      "lines": [
+        { "speaker": "Jonas",      "text": "Guten Tag! Eine Fahrkarte nach Hamburg, bitte." },
+        { "speaker": "Mitarbeiterin", "text": "Einfach oder hin und zurück?" },
+        { "speaker": "Jonas",      "text": "Hin und zurück, bitte. Wann fährt der nächste Zug?" },
+        { "speaker": "Mitarbeiterin", "text": "Die Abfahrt ist um 15:22 Uhr, von Gleis vier." },
+        { "speaker": "Jonas",      "text": "Hat der Zug Verspätung?" },
+        { "speaker": "Mitarbeiterin", "text": "Nein, er ist pünktlich. Müssen Sie umsteigen?" },
+        { "speaker": "Jonas",      "text": "Nein, es ist ein Direktzug. Perfekt, danke!" }
+      ]
+    },
+    {
+      "id": "hotel-checkin",
+      "scene": { "en": "Lena checks into her hotel after a long journey.", "zh": "Lena 经过长途旅行后在酒店办理入住。" },
+      "audio": "travel-dialogue-2.mp3",
+      "highlighted_words": ["Hotel", "Reservierung", "Zimmer", "Koffer", "Gepäck"],
+      "lines": [
+        { "speaker": "Rezeption", "text": "Willkommen! Haben Sie eine Reservierung?" },
+        { "speaker": "Lena",      "text": "Ja, auf den Namen Lena Bauer. Zwei Nächte." },
+        { "speaker": "Rezeption", "text": "Einen Moment... Ja, ein Doppelzimmer im dritten Stock." },
+        { "speaker": "Lena",      "text": "Super. Mein Gepäck ist leider zu schwer — kann jemand helfen?" },
+        { "speaker": "Rezeption", "text": "Natürlich, unser Gepäckservice kommt sofort." },
+        { "speaker": "Lena",      "text": "Danke. Und wo ist das Frühstück?" },
+        { "speaker": "Rezeption", "text": "Im zweiten Stock, täglich von sieben bis zehn Uhr. Schönen Aufenthalt!" }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Eine Fahrkarte nach ... bitte.", "en": "One ticket to ... please.", "zh": "请给我一张去……的票。" },
+    { "german": "Von welchem Gleis fährt der Zug?", "en": "From which platform does the train leave?", "zh": "火车从几号站台出发？" },
+    { "german": "Hat der Zug Verspätung?", "en": "Is the train delayed?", "zh": "火车晚点了吗？" },
+    { "german": "Ich habe eine Reservierung.", "en": "I have a reservation.", "zh": "我有预订。" },
+    { "german": "Mein Gepäck ist nicht angekommen.", "en": "My luggage hasn't arrived.", "zh": "我的行李没有到。" },
+    { "german": "Wo sind die Sehenswürdigkeiten?", "en": "Where are the sights/attractions?", "zh": "景点在哪里？" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "die Abfahrt",      "en": "departure",      "zh": "出发" },
+        { "german": "die Ankunft",      "en": "arrival",        "zh": "到达" },
+        { "german": "die Verspätung",   "en": "delay",          "zh": "晚点" },
+        { "german": "das Gleis",        "en": "platform",       "zh": "站台" },
+        { "german": "der Koffer",       "en": "suitcase",       "zh": "行李箱" },
+        { "german": "die Unterkunft",   "en": "accommodation",  "zh": "住宿" },
+        { "german": "die Sehenswürdigkeit", "en": "attraction", "zh": "景点" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Der Zug hat leider dreißig Minuten ___, wir kommen zu spät an.",
+      "answer": "Verspätung"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Am Flughafen musste ich meinen Koffer beim ___ öffnen.",
+      "answer": "Zoll"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "In Frankfurt müssen wir ___ — unser Zug fährt nicht direkt.",
+      "answer": "umsteigen"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich habe mein ___ zu Hause gelassen — ich kann nicht ins Ausland reisen.",
+      "answer": "Pass"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word is used for a train or bus ticket (NOT a plane ticket)?", "zh": "哪个词专指火车或公交车票（不是机票）？" },
+      "options": [
+        { "en": "das Ticket",          "zh": "das Ticket" },
+        { "en": "die Fahrkarte",       "zh": "die Fahrkarte" },
+        { "en": "die Eintrittskarte",  "zh": "die Eintrittskarte" },
+        { "en": "der Reiseführer",     "zh": "der Reiseführer" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the dialogue, what does Jonas buy and from which platform?", "zh": "在对话中，Jonas 买了什么票，从哪个站台出发？" },
+      "options": [
+        { "en": "One-way ticket, platform 7", "zh": "单程票，七号站台" },
+        { "en": "Return ticket, platform 4",  "zh": "往返票，四号站台" },
+        { "en": "Return ticket, platform 7",  "zh": "往返票，七号站台" },
+        { "en": "One-way ticket, platform 4", "zh": "单程票，四号站台" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Bahnhof",   "zh": "Bahnhof" },
+        { "en": "Flughafen", "zh": "Flughafen" },
+        { "en": "Gleis",     "zh": "Gleis" },
+        { "en": "Ausland",   "zh": "Ausland" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the plural of 'der Flughafen'?", "zh": "'der Flughafen' 的复数是？" },
+      "options": [
+        { "en": "die Flughafens", "zh": "die Flughafens" },
+        { "en": "die Flughäfen",  "zh": "die Flughäfen" },
+        { "en": "die Flughafene", "zh": "die Flughafene" },
+        { "en": "die Flughafenen","zh": "die Flughafenen" }
+      ],
+      "answer": 1
+    }
+  ]
+}

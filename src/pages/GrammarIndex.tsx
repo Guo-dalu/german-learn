@@ -6,8 +6,8 @@ import Tag from '../components/Tag'
 import { parseFrontmatter } from '../utils/content'
 import type { ContentFile, Lang } from '../types/content'
 
-const jsonModules = import.meta.glob<ContentFile>('/content/grammar/*.json', { eager: true, import: 'default' })
-const mdModules = import.meta.glob<string>('/content/grammar/*.md', { eager: true, query: '?raw', import: 'default' })
+const jsonModules = import.meta.glob<ContentFile>('/content/grammar/*/index.json', { eager: true, import: 'default' })
+const mdModules = import.meta.glob<string>('/content/grammar/*/*.md', { eager: true, query: '?raw', import: 'default' })
 
 export default function GrammarIndex() {
   const { t, i18n } = useTranslation()
@@ -15,8 +15,8 @@ export default function GrammarIndex() {
 
   const topics = useMemo(() => {
     return Object.entries(jsonModules).map(([path, json]) => {
-      const slug = path.replace('/content/grammar/', '').replace('.json', '')
-      const raw = mdModules[`/content/grammar/${slug}.${lang}.md`] ?? mdModules[`/content/grammar/${slug}.md`] ?? ''
+      const slug = path.replace('/content/grammar/', '').replace('/index.json', '')
+      const raw = mdModules[`/content/grammar/${slug}/index.${lang}.md`] ?? mdModules[`/content/grammar/${slug}/index.md`] ?? ''
       const { title, tags } = parseFrontmatter(raw)
       return {
         slug,
