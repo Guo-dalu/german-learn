@@ -8,7 +8,7 @@ interface Props {
   lang: Lang
 }
 
-const EMOJIS = ['🅐', '🅑', '🅒', '🅓']
+const LABELS = ['A', 'B', 'C', 'D']
 
 export default function MultipleChoice({ exercise, lang }: Props) {
   const { t } = useTranslation()
@@ -20,10 +20,10 @@ export default function MultipleChoice({ exercise, lang }: Props) {
   }
 
   const bgFor = (i: number) => {
-    if (selected === null) return 'var(--bg2)'
+    if (selected === null) return 'var(--option-bg)'
     if (i === exercise.answer) return 'var(--accent2-soft)'
     if (i === selected) return 'var(--accent1-soft)'
-    return 'var(--bg2)'
+    return 'var(--option-bg)'
   }
 
   const borderFor = (i: number) => {
@@ -54,7 +54,7 @@ export default function MultipleChoice({ exercise, lang }: Props) {
               border: `2px solid ${borderFor(i)}`,
             }}
           >
-            <span className="mr-2 opacity-60">{EMOJIS[i]}</span>
+            <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-accent4 text-white text-[10px] font-black mr-2 shrink-0">{LABELS[i]}</span>
             {opt[lang]}
           </button>
         ))}

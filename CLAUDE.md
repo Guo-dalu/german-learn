@@ -63,8 +63,9 @@ content/
 **Rules:**
 
 1. No hardcoded hex/rgba in TSX — always use CSS variables. Add new tokens to `:root` + `@theme inline`.
-2. Visual patterns live in components, not CSS classes. `Card.tsx` = card shell; `Tag.tsx` = tag pill. `index.css` only for: base/reset, CSS vars, `.word-highlight`, `.prose-content`, `.blob`, `.float`.
-3. Prefer Tailwind utilities over `style={{}}`. Use standard scale (e.g. `leading-none`, `tracking-wider`). `style={{}}` only for truly runtime-dynamic values. `clamp()` stays as `text-[clamp(...)]`.
+2. Visual patterns live in components, not CSS classes. `Card.tsx` = card shell; `Tag.tsx` = tag pill. `index.css` only for: base/reset, CSS vars, `.word-highlight`, `.prose-content`, `.float`.
+3. Prefer Tailwind utilities over `style={{}}`. Use standard scale (e.g. `leading-none`, `tracking-wider`). `style={{}}` only for truly runtime-dynamic values (e.g. state-driven bg/border switching between multiple CSS vars). `clamp()` stays as `text-[clamp(...)]`.
+4. Never use `style={{ color: GENDER_COLOR[x] }}` — use `GENDER_CLASS` from `src/constants/index.ts` which maps gender → Tailwind class (`text-accent1/2/5`). For any new color-class mapping, add a `*_CLASS` constant alongside the `*_COLOR` one and use the class version in TSX.
 
 ## Internationalization (i18n)
 

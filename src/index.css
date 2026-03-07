@@ -2,41 +2,44 @@
 
 /* ── Design tokens ─────────────────────────────────────── */
 :root {
-  --bg: #FFF9F0;
-  --bg2: #FFF3E0;
+  --bg: #FEFCE8;
+  --bg2: #FEF08A;
   --card: #FFFFFF;
   --text: #2D1B00;
-  --text2: #6B4C2A;
-  --border: #FFD8A8;
-  --shadow: rgba(255, 160, 50, 0.2);
-  --accent1: #FF6B6B;
-  --accent2: #4ECDC4;
-  --accent3: #FFE66D;
-  --accent4: #A855F7;
-  --accent5: #3B82F6;
-  --tag-bg: #FFE8CC;
-  --tag-text: #C05621;
-  --accent1-soft: rgba(255, 107, 107, 0.18);
-  --accent2-soft: rgba(78, 205, 196, 0.18);
+  --text2: #6B4526;
+  --border: #EDD75A;
+  --shadow: rgba(200, 120, 30, 0.18);
+  --accent1: #FF5252;
+  --accent2: #00BCD4;
+  --accent3: #FF9800;
+  --accent4: #5E35B1;
+  --accent5: #2196F3;
+  --tag-bg: #FFE4B2;
+  --tag-text: #BF6000;
+  --accent1-soft: rgba(255, 82, 82, 0.15);
+  --accent2-soft: rgba(0, 188, 212, 0.15);
+  --accent3-soft: rgba(255, 152, 0, 0.15);
+  --option-bg: #FEF9D4;
   --noun-badge-bg: #FFE0E0;
-  --verb-badge-bg: #E0FBF8;
-  --verb-badge-text: #0E9488;
-  --adj-badge-bg: #E0EEFF;
-  --adj-badge-text: #2563EB;
+  --verb-badge-bg: #E0F7FA;
+  --verb-badge-text: #006064;
+  --adj-badge-bg: #E3F2FD;
+  --adj-badge-text: #1565C0;
 }
 
 [data-theme="dark"] {
-  --bg: #1A1025;
-  --bg2: #231535;
-  --card: #2D1B45;
-  --text: #F5EEFF;
-  --text2: #C4A8E8;
-  --border: #4A2D7A;
-  --shadow: rgba(168, 85, 247, 0.2);
-  --accent4: #C084FC;
+  --bg: #12111E;
+  --bg2: #1C1A2E;
+  --card: #242240;
+  --text: #F0EEFF;
+  --text2: #A89CC8;
+  --border: #3E3568;
+  --shadow: rgba(130, 80, 247, 0.2);
+  --accent4: #9575CD;
   --accent5: #60A5FA;
-  --tag-bg: #3B1F6B;
-  --tag-text: #C084FC;
+  --tag-bg: #2D2560;
+  --tag-text: #A78BFA;
+  --option-bg: #2A2640;
 }
 
 /* ── Tailwind theme mapping ────────────────────────────── */
@@ -54,8 +57,10 @@
   --color-accent5:  var(--accent5);
   --color-tag-bg:        var(--tag-bg);
   --color-tag-text:      var(--tag-text);
+  --color-option-bg:     var(--option-bg);
   --color-accent1-soft:  var(--accent1-soft);
   --color-accent2-soft:  var(--accent2-soft);
+  --color-accent3-soft:  var(--accent3-soft);
   --color-noun-badge-bg: var(--noun-badge-bg);
   --color-verb-badge-bg: var(--verb-badge-bg);
   --color-verb-badge-text: var(--verb-badge-text);
@@ -116,14 +121,6 @@ h1, h2, h3 { font-family: 'Fredoka One', cursive; }
 
 /* ── Utilities ─────────────────────────────────────────── */
 @layer utilities {
-  .blob {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.15;
-    pointer-events: none;
-  }
-
   .float       { animation: float 3s ease-in-out infinite; }
   .float-delay { animation: float 3s ease-in-out infinite 1s; }
 }

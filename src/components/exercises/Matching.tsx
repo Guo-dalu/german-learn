@@ -51,7 +51,7 @@ export default function Matching({ exercise, lang }: Props) {
     if (isMatchedGerman(german)) return 'var(--accent2-soft)'
     if (wrongPair?.german === german) return 'var(--accent1-soft)'
     if (selectedGerman === german) return 'var(--accent3-soft)'
-    return 'var(--bg2)'
+    return 'var(--option-bg)'
   }
 
   const germanBorder = (german: string) => {
@@ -64,7 +64,7 @@ export default function Matching({ exercise, lang }: Props) {
   const translationBg = (translation: string) => {
     if (isMatchedTranslation(translation)) return 'var(--accent2-soft)'
     if (wrongPair?.translation === translation) return 'var(--accent1-soft)'
-    return 'var(--bg2)'
+    return 'var(--option-bg)'
   }
 
   const translationBorder = (translation: string) => {

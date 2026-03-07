@@ -8,7 +8,7 @@ import Tag from '../components/Tag'
 import FillInBlanks from '../components/exercises/FillInBlanks'
 import Matching from '../components/exercises/Matching'
 import MultipleChoice from '../components/exercises/MultipleChoice'
-import { GENDER_COLOR } from '../constants'
+import { GENDER_CLASS } from '../constants'
 import type { ContentFile, Dialogue, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise, Phrase, Word } from '../types/content'
 import { parseFrontmatter } from '../utils/content'
 
@@ -30,7 +30,7 @@ function highlightLine(text: string, highlightedWords: string[], words: Word[]) 
     const gender = wordMap[part.toLowerCase()]
     if (gender) {
       return (
-        <span key={i} style={{ color: GENDER_COLOR[gender] }} className='font-black'>
+        <span key={i} className={`font-black ${GENDER_CLASS[gender] ?? 'text-text'}`}>
           {part}
         </span>
       )
@@ -46,7 +46,7 @@ function DialogueSection({ dialogue, words, lang }: { dialogue: Dialogue; words:
       <div className='space-y-2'>
         {dialogue.lines.map((line, i) => (
           <div key={i} className='flex gap-3'>
-            <span className='font-display text-accent3 text-sm w-20 shrink-0'>{line.speaker}</span>
+            <span className='font-display text-accent4 text-sm w-20 shrink-0'>{line.speaker}</span>
             <span className='text-sm font-semibold text-text leading-relaxed'>{highlightLine(line.text, dialogue.highlighted_words, words)}</span>
           </div>
         ))}
@@ -96,13 +96,22 @@ export default function VocabularyPage() {
   const multiChoices = exercises.filter((e): e is MultipleChoiceExercise => e.type === 'multiple-choice')
 
   const emoji = content?.emoji ?? '📖'
+  const stickers = content?.stickers ?? ['🇩🇪', '⭐', '✏️', '📖']
+
+  const stickerPositions = [
+    'absolute bottom-2 left-4 text-3xl rotate-8',
+    'absolute bottom-3 left-28 text-3xl -rotate-10',
+    'absolute bottom-2 right-28 text-3xl rotate-10',
+    'absolute bottom-2 right-3 text-4xl -rotate-6',
+  ]
 
   return (
     <div className='bg-bg min-h-screen'>
       {/* 1. Header */}
       <div className='relative overflow-hidden bg-bg2 border-b-2 border-border px-4 py-[clamp(28px,5vw,48px)]'>
-        <div className='blob bg-accent1 w-65 h-65 -top-20 -left-15' />
-        <div className='blob bg-accent5 w-50 h-50 -bottom-12.5 right-15' />
+        {stickers.slice(0, 4).map((s, i) => (
+          <span key={i} className={`${stickerPositions[i]} select-none pointer-events-none`}>{s}</span>
+        ))}
         <div className='max-w-2xl mx-auto text-center relative z-10'>
           <div className='float-delay inline-block mb-2 text-3xl'>{emoji}</div>
           <h1 className='font-display text-text text-[clamp(1.8rem,6vw,2.8rem)] leading-none'>{title || topic}</h1>
@@ -127,7 +136,7 @@ export default function VocabularyPage() {
                 {words.map((word) => (
                   <div key={word.german} className='flex flex-col py-2 px-2 border-b border-dashed border-border'>
                     <div className='flex items-center gap-2'>
-                      <span className='font-display text-base leading-none' style={{ color: GENDER_COLOR[word.gender] ?? 'var(--text)' }}>
+                      <span className={`font-display text-base leading-none ${GENDER_CLASS[word.gender] ?? 'text-text'}`}>
                         {word.article} {word.german}
                       </span>
                       {word.level && (

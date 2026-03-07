@@ -61,6 +61,7 @@ export interface ContentFile {
   tags: string[]
   featured_word?: string
   emoji?: string
+  stickers?: string[]
   words?: Word[]
   dialogues?: Dialogue[]
   phrasebook?: Phrase[]

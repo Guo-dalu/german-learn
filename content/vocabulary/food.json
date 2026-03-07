@@ -3,6 +3,7 @@
   "tags": ["A1", "A2", "food"],
   "featured_word": "das Ei",
   "emoji": "🍳",
+  "stickers": ["🥨", "🧀", "🌭", "🥞"],
   "words": [
     { "german": "Wasser",    "article": "das", "gender": "neuter",    "plural": "—",              "en": "water",         "zh": "水",     "level": "A1", "tags": ["drink"],     "example": { "de": "Ich trinke jeden Tag viel Wasser.", "en": "I drink a lot of water every day.", "zh": "我每天喝很多水。" } },
     { "german": "Milch",     "article": "die", "gender": "feminine",  "plural": "—",              "en": "milk",          "zh": "牛奶",   "level": "A1", "tags": ["drink"],     "example": { "de": "Die Milch ist frisch und kalt.", "en": "The milk is fresh and cold.", "zh": "牛奶又新鲜又凉。" } },

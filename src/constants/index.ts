@@ -12,6 +12,12 @@ export const GENDER_COLOR: Record<string, string> = {
   neuter: 'var(--accent2)',
 }
 
+export const GENDER_CLASS: Record<string, string> = {
+  masculine: 'text-accent5',
+  feminine: 'text-accent1',
+  neuter: 'text-accent2',
+}
+
 export const GENDER_LABEL: Record<string, string> = {
   masculine: 'masc',
   feminine: 'fem',

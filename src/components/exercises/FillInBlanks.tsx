@@ -45,7 +45,7 @@ function FillInItem({ exercise, index }: { exercise: FillInExercise; index: numb
         <div className="font-bold text-base leading-loose text-text">
           {before}
           <input
-            className="inline-block mx-1 w-28 rounded-xl px-3 py-1 font-bold text-base text-center outline-none bg-bg2 text-text font-body"
+            className="inline-block mx-1 w-28 rounded-xl px-3 py-1 font-bold text-base text-center outline-none bg-option-bg text-text font-body"
             style={{ border: `2px solid ${borderColor}` }}
             value={value}
             onChange={e => check(e.target.value)}
