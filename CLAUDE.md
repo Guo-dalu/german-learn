@@ -55,8 +55,8 @@ content/
 
 ### Adding a new topic
 
-1. Add entry to `content/meta.json` — `{ emoji, tags, wordCount?, title: { en, zh } }`
-2. Create `content/{section}/{slug}/index.md`, `index.zh.md`, `index.json`
+1. Create `content/{section}/{slug}/index.md`, `index.zh.md`, `index.json`
+2. **Always update `content/meta.json`** — add `{ emoji, tags, wordCount, title: { en, zh } }` derived from the JSON file. Read the JSON to get the correct `emoji`, `tags`, and word count.
 3. Index pages, sidebar, and exercises pick it up automatically
 
 ## Styling Conventions
