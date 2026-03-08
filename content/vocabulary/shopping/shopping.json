@@ -1,0 +1,160 @@
+{
+  "topic": "shopping",
+  "tags": ["A1", "A2", "shopping"],
+  "featured_word": "der Laden",
+  "emoji": "🛍️",
+  "stickers": ["👗", "💳", "🏷️", "🧾"],
+  "words": [
+    { "german": "Laden",         "article": "der", "gender": "masculine", "plural": "die Läden",        "en": "shop/store",      "zh": "商店",   "level": "A1", "tags": ["place"],    "example": { "de": "Der Laden öffnet um neun Uhr.", "en": "The shop opens at nine o'clock.", "zh": "商店九点开门。" } },
+    { "german": "Supermarkt",    "article": "der", "gender": "masculine", "plural": "die Supermärkte",  "en": "supermarket",     "zh": "超市",   "level": "A1", "tags": ["place"],    "example": { "de": "Ich gehe jeden Tag in den Supermarkt.", "en": "I go to the supermarket every day.", "zh": "我每天去超市。" } },
+    { "german": "Markt",         "article": "der", "gender": "masculine", "plural": "die Märkte",       "en": "market",          "zh": "市场",   "level": "A1", "tags": ["place"],    "example": { "de": "Samstags gibt es einen Markt in der Stadt.", "en": "On Saturdays there is a market in town.", "zh": "周六城里有集市。" } },
+    { "german": "Kaufhaus",      "article": "das", "gender": "neuter",    "plural": "die Kaufhäuser",   "en": "department store", "zh": "百货商店","level": "A2", "tags": ["place"],   "example": { "de": "Das Kaufhaus hat fünf Stockwerke.", "en": "The department store has five floors.", "zh": "百货商店有五层。" } },
+    { "german": "Kasse",         "article": "die", "gender": "feminine",  "plural": "die Kassen",       "en": "checkout/till",   "zh": "收银台", "level": "A1", "tags": [],           "example": { "de": "Bitte zahlen Sie an der Kasse.", "en": "Please pay at the checkout.", "zh": "请到收银台付款。" } },
+    { "german": "Preis",         "article": "der", "gender": "masculine", "plural": "die Preise",       "en": "price",           "zh": "价格",   "level": "A1", "tags": [],           "example": { "de": "Der Preis ist zu hoch.", "en": "The price is too high.", "zh": "价格太高了。" } },
+    { "german": "Euro",          "article": "der", "gender": "masculine", "plural": "Euro",             "en": "euro",            "zh": "欧元",   "level": "A1", "tags": [],           "example": { "de": "Das kostet fünfzehn Euro.", "en": "That costs fifteen euros.", "zh": "这要十五欧元。" } },
+    { "german": "Cent",          "article": "der", "gender": "masculine", "plural": "Cent",             "en": "cent",            "zh": "欧分",   "level": "A1", "tags": [],           "example": { "de": "Das macht drei Euro fünfzig Cent.", "en": "That comes to three euros fifty cents.", "zh": "一共是三欧元五十分。" } },
+    { "german": "Rechnung",      "article": "die", "gender": "feminine",  "plural": "die Rechnungen",   "en": "bill/receipt",    "zh": "账单",   "level": "A1", "tags": [],           "example": { "de": "Kann ich bitte die Rechnung haben?", "en": "Can I have the bill, please?", "zh": "请给我账单。" } },
+    { "german": "Quittung",      "article": "die", "gender": "feminine",  "plural": "die Quittungen",   "en": "receipt",         "zh": "收据",   "level": "A2", "tags": [],           "example": { "de": "Brauchen Sie eine Quittung?", "en": "Do you need a receipt?", "zh": "您需要收据吗？" } },
+    { "german": "Karte",         "article": "die", "gender": "feminine",  "plural": "die Karten",       "en": "card",            "zh": "卡",     "level": "A1", "tags": [],           "example": { "de": "Kann ich mit Karte bezahlen?", "en": "Can I pay by card?", "zh": "可以刷卡吗？" } },
+    { "german": "Bargeld",       "article": "das", "gender": "neuter",    "plural": "—",                "en": "cash",            "zh": "现金",   "level": "A2", "tags": [],           "example": { "de": "Hier zahlt man nur mit Bargeld.", "en": "Here you can only pay with cash.", "zh": "这里只收现金。" } },
+    { "german": "Rabatt",        "article": "der", "gender": "masculine", "plural": "die Rabatte",      "en": "discount",        "zh": "折扣",   "level": "A2", "tags": [],           "example": { "de": "Gibt es einen Rabatt für Studenten?", "en": "Is there a discount for students?", "zh": "学生有折扣吗？" } },
+    { "german": "Angebot",       "article": "das", "gender": "neuter",    "plural": "die Angebote",     "en": "offer/special deal","zh": "特价",  "level": "A2", "tags": [],           "example": { "de": "Das Shampoo ist gerade im Angebot.", "en": "The shampoo is on special offer right now.", "zh": "洗发水现在特价。" } },
+    { "german": "teuer",         "article": null,  "gender": null,        "plural": null,               "en": "expensive",       "zh": "贵",     "level": "A1", "tags": [],           "example": { "de": "Das ist mir zu teuer.", "en": "That is too expensive for me.", "zh": "这对我来说太贵了。" } },
+    { "german": "günstig",       "article": null,  "gender": null,        "plural": null,               "en": "affordable/good value","zh": "实惠", "level": "A2", "tags": [],          "example": { "de": "Das ist wirklich günstig!", "en": "That is really good value!", "zh": "这真的很实惠！" } },
+    { "german": "Größe",         "article": "die", "gender": "feminine",  "plural": "die Größen",       "en": "size",            "zh": "尺码",   "level": "A1", "tags": ["clothing"], "example": { "de": "Welche Größe haben Sie?", "en": "What size are you?", "zh": "您穿几码？" } },
+    { "german": "Hemd",          "article": "das", "gender": "neuter",    "plural": "die Hemden",       "en": "shirt",           "zh": "衬衫",   "level": "A1", "tags": ["clothing"], "example": { "de": "Das blaue Hemd steht dir gut.", "en": "The blue shirt suits you.", "zh": "蓝色衬衫很适合你。" } },
+    { "german": "Hose",          "article": "die", "gender": "feminine",  "plural": "die Hosen",        "en": "trousers/pants",  "zh": "裤子",   "level": "A1", "tags": ["clothing"], "example": { "de": "Ich suche eine schwarze Hose.", "en": "I'm looking for black trousers.", "zh": "我在找黑色裤子。" } },
+    { "german": "Jacke",         "article": "die", "gender": "feminine",  "plural": "die Jacken",       "en": "jacket",          "zh": "夹克",   "level": "A1", "tags": ["clothing"], "example": { "de": "Die Jacke ist warm und günstig.", "en": "The jacket is warm and affordable.", "zh": "这件夹克保暖又实惠。" } },
+    { "german": "Schuhe",        "article": "der", "gender": "masculine", "plural": "die Schuhe",       "en": "shoes",           "zh": "鞋子",   "level": "A1", "tags": ["clothing"], "example": { "de": "Diese Schuhe sind sehr bequem.", "en": "These shoes are very comfortable.", "zh": "这双鞋很舒适。" } },
+    { "german": "Kleid",         "article": "das", "gender": "neuter",    "plural": "die Kleider",      "en": "dress",           "zh": "裙子/连衣裙","level": "A1","tags": ["clothing"],"example": { "de": "Das rote Kleid ist sehr schön.", "en": "The red dress is very beautiful.", "zh": "红色裙子很漂亮。" } },
+    { "german": "Tasche",        "article": "die", "gender": "feminine",  "plural": "die Taschen",      "en": "bag/pocket",      "zh": "包/口袋", "level": "A1", "tags": ["clothing"], "example": { "de": "Die Tasche ist aus echtem Leder.", "en": "The bag is made of real leather.", "zh": "这个包是真皮的。" } },
+    { "german": "Umkleidekabine","article": "die", "gender": "feminine",  "plural": "die Umkleidekabinen","en": "fitting room",  "zh": "试衣间", "level": "A2", "tags": [],           "example": { "de": "Darf ich das mal in der Umkleidekabine anprobieren?", "en": "May I try this on in the fitting room?", "zh": "我可以在试衣间试穿吗？" } },
+    { "german": "umtauschen",    "article": null,  "gender": null,        "plural": null,               "en": "to exchange/return","zh": "换货/退货","level": "A2","tags": [],           "example": { "de": "Kann ich das umtauschen? Es passt nicht.", "en": "Can I exchange this? It doesn't fit.", "zh": "我可以换货吗？不合适。" } },
+    { "german": "Schaufenster",  "article": "das", "gender": "neuter",    "plural": "die Schaufenster", "en": "shop window",     "zh": "橱窗",   "level": "A2", "tags": ["place"],    "example": { "de": "Im Schaufenster sehe ich ein schönes Kleid.", "en": "In the shop window I see a beautiful dress.", "zh": "我在橱窗里看到一条漂亮的裙子。" } },
+    { "german": "Einkaufswagen", "article": "der", "gender": "masculine", "plural": "die Einkaufswagen","en": "shopping cart",   "zh": "购物车", "level": "A2", "tags": [],           "example": { "de": "Ich brauche einen Euro für den Einkaufswagen.", "en": "I need one euro for the shopping cart.", "zh": "我需要一欧元才能用购物车。" } },
+    { "german": "Tüte",          "article": "die", "gender": "feminine",  "plural": "die Tüten",        "en": "bag (plastic/paper)","zh": "购物袋","level": "A1", "tags": [],           "example": { "de": "Brauchen Sie eine Tüte?", "en": "Do you need a bag?", "zh": "您需要袋子吗？" } },
+    { "german": "ausverkauft",   "article": null,  "gender": null,        "plural": null,               "en": "sold out",        "zh": "卖完了", "level": "A2", "tags": [],           "example": { "de": "Leider ist das in Ihrer Größe ausverkauft.", "en": "Unfortunately that is sold out in your size.", "zh": "很遗憾，您的尺码卖完了。" } },
+    { "german": "Öffnungszeiten","article": "die", "gender": "feminine",  "plural": "die Öffnungszeiten","en": "opening hours",  "zh": "营业时间","level": "A2", "tags": ["place"],   "example": { "de": "Die Öffnungszeiten stehen an der Tür.", "en": "The opening hours are on the door.", "zh": "营业时间写在门上。" } }
+  ],
+  "dialogues": [
+    {
+      "id": "clothing-shop",
+      "scene": { "en": "Julia tries on clothes in a shop.", "zh": "Julia 在商店里试穿衣服。" },
+      "audio": "shopping-dialogue-1.mp3",
+      "highlighted_words": ["Größe", "Hose", "Jacke", "Umkleidekabine", "Kasse", "Rabatt"],
+      "lines": [
+        { "speaker": "Verkäuferin", "text": "Kann ich Ihnen helfen?" },
+        { "speaker": "Julia",       "text": "Ja, ich suche eine schwarze Hose in Größe 36." },
+        { "speaker": "Verkäuferin", "text": "Moment... Hier ist eine. Möchten Sie sie anprobieren?" },
+        { "speaker": "Julia",       "text": "Gerne. Wo ist die Umkleidekabine?" },
+        { "speaker": "Verkäuferin", "text": "Gleich dort hinten. Darf ich auch diese Jacke zeigen? Sie passt gut dazu." },
+        { "speaker": "Julia",       "text": "Oh, sehr schön. Was kostet die Jacke?" },
+        { "speaker": "Verkäuferin", "text": "Neunundvierzig Euro. Und im Angebot — zwanzig Prozent Rabatt." },
+        { "speaker": "Julia",       "text": "Super! Dann nehme ich beides. Kann ich mit Karte zahlen?" },
+        { "speaker": "Verkäuferin", "text": "Natürlich, an der Kasse." }
+      ]
+    },
+    {
+      "id": "supermarket",
+      "scene": { "en": "Max can't find something at the supermarket and asks for help.", "zh": "Max 在超市找不到东西，向人求助。" },
+      "audio": "shopping-dialogue-2.mp3",
+      "highlighted_words": ["Angebot", "Preis", "Kasse", "Tüte", "ausverkauft"],
+      "lines": [
+        { "speaker": "Max",        "text": "Entschuldigung — wo finde ich Olivenöl?" },
+        { "speaker": "Mitarbeiter","text": "Gang fünf, links. Das große ist gerade im Angebot." },
+        { "speaker": "Max",        "text": "Perfekt! Und der Preis?" },
+        { "speaker": "Mitarbeiter","text": "Vier neunzig statt sieben Euro." },
+        { "speaker": "Max",        "text": "Das nehme ich. Ach — haben Sie noch Mineralwasser in Flaschen?" },
+        { "speaker": "Mitarbeiter","text": "Die Einliterflaschen sind leider ausverkauft. Nur noch die halben." },
+        { "speaker": "Max",        "text": "Okay, auch gut. Brauche ich eine Tüte hier?" },
+        { "speaker": "Mitarbeiter","text": "Ja, die kosten zwanzig Cent. Oder Sie zahlen an der Kasse." }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Was kostet das?", "en": "How much does this cost?", "zh": "这多少钱？" },
+    { "german": "Haben Sie das in Größe ...?", "en": "Do you have this in size ...?", "zh": "这个有……码吗？" },
+    { "german": "Kann ich das anprobieren?", "en": "Can I try this on?", "zh": "我可以试穿吗？" },
+    { "german": "Ich zahle mit Karte.", "en": "I'll pay by card.", "zh": "我用卡付款。" },
+    { "german": "Gibt es einen Rabatt?", "en": "Is there a discount?", "zh": "有折扣吗？" },
+    { "german": "Kann ich das umtauschen?", "en": "Can I exchange this?", "zh": "我可以换货吗？" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "die Kasse",         "en": "checkout",       "zh": "收银台" },
+        { "german": "das Bargeld",       "en": "cash",           "zh": "现金" },
+        { "german": "der Rabatt",        "en": "discount",       "zh": "折扣" },
+        { "german": "das Angebot",       "en": "special deal",   "zh": "特价" },
+        { "german": "die Quittung",      "en": "receipt",        "zh": "收据" },
+        { "german": "das Schaufenster",  "en": "shop window",    "zh": "橱窗" },
+        { "german": "die Öffnungszeiten","en": "opening hours",  "zh": "营业时间" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Diese Hose ist leider in meiner ___ ausverkauft.",
+      "answer": "Größe"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Das Olivenöl kostet normalerweise sieben Euro, aber es ist heute im ___.",
+      "answer": "Angebot"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Hier zahlt man nur mit ___ — Karte wird nicht akzeptiert.",
+      "answer": "Bargeld"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Das Hemd passt nicht — kann ich es ___?",
+      "answer": "umtauschen"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence uses the correct verb for price?", "zh": "哪句话正确使用了表示价格的动词？" },
+      "options": [
+        { "en": "Das bezahlt zwanzig Euro.",  "zh": "Das bezahlt zwanzig Euro." },
+        { "en": "Das kauft zwanzig Euro.",    "zh": "Das kauft zwanzig Euro." },
+        { "en": "Das kostet zwanzig Euro.",   "zh": "Das kostet zwanzig Euro." },
+        { "en": "Das hat zwanzig Euro.",      "zh": "Das hat zwanzig Euro." }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the clothing shop dialogue, what discount does Julia get on the jacket?", "zh": "在服装店对话中，Julia 买夹克有什么折扣？" },
+      "options": [
+        { "en": "10%", "zh": "10%" },
+        { "en": "15%", "zh": "15%" },
+        { "en": "20%", "zh": "20%" },
+        { "en": "25%", "zh": "25%" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Hemd",   "zh": "Hemd" },
+        { "en": "Hose",   "zh": "Hose" },
+        { "en": "Kleid",  "zh": "Kleid" },
+        { "en": "Markt",  "zh": "Markt" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the correct plural form of 'der Euro' in German?", "zh": "德语中 'der Euro' 的正确复数是？" },
+      "options": [
+        { "en": "die Euros",   "zh": "die Euros" },
+        { "en": "die Euroe",   "zh": "die Euroe" },
+        { "en": "Euro",        "zh": "Euro" },
+        { "en": "die Euron",   "zh": "die Euron" }
+      ],
+      "answer": 2
+    }
+  ]
+}

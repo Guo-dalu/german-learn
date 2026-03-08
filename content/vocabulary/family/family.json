@@ -1,0 +1,153 @@
+{
+  "topic": "family",
+  "tags": ["A1", "A2", "family"],
+  "featured_word": "die Familie",
+  "emoji": "👨‍👩‍👧‍👦",
+  "stickers": ["👶", "👴", "💍", "🏡"],
+  "words": [
+    { "german": "Familie",      "article": "die", "gender": "feminine",  "plural": "die Familien",     "en": "family",         "zh": "家庭",   "level": "A1", "tags": [],              "example": { "de": "Meine Familie ist groß.", "en": "My family is big.", "zh": "我家人很多。" } },
+    { "german": "Vater",        "article": "der", "gender": "masculine", "plural": "die Väter",        "en": "father",         "zh": "父亲",   "level": "A1", "tags": ["parent"],      "example": { "de": "Mein Vater arbeitet als Ingenieur.", "en": "My father works as an engineer.", "zh": "我父亲是工程师。" } },
+    { "german": "Mutter",       "article": "die", "gender": "feminine",  "plural": "die Mütter",       "en": "mother",         "zh": "母亲",   "level": "A1", "tags": ["parent"],      "example": { "de": "Meine Mutter kocht sehr gut.", "en": "My mother cooks very well.", "zh": "我妈妈做饭很好。" } },
+    { "german": "Eltern",       "article": "die", "gender": "feminine",  "plural": "die Eltern",       "en": "parents",        "zh": "父母",   "level": "A1", "tags": ["parent"],      "example": { "de": "Meine Eltern wohnen in Hamburg.", "en": "My parents live in Hamburg.", "zh": "我父母住在汉堡。" } },
+    { "german": "Kind",         "article": "das", "gender": "neuter",    "plural": "die Kinder",       "en": "child",          "zh": "孩子",   "level": "A1", "tags": [],              "example": { "de": "Sie haben zwei Kinder.", "en": "They have two children.", "zh": "他们有两个孩子。" } },
+    { "german": "Sohn",         "article": "der", "gender": "masculine", "plural": "die Söhne",        "en": "son",            "zh": "儿子",   "level": "A1", "tags": [],              "example": { "de": "Ihr Sohn ist sechs Jahre alt.", "en": "Her son is six years old.", "zh": "她儿子六岁。" } },
+    { "german": "Tochter",      "article": "die", "gender": "feminine",  "plural": "die Töchter",      "en": "daughter",       "zh": "女儿",   "level": "A1", "tags": [],              "example": { "de": "Seine Tochter studiert Medizin.", "en": "His daughter studies medicine.", "zh": "他女儿学医学。" } },
+    { "german": "Bruder",       "article": "der", "gender": "masculine", "plural": "die Brüder",       "en": "brother",        "zh": "兄弟",   "level": "A1", "tags": ["sibling"],     "example": { "de": "Mein Bruder ist älter als ich.", "en": "My brother is older than me.", "zh": "我哥哥比我大。" } },
+    { "german": "Schwester",    "article": "die", "gender": "feminine",  "plural": "die Schwestern",   "en": "sister",         "zh": "姐妹",   "level": "A1", "tags": ["sibling"],     "example": { "de": "Meine Schwester lebt in Wien.", "en": "My sister lives in Vienna.", "zh": "我姐姐住在维也纳。" } },
+    { "german": "Geschwister",  "article": "die", "gender": "feminine",  "plural": "die Geschwister",  "en": "siblings",       "zh": "兄弟姐妹","level": "A1", "tags": ["sibling"],    "example": { "de": "Hast du Geschwister?", "en": "Do you have siblings?", "zh": "你有兄弟姐妹吗？" } },
+    { "german": "Großvater",    "article": "der", "gender": "masculine", "plural": "die Großväter",    "en": "grandfather",    "zh": "祖父",   "level": "A1", "tags": ["grandparent"], "example": { "de": "Mein Großvater ist achtzig Jahre alt.", "en": "My grandfather is eighty years old.", "zh": "我祖父八十岁。" } },
+    { "german": "Großmutter",   "article": "die", "gender": "feminine",  "plural": "die Großmütter",   "en": "grandmother",    "zh": "祖母",   "level": "A1", "tags": ["grandparent"], "example": { "de": "Meine Großmutter backt den besten Kuchen.", "en": "My grandmother bakes the best cake.", "zh": "我祖母做的蛋糕最好吃。" } },
+    { "german": "Großeltern",   "article": "die", "gender": "feminine",  "plural": "die Großeltern",   "en": "grandparents",   "zh": "祖父母", "level": "A1", "tags": ["grandparent"], "example": { "de": "Wir besuchen die Großeltern am Sonntag.", "en": "We visit the grandparents on Sunday.", "zh": "我们周日去看望祖父母。" } },
+    { "german": "Onkel",        "article": "der", "gender": "masculine", "plural": "die Onkel",        "en": "uncle",          "zh": "叔叔/舅舅","level": "A1","tags": [],             "example": { "de": "Mein Onkel hat ein großes Auto.", "en": "My uncle has a big car.", "zh": "我叔叔有一辆大车。" } },
+    { "german": "Tante",        "article": "die", "gender": "feminine",  "plural": "die Tanten",       "en": "aunt",           "zh": "阿姨",   "level": "A1", "tags": [],              "example": { "de": "Meine Tante wohnt in München.", "en": "My aunt lives in Munich.", "zh": "我阿姨住在慕尼黑。" } },
+    { "german": "Cousin",       "article": "der", "gender": "masculine", "plural": "die Cousins",      "en": "cousin (male)",  "zh": "堂/表兄弟","level": "A2","tags": [],             "example": { "de": "Mein Cousin ist in meiner Klasse.", "en": "My cousin is in my class.", "zh": "我堂兄在我班上。" } },
+    { "german": "Cousine",      "article": "die", "gender": "feminine",  "plural": "die Cousinen",     "en": "cousin (female)","zh": "堂/表姐妹","level": "A2","tags": [],             "example": { "de": "Meine Cousine kommt nächste Woche.", "en": "My cousin is coming next week.", "zh": "我表妹下周来。" } },
+    { "german": "Mann",         "article": "der", "gender": "masculine", "plural": "die Männer",       "en": "husband/man",    "zh": "丈夫/男人","level": "A1","tags": ["partner"],    "example": { "de": "Ihr Mann heißt Thomas.", "en": "Her husband's name is Thomas.", "zh": "她丈夫叫 Thomas。" } },
+    { "german": "Frau",         "article": "die", "gender": "feminine",  "plural": "die Frauen",       "en": "wife/woman",     "zh": "妻子/女人","level": "A1","tags": ["partner"],    "example": { "de": "Seine Frau arbeitet als Ärztin.", "en": "His wife works as a doctor.", "zh": "他妻子是医生。" } },
+    { "german": "Baby",         "article": "das", "gender": "neuter",    "plural": "die Babys",        "en": "baby",           "zh": "婴儿",   "level": "A1", "tags": [],              "example": { "de": "Das Baby schläft gerade.", "en": "The baby is sleeping right now.", "zh": "婴儿正在睡觉。" } },
+    { "german": "Freund",       "article": "der", "gender": "masculine", "plural": "die Freunde",      "en": "friend/boyfriend","zh": "朋友/男友","level": "A1","tags": [],            "example": { "de": "Das ist mein bester Freund.", "en": "This is my best friend.", "zh": "这是我最好的朋友。" } },
+    { "german": "Freundin",     "article": "die", "gender": "feminine",  "plural": "die Freundinnen",  "en": "friend/girlfriend","zh": "朋友/女友","level": "A1","tags": [],           "example": { "de": "Meine Freundin kommt aus Spanien.", "en": "My friend comes from Spain.", "zh": "我朋友来自西班牙。" } },
+    { "german": "Hochzeit",     "article": "die", "gender": "feminine",  "plural": "die Hochzeiten",   "en": "wedding",        "zh": "婚礼",   "level": "A2", "tags": [],              "example": { "de": "Die Hochzeit war sehr schön.", "en": "The wedding was very beautiful.", "zh": "婚礼很美。" } },
+    { "german": "verheiratet",  "article": null,  "gender": null,        "plural": null,               "en": "married",        "zh": "已婚",   "level": "A2", "tags": [],              "example": { "de": "Sie sind seit zehn Jahren verheiratet.", "en": "They have been married for ten years.", "zh": "他们结婚十年了。" } },
+    { "german": "ledig",        "article": null,  "gender": null,        "plural": null,               "en": "single/unmarried","zh": "未婚",  "level": "A2", "tags": [],              "example": { "de": "Er ist noch ledig.", "en": "He is still single.", "zh": "他还没结婚。" } },
+    { "german": "Alter",        "article": "das", "gender": "neuter",    "plural": "die Alter",        "en": "age",            "zh": "年龄",   "level": "A2", "tags": [],              "example": { "de": "In welchem Alter lernst du Deutsch?", "en": "At what age are you learning German?", "zh": "你多大开始学德语的？" } }
+  ],
+  "dialogues": [
+    {
+      "id": "talking-about-family",
+      "scene": { "en": "Emma and Noah talk about their families at a language course.", "zh": "Emma 和 Noah 在语言课上聊家人。" },
+      "audio": "family-dialogue-1.mp3",
+      "highlighted_words": ["Familie", "Geschwister", "Bruder", "Schwester", "Eltern", "Kind", "Großeltern"],
+      "lines": [
+        { "speaker": "Noah",  "text": "Hast du Geschwister?" },
+        { "speaker": "Emma",  "text": "Ja, einen Bruder und eine Schwester. Und du?" },
+        { "speaker": "Noah",  "text": "Ich bin Einzelkind. Aber ich habe viele Cousins." },
+        { "speaker": "Emma",  "text": "Sind deine Eltern noch zusammen?" },
+        { "speaker": "Noah",  "text": "Ja, seit dreißig Jahren verheiratet! Und deine Familie?" },
+        { "speaker": "Emma",  "text": "Meine Eltern auch. Und meine Großeltern leben noch — sie sind über achtzig." },
+        { "speaker": "Noah",  "text": "Das ist wunderbar. Hast du selbst Kinder?" },
+        { "speaker": "Emma",  "text": "Nein, noch nicht. Ich bin erst sechsundzwanzig." }
+      ]
+    },
+    {
+      "id": "showing-photos",
+      "scene": { "en": "Luca shows his phone photos to a colleague.", "zh": "Luca 把手机里的照片给同事看。" },
+      "audio": "family-dialogue-2.mp3",
+      "highlighted_words": ["Frau", "Sohn", "Tochter", "Baby", "Vater", "Mutter", "Hochzeit"],
+      "lines": [
+        { "speaker": "Luca",   "text": "Schau mal — das ist meine Frau und unsere Kinder." },
+        { "speaker": "Kollegin", "text": "Oh, wie süß! Wie alt ist der Sohn?" },
+        { "speaker": "Luca",   "text": "Der Sohn ist vier, die Tochter ist zwei. Und das hier ist unser neues Baby." },
+        { "speaker": "Kollegin", "text": "Drei Kinder! Und das hier — eine Hochzeit?" },
+        { "speaker": "Luca",   "text": "Ja, das sind meine Eltern — mein Vater und meine Mutter. Ihr fünfundzwanzigster Hochzeitstag." },
+        { "speaker": "Kollegin", "text": "Fünfundzwanzig Jahre — das ist toll!" },
+        { "speaker": "Luca",   "text": "Ja, sie sind noch sehr verliebt." }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Hast du Geschwister?", "en": "Do you have siblings?", "zh": "你有兄弟姐妹吗？" },
+    { "german": "Ich bin Einzelkind.", "en": "I am an only child.", "zh": "我是独生子/独生女。" },
+    { "german": "Wie alt ist dein Bruder?", "en": "How old is your brother?", "zh": "你哥哥/弟弟多大？" },
+    { "german": "Sie sind seit ... Jahren verheiratet.", "en": "They have been married for ... years.", "zh": "他们结婚……年了。" },
+    { "german": "Das ist meine Frau / mein Mann.", "en": "This is my wife / my husband.", "zh": "这是我妻子/丈夫。" },
+    { "german": "Wir haben zwei Kinder.", "en": "We have two children.", "zh": "我们有两个孩子。" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "der Großvater", "en": "grandfather", "zh": "祖父" },
+        { "german": "die Tochter",   "en": "daughter",    "zh": "女儿" },
+        { "german": "die Geschwister","en": "siblings",   "zh": "兄弟姐妹" },
+        { "german": "die Hochzeit",  "en": "wedding",     "zh": "婚礼" },
+        { "german": "der Onkel",     "en": "uncle",       "zh": "叔叔" },
+        { "german": "das Alter",     "en": "age",         "zh": "年龄" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Er hat keine Brüder und keine Schwestern — er ist ___.",
+      "answer": "Einzelkind"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Meine ___ backt immer einen Kuchen, wenn ich sie besuche.",
+      "answer": "Großmutter"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Meine Eltern sind seit zwanzig Jahren ___.",
+      "answer": "verheiratet"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Das ___ schläft die ganze Nacht durch — endlich!",
+      "answer": "Baby"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence is grammatically correct?", "zh": "哪句话语法正确？" },
+      "options": [
+        { "en": "Mein Bruder hat zwölf Jahre alt.",  "zh": "Mein Bruder hat zwölf Jahre alt." },
+        { "en": "Mein Bruder ist zwölf Jahre alt.",  "zh": "Mein Bruder ist zwölf Jahre alt." },
+        { "en": "Mein Bruder hat zwölf Jahre.",      "zh": "Mein Bruder hat zwölf Jahre." },
+        { "en": "Mein Bruder wird zwölf Jahre alt.", "zh": "Mein Bruder wird zwölf Jahre alt." }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the dialogue, how many children does Luca have?", "zh": "在对话中，Luca 有几个孩子？" },
+      "options": [
+        { "en": "One", "zh": "一个" },
+        { "en": "Two", "zh": "两个" },
+        { "en": "Three", "zh": "三个" },
+        { "en": "Four", "zh": "四个" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word cannot be used in singular form?", "zh": "哪个词没有单数形式？" },
+      "options": [
+        { "en": "Kind",        "zh": "Kind" },
+        { "en": "Geschwister", "zh": "Geschwister" },
+        { "en": "Bruder",      "zh": "Bruder" },
+        { "en": "Tochter",     "zh": "Tochter" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the plural of 'die Mutter'?", "zh": "'die Mutter' 的复数是？" },
+      "options": [
+        { "en": "die Mutters",  "zh": "die Mutters" },
+        { "en": "die Muttern",  "zh": "die Muttern" },
+        { "en": "die Mütter",   "zh": "die Mütter" },
+        { "en": "die Muttere",  "zh": "die Muttere" }
+      ],
+      "answer": 2
+    }
+  ]
+}

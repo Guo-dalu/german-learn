@@ -4,7 +4,10 @@
     "apartment": { "emoji": "🏠", "tags": ["A1", "A2", "home"], "wordCount": 38, "title": { "en": "Apartment", "zh": "公寓" } },
     "health": { "emoji": "🏥", "tags": ["A2", "B1", "health"], "wordCount": 25, "title": { "en": "Health", "zh": "健康" } },
     "work": { "emoji": "💼", "tags": ["A2", "B1", "work"], "wordCount": 25, "title": { "en": "Work", "zh": "工作" } },
-    "travel": { "emoji": "✈️", "tags": ["A2", "B1", "travel"], "wordCount": 25, "title": { "en": "Travel", "zh": "旅行" } }
+    "travel": { "emoji": "✈️", "tags": ["A2", "B1", "travel"], "wordCount": 25, "title": { "en": "Travel", "zh": "旅行" } },
+    "family": { "emoji": "👨‍👩‍👧‍👦", "tags": ["A1", "A2", "family"], "wordCount": 26, "title": { "en": "Family", "zh": "家庭" } },
+    "shopping": { "emoji": "🛍️", "tags": ["A1", "A2", "shopping"], "wordCount": 30, "title": { "en": "Shopping", "zh": "购物" } },
+    "time": { "emoji": "🕐", "tags": ["A1", "A2", "numbers", "time"], "wordCount": 38, "title": { "en": "Time & Dates", "zh": "时间与日期" } }
   },
   "grammar": {
     "articles": { "emoji": "📌", "tags": ["A1", "articles", "grammar"], "title": { "en": "German Articles", "zh": "德语冠词" } }

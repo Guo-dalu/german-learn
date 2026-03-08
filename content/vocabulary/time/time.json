@@ -1,0 +1,167 @@
+{
+  "topic": "time",
+  "tags": ["A1", "A2", "numbers", "time"],
+  "featured_word": "die Uhr",
+  "emoji": "🕐",
+  "stickers": ["📅", "⏰", "🗓️", "🌸"],
+  "words": [
+    { "german": "Uhr",        "article": "die", "gender": "feminine",  "plural": "die Uhren",      "en": "clock/watch; o'clock", "zh": "钟；点钟", "level": "A1", "tags": ["time"],    "example": { "de": "Es ist jetzt zehn Uhr.", "en": "It is ten o'clock now.", "zh": "现在是十点钟。" } },
+    { "german": "Stunde",     "article": "die", "gender": "feminine",  "plural": "die Stunden",    "en": "hour",           "zh": "小时",   "level": "A1", "tags": ["time"],    "example": { "de": "Der Film dauert zwei Stunden.", "en": "The film lasts two hours.", "zh": "电影持续两个小时。" } },
+    { "german": "Minute",     "article": "die", "gender": "feminine",  "plural": "die Minuten",    "en": "minute",         "zh": "分钟",   "level": "A1", "tags": ["time"],    "example": { "de": "Ich bin in fünf Minuten fertig.", "en": "I'll be ready in five minutes.", "zh": "我五分钟后就好。" } },
+    { "german": "Tag",        "article": "der", "gender": "masculine", "plural": "die Tage",       "en": "day",            "zh": "天",     "level": "A1", "tags": ["time"],    "example": { "de": "Der Tag hat vierundzwanzig Stunden.", "en": "The day has twenty-four hours.", "zh": "一天有二十四小时。" } },
+    { "german": "Woche",      "article": "die", "gender": "feminine",  "plural": "die Wochen",     "en": "week",           "zh": "周",     "level": "A1", "tags": ["time"],    "example": { "de": "Die Woche hat sieben Tage.", "en": "The week has seven days.", "zh": "一周有七天。" } },
+    { "german": "Monat",      "article": "der", "gender": "masculine", "plural": "die Monate",     "en": "month",          "zh": "月",     "level": "A1", "tags": ["time"],    "example": { "de": "Ein Jahr hat zwölf Monate.", "en": "A year has twelve months.", "zh": "一年有十二个月。" } },
+    { "german": "Jahr",       "article": "das", "gender": "neuter",    "plural": "die Jahre",      "en": "year",           "zh": "年",     "level": "A1", "tags": ["time"],    "example": { "de": "Ich lerne seit einem Jahr Deutsch.", "en": "I have been learning German for one year.", "zh": "我学德语已经一年了。" } },
+    { "german": "Morgen",     "article": "der", "gender": "masculine", "plural": "die Morgen",     "en": "morning",        "zh": "早上",   "level": "A1", "tags": ["daytime"], "example": { "de": "Am Morgen trinke ich Kaffee.", "en": "In the morning I drink coffee.", "zh": "早上我喝咖啡。" } },
+    { "german": "Mittag",     "article": "der", "gender": "masculine", "plural": "die Mittage",    "en": "midday/noon",    "zh": "中午",   "level": "A1", "tags": ["daytime"], "example": { "de": "Um Mittag esse ich zu Hause.", "en": "At noon I eat at home.", "zh": "中午我在家吃饭。" } },
+    { "german": "Abend",      "article": "der", "gender": "masculine", "plural": "die Abende",     "en": "evening",        "zh": "晚上",   "level": "A1", "tags": ["daytime"], "example": { "de": "Am Abend schaue ich fern.", "en": "In the evening I watch TV.", "zh": "晚上我看电视。" } },
+    { "german": "Nacht",      "article": "die", "gender": "feminine",  "plural": "die Nächte",     "en": "night",          "zh": "夜晚",   "level": "A1", "tags": ["daytime"], "example": { "de": "Nachts schläft die Stadt.", "en": "At night the city sleeps.", "zh": "夜晚城市沉睡了。" } },
+    { "german": "Montag",     "article": "der", "gender": "masculine", "plural": "die Montage",    "en": "Monday",         "zh": "周一",   "level": "A1", "tags": ["weekday"], "example": { "de": "Am Montag beginnt die Arbeitswoche.", "en": "On Monday the work week begins.", "zh": "周一工作周开始了。" } },
+    { "german": "Dienstag",   "article": "der", "gender": "masculine", "plural": "die Dienstage",  "en": "Tuesday",        "zh": "周二",   "level": "A1", "tags": ["weekday"], "example": { "de": "Dienstag habe ich Deutschkurs.", "en": "On Tuesday I have German class.", "zh": "周二我有德语课。" } },
+    { "german": "Mittwoch",   "article": "der", "gender": "masculine", "plural": "die Mittwoche",  "en": "Wednesday",      "zh": "周三",   "level": "A1", "tags": ["weekday"], "example": { "de": "Mittwoch ist die Wochenmitte.", "en": "Wednesday is the middle of the week.", "zh": "周三是一周的中间。" } },
+    { "german": "Donnerstag", "article": "der", "gender": "masculine", "plural": "die Donnerstage","en": "Thursday",       "zh": "周四",   "level": "A1", "tags": ["weekday"], "example": { "de": "Am Donnerstag treffe ich meine Freunde.", "en": "On Thursday I meet my friends.", "zh": "周四我和朋友见面。" } },
+    { "german": "Freitag",    "article": "der", "gender": "masculine", "plural": "die Freitage",   "en": "Friday",         "zh": "周五",   "level": "A1", "tags": ["weekday"], "example": { "de": "Freitag ist mein Lieblingstag.", "en": "Friday is my favourite day.", "zh": "周五是我最喜欢的一天。" } },
+    { "german": "Samstag",    "article": "der", "gender": "masculine", "plural": "die Samstage",   "en": "Saturday",       "zh": "周六",   "level": "A1", "tags": ["weekday"], "example": { "de": "Am Samstag schlafe ich lange.", "en": "On Saturday I sleep in.", "zh": "周六我睡懒觉。" } },
+    { "german": "Sonntag",    "article": "der", "gender": "masculine", "plural": "die Sonntage",   "en": "Sunday",         "zh": "周日",   "level": "A1", "tags": ["weekday"], "example": { "de": "Am Sonntag sind die Geschäfte geschlossen.", "en": "On Sunday the shops are closed.", "zh": "周日商店都关门。" } },
+    { "german": "Januar",     "article": "der", "gender": "masculine", "plural": "die Januare",    "en": "January",        "zh": "一月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im Januar ist es kalt.", "en": "In January it is cold.", "zh": "一月很冷。" } },
+    { "german": "Februar",    "article": "der", "gender": "masculine", "plural": "die Februare",   "en": "February",       "zh": "二月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im Februar gibt es oft Schnee.", "en": "In February there is often snow.", "zh": "二月经常下雪。" } },
+    { "german": "März",       "article": "der", "gender": "masculine", "plural": "die Märze",      "en": "March",          "zh": "三月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im März beginnt der Frühling.", "en": "In March spring begins.", "zh": "三月春天开始了。" } },
+    { "german": "April",      "article": "der", "gender": "masculine", "plural": "die Aprile",     "en": "April",          "zh": "四月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im April regnet es viel.", "en": "In April it rains a lot.", "zh": "四月经常下雨。" } },
+    { "german": "Mai",        "article": "der", "gender": "masculine", "plural": "die Maie",       "en": "May",            "zh": "五月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im Mai blühen die Blumen.", "en": "In May the flowers bloom.", "zh": "五月鲜花盛开。" } },
+    { "german": "Juni",       "article": "der", "gender": "masculine", "plural": "die Junis",      "en": "June",           "zh": "六月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im Juni beginnt der Sommer.", "en": "In June summer begins.", "zh": "六月夏天开始了。" } },
+    { "german": "Juli",       "article": "der", "gender": "masculine", "plural": "die Julis",      "en": "July",           "zh": "七月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im Juli fahren viele in den Urlaub.", "en": "In July many people go on holiday.", "zh": "七月很多人去度假。" } },
+    { "german": "August",     "article": "der", "gender": "masculine", "plural": "die Auguste",    "en": "August",         "zh": "八月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im August ist es am heißesten.", "en": "In August it is the hottest.", "zh": "八月是最热的时候。" } },
+    { "german": "September",  "article": "der", "gender": "masculine", "plural": "die Septembre",  "en": "September",      "zh": "九月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im September beginnt die Schule.", "en": "In September school starts.", "zh": "九月开学了。" } },
+    { "german": "Oktober",    "article": "der", "gender": "masculine", "plural": "die Oktobere",   "en": "October",        "zh": "十月",   "level": "A1", "tags": ["month"],   "example": { "de": "Im Oktober werden die Blätter bunt.", "en": "In October the leaves turn colourful.", "zh": "十月树叶变色了。" } },
+    { "german": "November",   "article": "der", "gender": "masculine", "plural": "die Novembre",   "en": "November",       "zh": "十一月", "level": "A1", "tags": ["month"],   "example": { "de": "Im November ist es oft grau.", "en": "In November it is often grey.", "zh": "十一月经常阴天。" } },
+    { "german": "Dezember",   "article": "der", "gender": "masculine", "plural": "die Dezembere",  "en": "December",       "zh": "十二月", "level": "A1", "tags": ["month"],   "example": { "de": "Im Dezember feiern wir Weihnachten.", "en": "In December we celebrate Christmas.", "zh": "十二月我们庆祝圣诞节。" } },
+    { "german": "Frühling",   "article": "der", "gender": "masculine", "plural": "die Frühlinge",  "en": "spring",         "zh": "春天",   "level": "A1", "tags": ["season"],  "example": { "de": "Im Frühling wird es wärmer.", "en": "In spring it gets warmer.", "zh": "春天天气变暖了。" } },
+    { "german": "Sommer",     "article": "der", "gender": "masculine", "plural": "die Sommer",     "en": "summer",         "zh": "夏天",   "level": "A1", "tags": ["season"],  "example": { "de": "Im Sommer gehe ich schwimmen.", "en": "In summer I go swimming.", "zh": "夏天我去游泳。" } },
+    { "german": "Herbst",     "article": "der", "gender": "masculine", "plural": "die Herbste",    "en": "autumn/fall",    "zh": "秋天",   "level": "A1", "tags": ["season"],  "example": { "de": "Im Herbst fallen die Blätter.", "en": "In autumn the leaves fall.", "zh": "秋天树叶落下来。" } },
+    { "german": "Winter",     "article": "der", "gender": "masculine", "plural": "die Winter",     "en": "winter",         "zh": "冬天",   "level": "A1", "tags": ["season"],  "example": { "de": "Im Winter schneit es manchmal.", "en": "In winter it sometimes snows.", "zh": "冬天有时会下雪。" } },
+    { "german": "Datum",      "article": "das", "gender": "neuter",    "plural": "die Daten",      "en": "date",           "zh": "日期",   "level": "A2", "tags": ["time"],    "example": { "de": "Welches Datum ist heute?", "en": "What is today's date?", "zh": "今天是几号？" } },
+    { "german": "Uhrzeit",    "article": "die", "gender": "feminine",  "plural": "die Uhrzeiten",  "en": "time (of day)",  "zh": "时刻",   "level": "A2", "tags": ["time"],    "example": { "de": "Zu welcher Uhrzeit beginnt der Kurs?", "en": "At what time does the course start?", "zh": "课程几点开始？" } },
+    { "german": "Wochenende", "article": "das", "gender": "neuter",    "plural": "die Wochenenden","en": "weekend",        "zh": "周末",   "level": "A2", "tags": ["time"],    "example": { "de": "Am Wochenende schlafe ich aus.", "en": "On the weekend I sleep in.", "zh": "周末我睡懒觉。" } },
+    { "german": "Termin",     "article": "der", "gender": "masculine", "plural": "die Termine",    "en": "appointment/date","zh": "约定",  "level": "A2", "tags": ["time"],    "example": { "de": "Ich habe um drei Uhr einen Termin.", "en": "I have an appointment at three o'clock.", "zh": "我三点有个约。" } }
+  ],
+  "dialogues": [
+    {
+      "id": "making-plans",
+      "scene": { "en": "Anna and Ben make plans for the weekend.", "zh": "Anna 和 Ben 约好周末的计划。" },
+      "audio": "time-dialogue-1.mp3",
+      "highlighted_words": ["Wochenende", "Samstag", "Sonntag", "Uhr", "Abend", "Termin"],
+      "lines": [
+        { "speaker": "Anna", "text": "Was machst du am Wochenende?" },
+        { "speaker": "Ben",  "text": "Am Samstag habe ich einen Termin um elf Uhr. Am Nachmittag bin ich frei." },
+        { "speaker": "Anna", "text": "Wollen wir uns am Samstag um drei Uhr treffen?" },
+        { "speaker": "Ben",  "text": "Ja, gerne! Und am Sonntag?" },
+        { "speaker": "Anna", "text": "Sonntag schlafe ich lange. Erst am Abend bin ich wach." },
+        { "speaker": "Ben",  "text": "Ich auch! Sonntag Abend kochen wir zusammen?" },
+        { "speaker": "Anna", "text": "Super Idee. So gegen sieben Uhr?" },
+        { "speaker": "Ben",  "text": "Perfekt. Dann bis Samstag!" }
+      ]
+    },
+    {
+      "id": "birthday-date",
+      "scene": { "en": "Clara asks Leo about his birthday and they talk about seasons.", "zh": "Clara 问 Leo 生日，他们聊起了季节。" },
+      "audio": "time-dialogue-2.mp3",
+      "highlighted_words": ["Datum", "Frühling", "Sommer", "Herbst", "Winter", "März"],
+      "lines": [
+        { "speaker": "Clara", "text": "Wann hast du Geburtstag?" },
+        { "speaker": "Leo",   "text": "Am fünfzehnten März. Und du?" },
+        { "speaker": "Clara", "text": "Ich bin im August geboren, mitten im Sommer!" },
+        { "speaker": "Leo",   "text": "Oh schön! Mein Geburtstag ist im Frühling — manchmal ist es noch kalt." },
+        { "speaker": "Clara", "text": "Welches Datum ist heute eigentlich?" },
+        { "speaker": "Leo",   "text": "Der zweite November. Schon Herbst." },
+        { "speaker": "Clara", "text": "Der Winter kommt bald. Ich mag den Winter nicht." },
+        { "speaker": "Leo",   "text": "Ich schon — ich liebe Schnee!" }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Wie spät ist es?", "en": "What time is it?", "zh": "现在几点？" },
+    { "german": "Es ist halb drei.", "en": "It is half past two.", "zh": "现在两点半。" },
+    { "german": "Wann hast du Geburtstag?", "en": "When is your birthday?", "zh": "你什么时候过生日？" },
+    { "german": "Am Montag um zehn Uhr.", "en": "On Monday at ten o'clock.", "zh": "周一十点。" },
+    { "german": "Welches Datum ist heute?", "en": "What is today's date?", "zh": "今天几号？" },
+    { "german": "Wir treffen uns um halb sieben.", "en": "We'll meet at half past six.", "zh": "我们六点半见面。" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "der Frühling", "en": "spring",   "zh": "春天" },
+        { "german": "der Herbst",   "en": "autumn",   "zh": "秋天" },
+        { "german": "die Stunde",   "en": "hour",     "zh": "小时" },
+        { "german": "das Datum",    "en": "date",     "zh": "日期" },
+        { "german": "der Mittag",   "en": "noon",     "zh": "中午" },
+        { "german": "die Woche",    "en": "week",     "zh": "周" },
+        { "german": "das Wochenende", "en": "weekend","zh": "周末" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Am ___ sind alle Geschäfte in Deutschland geschlossen.",
+      "answer": "Sonntag"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich habe um Viertel nach drei einen ___ beim Arzt.",
+      "answer": "Termin"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Im ___ fallen die Blätter von den Bäumen.",
+      "answer": "Herbst"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Der ___ hat dreißig oder einunddreißig Tage.",
+      "answer": "Monat"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What time does 'Es ist halb vier' mean?", "zh": "'Es ist halb vier' 是几点？" },
+      "options": [
+        { "en": "4:30", "zh": "4:30" },
+        { "en": "3:30", "zh": "3:30" },
+        { "en": "4:15", "zh": "4:15" },
+        { "en": "3:45", "zh": "3:45" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which preposition correctly fills the blank: 'Ich treffe sie ___ Montag ___ Abend.'?", "zh": "哪个介词正确填入空白：'Ich treffe sie ___ Montag ___ Abend.'？" },
+      "options": [
+        { "en": "im / im",  "zh": "im / im" },
+        { "en": "am / am",  "zh": "am / am" },
+        { "en": "am / im",  "zh": "am / im" },
+        { "en": "im / am",  "zh": "im / am" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "In the dialogue, what does Leo say about his birthday?", "zh": "在对话中，Leo 说他的生日是什么时候？" },
+      "options": [
+        { "en": "15th August, in summer",  "zh": "八月十五日，在夏天" },
+        { "en": "2nd November, in autumn", "zh": "十一月二日，在秋天" },
+        { "en": "15th March, in spring",   "zh": "三月十五日，在春天" },
+        { "en": "1st March, in winter",    "zh": "三月一日，在冬天" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Montag",    "zh": "Montag" },
+        { "en": "Dienstag",  "zh": "Dienstag" },
+        { "en": "Mittwoch",  "zh": "Mittwoch" },
+        { "en": "Mittag",    "zh": "Mittag" }
+      ],
+      "answer": 3
+    }
+  ]
+}
