@@ -6,14 +6,14 @@ import MultipleChoice from '../components/exercises/MultipleChoice'
 import { meta, getLocalizedTitle } from '../utils/content'
 import type { ContentFile, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise } from '../types/content'
 
-const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*/index.json', { eager: true, import: 'default' })
-const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*/index.json', { eager: true, import: 'default' })
+const vocabJsons = import.meta.glob<ContentFile>('/content/vocabulary/*/*.json', { eager: true, import: 'default' })
+const grammarJsons = import.meta.glob<ContentFile>('/content/grammar/*/*.json', { eager: true, import: 'default' })
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
 function buildTopicData(jsons: Record<string, ContentFile>, section: 'vocabulary' | 'grammar', basePath: string, lang: Lang) {
   return Object.entries(jsons).map(([path, json]) => {
-    const slug = path.replace(`${basePath}/`, '').replace('/index.json', '')
+    const slug = path.replace(`${basePath}/`, '').split('/')[0]
     const m = meta[section][slug]
     return { slug, title: m ? getLocalizedTitle(m, lang) : slug, emoji: m?.emoji ?? '📖', tags: m?.tags ?? [], exercises: json.exercises ?? [] }
   })

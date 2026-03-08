@@ -14,7 +14,7 @@ import { parseFrontmatter } from '../utils/content'
 import type { ContentFile, Dialogue, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise, Phrase, Word } from '../types/content'
 
 const mdModules = import.meta.glob('/content/vocabulary/*/*.md', { query: '?raw', import: 'default' })
-const jsonModules = import.meta.glob<ContentFile>('/content/vocabulary/*/index.json', { import: 'default' })
+const jsonModules = import.meta.glob<ContentFile>('/content/vocabulary/*/*.json', { import: 'default' })
 
 function highlightLine(text: string, highlightedWords: string[], words: Word[]) {
   // Build a map from bare word -> gender for color lookup
@@ -78,15 +78,15 @@ export default function VocabularyPage() {
 
   useEffect(() => {
     if (!topic) return
-    const mdKey = `/content/vocabulary/${topic}/index.${lang}.md`
-    const mdFallback = `/content/vocabulary/${topic}/index.md`
+    const mdKey = `/content/vocabulary/${topic}/${topic}.${lang}.md`
+    const mdFallback = `/content/vocabulary/${topic}/${topic}.md`
     const mdLoader = mdModules[mdKey] ?? mdModules[mdFallback]
     if (mdLoader) {
       mdLoader().then((raw) => {
         setNotesBody(parseFrontmatter(raw as string).body)
       })
     }
-    const jsonLoader = jsonModules[`/content/vocabulary/${topic}/index.json`]
+    const jsonLoader = jsonModules[`/content/vocabulary/${topic}/${topic}.json`]
     if (jsonLoader) jsonLoader().then((data) => setContent(data))
   }, [topic, lang])
 
