@@ -1,0 +1,177 @@
+{
+  "topic": "weather",
+  "tags": ["A1", "A2", "weather"],
+  "featured_word": "die Sonne",
+  "emoji": "🌤️",
+  "stickers": ["☀️", "🌧️", "❄️", "🌈"],
+  "words": [
+    { "german": "Sonne",       "article": "die", "gender": "feminine",  "plural": "die Sonnen",      "en": "sun",           "zh": "太阳",   "level": "A1", "tags": ["sky"],         "example": { "de": "Die Sonne scheint heute.", "en": "The sun is shining today.", "zh": "今天阳光明媚。" } },
+    { "german": "Regen",       "article": "der", "gender": "masculine", "plural": "—",               "en": "rain",          "zh": "雨",     "level": "A1", "tags": [],              "example": { "de": "Der Regen macht alles nass.", "en": "The rain makes everything wet.", "zh": "雨把一切都打湿了。" } },
+    { "german": "Schnee",      "article": "der", "gender": "masculine", "plural": "—",               "en": "snow",          "zh": "雪",     "level": "A1", "tags": [],              "example": { "de": "Im Winter fällt viel Schnee.", "en": "A lot of snow falls in winter.", "zh": "冬天下很多雪。" } },
+    { "german": "Wind",        "article": "der", "gender": "masculine", "plural": "die Winde",       "en": "wind",          "zh": "风",     "level": "A1", "tags": [],              "example": { "de": "Der Wind ist heute sehr stark.", "en": "The wind is very strong today.", "zh": "今天风很大。" } },
+    { "german": "Wolke",       "article": "die", "gender": "feminine",  "plural": "die Wolken",      "en": "cloud",         "zh": "云",     "level": "A1", "tags": ["sky"],         "example": { "de": "Die Wolken bedecken die Sonne.", "en": "The clouds cover the sun.", "zh": "云遮住了太阳。" } },
+    { "german": "Gewitter",    "article": "das", "gender": "neuter",    "plural": "die Gewitter",    "en": "thunderstorm",  "zh": "雷暴",   "level": "A2", "tags": [],              "example": { "de": "Das Gewitter kommt schnell näher.", "en": "The thunderstorm is approaching quickly.", "zh": "雷暴很快就来了。" } },
+    { "german": "Nebel",       "article": "der", "gender": "masculine", "plural": "die Nebel",       "en": "fog",           "zh": "雾",     "level": "A2", "tags": [],              "example": { "de": "Der Nebel ist morgens sehr dicht.", "en": "The fog is very thick in the morning.", "zh": "早上雾很浓。" } },
+    { "german": "Frost",       "article": "der", "gender": "masculine", "plural": "die Fröste",      "en": "frost",         "zh": "霜",     "level": "A2", "tags": [],              "example": { "de": "Heute Nacht gibt es Frost.", "en": "Tonight there will be frost.", "zh": "今晚会有霜冻。" } },
+    { "german": "Temperatur",  "article": "die", "gender": "feminine",  "plural": "die Temperaturen","en": "temperature",   "zh": "温度",   "level": "A2", "tags": [],              "example": { "de": "Die Temperatur fällt auf null Grad.", "en": "The temperature drops to zero degrees.", "zh": "气温降到零度。" } },
+    { "german": "Grad",        "article": "der", "gender": "masculine", "plural": "die Grad",        "en": "degree",        "zh": "度",     "level": "A2", "tags": [],              "example": { "de": "Es sind dreißig Grad im Schatten.", "en": "It is thirty degrees in the shade.", "zh": "阴凉处有三十度。" } },
+    { "german": "Himmel",      "article": "der", "gender": "masculine", "plural": "die Himmel",      "en": "sky",           "zh": "天空",   "level": "A1", "tags": ["sky"],         "example": { "de": "Der Himmel ist heute strahlend blau.", "en": "The sky is brilliantly blue today.", "zh": "今天天空湛蓝。" } },
+    { "german": "Regenschirm", "article": "der", "gender": "masculine", "plural": "die Regenschirme","en": "umbrella",      "zh": "雨伞",   "level": "A1", "tags": ["accessory"],   "example": { "de": "Vergiss deinen Regenschirm nicht!", "en": "Don't forget your umbrella!", "zh": "别忘了带雨伞！" } },
+    { "german": "Mantel",      "article": "der", "gender": "masculine", "plural": "die Mäntel",      "en": "coat",          "zh": "外套",   "level": "A1", "tags": ["accessory"],   "example": { "de": "Zieh deinen Mantel an, es ist kalt!", "en": "Put on your coat, it's cold!", "zh": "穿上外套，很冷！" } },
+    { "german": "Jahreszeit",  "article": "die", "gender": "feminine",  "plural": "die Jahreszeiten","en": "season",        "zh": "季节",   "level": "A2", "tags": ["season"],      "example": { "de": "Meine Lieblingsjahreszeit ist der Herbst.", "en": "My favourite season is autumn.", "zh": "我最喜欢的季节是秋天。" } },
+    { "german": "Frühling",    "article": "der", "gender": "masculine", "plural": "die Frühlinge",   "en": "spring",        "zh": "春天",   "level": "A1", "tags": ["season"],      "example": { "de": "Im Frühling blühen viele Blumen.", "en": "Many flowers bloom in spring.", "zh": "春天有很多花开放。" } },
+    { "german": "Sommer",      "article": "der", "gender": "masculine", "plural": "die Sommer",      "en": "summer",        "zh": "夏天",   "level": "A1", "tags": ["season"],      "example": { "de": "Im Sommer ist es heiß und sonnig.", "en": "In summer it is hot and sunny.", "zh": "夏天又热又晴。" } },
+    { "german": "Herbst",      "article": "der", "gender": "masculine", "plural": "die Herbste",     "en": "autumn",        "zh": "秋天",   "level": "A1", "tags": ["season"],      "example": { "de": "Im Herbst werden die Blätter bunt.", "en": "In autumn the leaves turn colourful.", "zh": "秋天树叶变得五彩缤纷。" } },
+    { "german": "Winter",      "article": "der", "gender": "masculine", "plural": "die Winter",      "en": "winter",        "zh": "冬天",   "level": "A1", "tags": ["season"],      "example": { "de": "Der Winter in Berlin ist oft kalt und grau.", "en": "Winter in Berlin is often cold and grey.", "zh": "柏林的冬天常常寒冷阴沉。" } },
+    { "german": "Wettervorhersage", "article": "die", "gender": "feminine", "plural": "die Wettervorhersagen", "en": "weather forecast", "zh": "天气预报", "level": "A2", "tags": [], "example": { "de": "Laut Wettervorhersage regnet es morgen.", "en": "According to the weather forecast it will rain tomorrow.", "zh": "据天气预报，明天会下雨。" } },
+    { "german": "Sonnenschein","article": "der", "gender": "masculine", "plural": "—",               "en": "sunshine",      "zh": "阳光",   "level": "A2", "tags": ["sky"],         "example": { "de": "Nach dem Regen kommt der Sonnenschein.", "en": "Sunshine comes after the rain.", "zh": "雨后会有阳光。" } },
+    { "german": "warm",        "article": null,  "gender": null,        "plural": null,              "en": "warm",          "zh": "暖和",   "level": "A1", "tags": ["adjective"],   "example": { "de": "Das Wetter ist heute angenehm warm.", "en": "The weather is pleasantly warm today.", "zh": "今天天气温暖宜人。" } },
+    { "german": "kalt",        "article": null,  "gender": null,        "plural": null,              "en": "cold",          "zh": "冷",     "level": "A1", "tags": ["adjective"],   "example": { "de": "Im Januar ist es sehr kalt.", "en": "In January it is very cold.", "zh": "一月份非常冷。" } },
+    { "german": "heiß",        "article": null,  "gender": null,        "plural": null,              "en": "hot",           "zh": "热",     "level": "A1", "tags": ["adjective"],   "example": { "de": "Im August ist es oft heiß.", "en": "It is often hot in August.", "zh": "八月份常常很热。" } },
+    { "german": "sonnig",      "article": null,  "gender": null,        "plural": null,              "en": "sunny",         "zh": "晴天",   "level": "A1", "tags": ["adjective"],   "example": { "de": "Am Wochenende ist es sonnig.", "en": "It is sunny at the weekend.", "zh": "周末是晴天。" } },
+    { "german": "bewölkt",     "article": null,  "gender": null,        "plural": null,              "en": "cloudy",        "zh": "阴天",   "level": "A2", "tags": ["adjective"],   "example": { "de": "Heute ist es leider sehr bewölkt.", "en": "Unfortunately it is very cloudy today.", "zh": "今天很遗憾是阴天。" } },
+    { "german": "nass",        "article": null,  "gender": null,        "plural": null,              "en": "wet",           "zh": "湿",     "level": "A1", "tags": ["adjective"],   "example": { "de": "Die Straße ist nass vom Regen.", "en": "The street is wet from the rain.", "zh": "街道被雨水打湿了。" } },
+    { "german": "regnen",      "article": null,  "gender": null,        "plural": null,              "en": "to rain",       "zh": "下雨",   "level": "A1", "tags": ["verb"],        "example": { "de": "Es regnet seit heute Morgen.", "en": "It has been raining since this morning.", "zh": "从今天早上就开始下雨了。" } },
+    { "german": "scheinen",    "article": null,  "gender": null,        "plural": null,              "en": "to shine",      "zh": "照耀",   "level": "A1", "tags": ["verb"],        "example": { "de": "Die Sonne scheint den ganzen Tag.", "en": "The sun shines all day long.", "zh": "太阳整天都在照耀。" } },
+    { "german": "schneien",    "article": null,  "gender": null,        "plural": null,              "en": "to snow",       "zh": "下雪",   "level": "A1", "tags": ["verb"],        "example": { "de": "Es schneit seit heute Nacht.", "en": "It has been snowing since last night.", "zh": "昨晚开始就下雪了。" } },
+    { "german": "anziehen",    "article": null,  "gender": null,        "plural": null,              "en": "to put on (clothes)", "zh": "穿上", "level": "A1", "tags": ["verb"],   "example": { "de": "Zieh eine Jacke an, es wird kälter.", "en": "Put on a jacket, it's getting colder.", "zh": "穿上夹克，天气变冷了。" } }
+  ],
+  "dialogues": [
+    {
+      "id": "morning-forecast",
+      "scene": { "en": "Julia and Max check the weather before leaving home in the morning.", "zh": "Julia 和 Max 早上出门前查看天气。" },
+      "audio": "weather-dialogue-1.mp3",
+      "highlighted_words": ["Regen", "Regenschirm", "Sonne", "Wind", "Wolken", "Mantel"],
+      "lines": [
+        { "speaker": "Julia", "text": "Schau mal aus dem Fenster — es gibt schon Wolken!" },
+        { "speaker": "Max",   "text": "Ja, und die Wettervorhersage sagt: Regen am Nachmittag." },
+        { "speaker": "Julia", "text": "Dann nehme ich meinen Regenschirm mit." },
+        { "speaker": "Max",   "text": "Gute Idee. Und zieh einen Mantel an, der Wind ist heute kalt." },
+        { "speaker": "Julia", "text": "Meinst du? Morgens scheint noch die Sonne." },
+        { "speaker": "Max",   "text": "Nur kurz. Mittags wird es bewölkt und nass." },
+        { "speaker": "Julia", "text": "Okay, ich nehme den Mantel. Danke für den Hinweis!" }
+      ]
+    },
+    {
+      "id": "seasons-chat",
+      "scene": { "en": "Lena and David talk about their favourite seasons at a café.", "zh": "Lena 和 David 在咖啡馆聊喜欢的季节。" },
+      "audio": "weather-dialogue-2.mp3",
+      "highlighted_words": ["Frühling", "Sommer", "Herbst", "Winter", "Schnee", "Sonnenschein", "Frost"],
+      "lines": [
+        { "speaker": "Lena",  "text": "Welche Jahreszeit magst du am liebsten?" },
+        { "speaker": "David", "text": "Definitiv den Sommer! Ich liebe Sonnenschein und Wärme." },
+        { "speaker": "Lena",  "text": "Ich finde den Frühling schöner — nicht zu heiß, nicht zu kalt." },
+        { "speaker": "David", "text": "Und der Herbst? Die Blätter sind sehr schön bunt." },
+        { "speaker": "Lena",  "text": "Ja, aber dann kommt der Winter mit Frost und Schnee." },
+        { "speaker": "David", "text": "Ich mag Schnee eigentlich gern! Es sieht magisch aus." },
+        { "speaker": "Lena",  "text": "Wirklich? Ich friere lieber nicht. Gib mir den Frühling!" }
+      ]
+    },
+    {
+      "id": "holiday-weather",
+      "scene": { "en": "Tom calls his friend Sara who is on holiday to ask about the weather there.", "zh": "Tom 给正在度假的朋友 Sara 打电话，问那边的天气。" },
+      "audio": "weather-dialogue-3.mp3",
+      "highlighted_words": ["Temperatur", "Grad", "Gewitter", "Nebel", "Himmel", "sonnig"],
+      "lines": [
+        { "speaker": "Tom",  "text": "Hallo Sara! Wie ist das Wetter dort?" },
+        { "speaker": "Sara", "text": "Fantastisch! Der Himmel ist strahlend blau und es ist sehr sonnig." },
+        { "speaker": "Tom",  "text": "Wie viel Grad hat es?" },
+        { "speaker": "Sara", "text": "Ungefähr achtundzwanzig Grad. Die Temperatur ist perfekt." },
+        { "speaker": "Tom",  "text": "Schön! Hier gibt es Nebel und es ist grau." },
+        { "speaker": "Sara", "text": "Oh nein! Gestern hatten wir kurz ein Gewitter, aber dann kam wieder die Sonne." },
+        { "speaker": "Tom",  "text": "Das klingt viel besser als hier. Genieß das Wetter!" }
+      ]
+    }
+  ],
+  "phrasebook": [
+    { "german": "Wie ist das Wetter heute?", "en": "What is the weather like today?", "zh": "今天天气怎么样？" },
+    { "german": "Es regnet / Es schneit / Es ist sonnig.", "en": "It is raining / snowing / sunny.", "zh": "在下雨 / 下雪 / 天晴。" },
+    { "german": "Wie viel Grad hat es?", "en": "How many degrees is it?", "zh": "现在几度？" },
+    { "german": "Soll ich einen Regenschirm mitnehmen?", "en": "Should I take an umbrella?", "zh": "我需要带雨伞吗？" },
+    { "german": "Das Wetter wird besser / schlechter.", "en": "The weather is getting better / worse.", "zh": "天气会变好 / 变差。" },
+    { "german": "Ich mag den Sommer lieber als den Winter.", "en": "I prefer summer to winter.", "zh": "我更喜欢夏天而不是冬天。" }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "der Schnee",          "en": "snow",             "zh": "雪" },
+        { "german": "die Wolke",           "en": "cloud",            "zh": "云" },
+        { "german": "das Gewitter",        "en": "thunderstorm",     "zh": "雷暴" },
+        { "german": "der Regenschirm",     "en": "umbrella",         "zh": "雨伞" },
+        { "german": "die Jahreszeit",      "en": "season",           "zh": "季节" },
+        { "german": "der Nebel",           "en": "fog",              "zh": "雾" },
+        { "german": "die Wettervorhersage","en": "weather forecast",  "zh": "天气预报" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Im Sommer scheint die ___ fast jeden Tag.",
+      "answer": "Sonne"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Wenn es regnet, nehme ich meinen ___ mit.",
+      "answer": "Regenschirm"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Im Winter liegt viel ___ auf den Straßen.",
+      "answer": "Schnee"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Der starke ___ hat meinen Schirm kaputt gemacht.",
+      "answer": "Wind"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Es sind nur fünf ___, zieh eine Jacke an!",
+      "answer": "Grad"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence is grammatically correct?", "zh": "哪句话语法正确？" },
+      "options": [
+        { "en": "Der Sonne scheint heute.", "zh": "Der Sonne scheint heute." },
+        { "en": "Die Sonne scheint heute.", "zh": "Die Sonne scheint heute." },
+        { "en": "Das Sonne scheint heute.", "zh": "Das Sonne scheint heute." },
+        { "en": "Ein Sonne scheint heute.", "zh": "Ein Sonne scheint heute." }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word does NOT belong with the others?", "zh": "哪个词和其他的不是一类？" },
+      "options": [
+        { "en": "Frühling", "zh": "Frühling" },
+        { "en": "Sommer",   "zh": "Sommer" },
+        { "en": "Herbst",   "zh": "Herbst" },
+        { "en": "Nebel",    "zh": "Nebel" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Tom says the weather at home is grey and foggy. What word describes this condition?", "zh": "Tom 说家里天气灰暗有雾。哪个词描述这种状况？" },
+      "options": [
+        { "en": "sonnig",   "zh": "sonnig（晴天）" },
+        { "en": "warm",     "zh": "warm（暖和）" },
+        { "en": "bewölkt",  "zh": "bewölkt（阴天）" },
+        { "en": "heiß",     "zh": "heiß（热）" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "What is the correct plural of 'die Wolke'?", "zh": "'die Wolke' 的复数是？" },
+      "options": [
+        { "en": "die Wolkes",  "zh": "die Wolkes" },
+        { "en": "die Wolker",  "zh": "die Wolker" },
+        { "en": "die Wolken",  "zh": "die Wolken" },
+        { "en": "die Wölke",   "zh": "die Wölke" }
+      ],
+      "answer": 2
+    }
+  ]
+}
