@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <script>
       // Restore path encoded by 404.html redirect
-      (function() {
-        var p = new URLSearchParams(window.location.search).get('p');
+      ;(function () {
+        var p = new URLSearchParams(window.location.search).get('p')
         if (p) {
-          window.history.replaceState(null, null, '/' + decodeURIComponent(p));
+          window.history.replaceState(null, null, '/' + decodeURIComponent(p))
         }
-      })();
+      })()
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deutsch!</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
