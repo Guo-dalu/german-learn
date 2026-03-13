@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import ReactMarkdown from 'react-markdown'
 import { Link, useParams } from 'react-router-dom'
 import remarkGfm from 'remark-gfm'
+import AudioButton from '../components/AudioButton'
 import Card from '../components/Card'
 import FillInBlanks from '../components/exercises/FillInBlanks'
 import Matching from '../components/exercises/Matching'
@@ -147,6 +148,7 @@ export default function VocabularyPage() {
                       <span className={`font-display text-base leading-none ${GENDER_CLASS[word.gender] ?? 'text-text'}`}>
                         {word.article} {word.german}
                       </span>
+                      <AudioButton text={`${word.article} ${word.german}`} />
                       {word.level && (
                         <span className='text-[10px] bg-tag-bg text-tag-text rounded-full px-1.5 py-0.5 leading-none shrink-0'>{word.level}</span>
                       )}
