@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint src --fix && tsc --noEmit"
+    "lint": "eslint src --fix && tsc --noEmit",
+    "audio": "node tools/create-audio.js",
+    "audio:force": "node tools/create-audio.js -f",
+    "audio:all": "node tools/create-audio.js --all",
+    "audio:all:force": "node tools/create-audio.js --all -f"
   },
   "dependencies": {
     "i18next": "^25.8.13",

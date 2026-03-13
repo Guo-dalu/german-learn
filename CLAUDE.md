@@ -140,3 +140,17 @@ progress:{topic}   → { correct: number, total: number }
 
 - **Lint:** `npm run lint` → `eslint src --fix && tsc --noEmit`
 - **Tailwind v4:** no `tailwind.config.ts`; PostCSS via `@tailwindcss/postcss`
+
+### Audio Generation (`tools/create-audio.js`)
+
+Generates MP3s from Google Translate TTS → `public/audio/words/{topic}/{word}.mp3`.
+By default skips existing files; use `-f` to overwrite.
+
+```bash
+npm run audio -- weather          # single topic, skip existing
+npm run audio:force -- weather    # single topic, force overwrite
+npm run audio:all                 # all topics, skip existing
+npm run audio:all:force           # all topics, force overwrite
+```
+
+When adding a new topic, run the single-topic command after creating the JSON file.
