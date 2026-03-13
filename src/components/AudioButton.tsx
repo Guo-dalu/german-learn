@@ -1,18 +1,20 @@
 import { useAudio } from '../hooks/useAudio'
 
 interface Props {
-  text: string
+  topic: string
+  word: string
   className?: string
 }
 
-export default function AudioButton({ text, className = '' }: Props) {
+export default function AudioButton({ topic, word, className = '' }: Props) {
   const { speak, speaking } = useAudio()
+  const src = `${import.meta.env.BASE_URL}audio/words/${topic}/${word}.mp3`
 
   return (
     <button
-      onClick={() => speak(text)}
+      onClick={() => speak(src)}
       disabled={speaking}
-      aria-label={`Play pronunciation: ${text}`}
+      aria-label={`Play pronunciation: ${word}`}
       className={`inline-flex items-center justify-center p-0.5 rounded hover:bg-accent3/15 transition-colors cursor-pointer disabled:cursor-default ${speaking ? 'text-accent3 animate-pulse' : 'text-text2/50 hover:text-accent3'} ${className}`}
     >
       <svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='currentColor'>

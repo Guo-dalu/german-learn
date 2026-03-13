@@ -148,7 +148,7 @@ export default function VocabularyPage() {
                       <span className={`font-display text-base leading-none ${GENDER_CLASS[word.gender] ?? 'text-text'}`}>
                         {word.article} {word.german}
                       </span>
-                      <AudioButton text={`${word.article} ${word.german}`} />
+                      <AudioButton topic={topic ?? ''} word={word.german} />
                       {word.level && (
                         <span className='text-[10px] bg-tag-bg text-tag-text rounded-full px-1.5 py-0.5 leading-none shrink-0'>{word.level}</span>
                       )}
