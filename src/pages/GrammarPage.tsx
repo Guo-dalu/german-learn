@@ -4,13 +4,11 @@ import ReactMarkdown from 'react-markdown'
 import { Link, useParams } from 'react-router-dom'
 import remarkGfm from 'remark-gfm'
 import Card from '../components/Card'
-import FillInBlanks from '../components/exercises/FillInBlanks'
-import Matching from '../components/exercises/Matching'
-import MultipleChoice from '../components/exercises/MultipleChoice'
+import ExercisesSection from '../components/ExercisesSection'
 import SectionLayout from '../components/SectionLayout'
-import Tag from '../components/Tag'
+import TopicHeader from '../components/TopicHeader'
 import { parseFrontmatter } from '../utils/content'
-import type { ContentFile, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise } from '../types/content'
+import type { ContentFile, Lang } from '../types/content'
 
 const mdModules = import.meta.glob('/content/grammar/*/*.md', { query: '?raw', import: 'default' })
 const jsonModules = import.meta.glob<ContentFile>('/content/grammar/*/*.json', { import: 'default' })
@@ -42,11 +40,8 @@ export default function GrammarPage() {
     if (jsonLoader) jsonLoader().then((data) => setContent(data))
   }, [topic, lang])
 
-  const emoji = content?.emoji ?? '📖'
+  const emoji = content?.emoji
   const exercises = content?.exercises ?? []
-  const matchings = exercises.filter((e): e is MatchingExercise => e.type === 'matching')
-  const fillIns = exercises.filter((e): e is FillInExercise => e.type === 'fill-in')
-  const multiChoices = exercises.filter((e): e is MultipleChoiceExercise => e.type === 'multiple-choice')
 
   return (
     <SectionLayout section='grammar' currentSlug={topic ?? ''}>
@@ -57,21 +52,9 @@ export default function GrammarPage() {
         </Link>
       </div>
 
-      {/* Header */}
-      <div className='bg-bg2 border-b-2 border-border p-4'>
-        <div className='max-w-2xl mx-auto text-center'>
-          <div className='float-delay inline-block mb-1 text-2xl'>{emoji}</div>
-          <h1 className='font-display text-text text-[clamp(1.1rem,4vw,2rem)] leading-none'>{title || topic}</h1>
-          <div className='flex gap-2 justify-center flex-wrap mt-2'>
-            {tags.map((tag) => (
-              <Tag key={tag} label={tag} />
-            ))}
-          </div>
-        </div>
-      </div>
-
       <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] py-[clamp(8px,2vw,20px)]'>
-        {/* Grammar content */}
+        <TopicHeader emoji={emoji} title={title || (topic ?? '')} tags={tags} />
+
         {body && (
           <section className='mb-6'>
             <Card className='prose-content px-6'>
@@ -80,29 +63,9 @@ export default function GrammarPage() {
           </section>
         )}
 
-        {/* Exercises */}
-        {exercises.length > 0 && (
-          <section>
-            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
-              ✏️ Exercises
-              <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
-            </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-              {matchings.map((ex, i) => (
-                <Matching key={i} exercise={ex} lang={lang} />
-              ))}
-              {fillIns.length > 0 && <FillInBlanks exercises={fillIns} lang={lang} />}
-              {multiChoices.map((ex, i) => (
-                <MultipleChoice key={i} exercise={ex} lang={lang} />
-              ))}
-            </div>
-          </section>
-        )}
+        <ExercisesSection exercises={exercises} lang={lang} />
       </div>
 
-      <div className='mt-6 py-2.5 text-center bg-accent4'>
-        <span className='font-display text-white text-[clamp(0.85rem,2.5vw,1rem)] tracking-wider'>✦ Keep going · Weitermachen · 你能做到 ✦</span>
-      </div>
     </SectionLayout>
   )
 }

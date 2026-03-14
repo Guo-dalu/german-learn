@@ -5,26 +5,23 @@ import { Link, useParams } from 'react-router-dom'
 import remarkGfm from 'remark-gfm'
 import AudioButton from '../components/AudioButton'
 import Card from '../components/Card'
-import FillInBlanks from '../components/exercises/FillInBlanks'
-import Matching from '../components/exercises/Matching'
-import MultipleChoice from '../components/exercises/MultipleChoice'
+import ExercisesSection from '../components/ExercisesSection'
+import SectionHeading from '../components/SectionHeading'
 import SectionLayout from '../components/SectionLayout'
-import Tag from '../components/Tag'
+import TopicHeader from '../components/TopicHeader'
 import { GENDER_CLASS } from '../constants'
 import { parseFrontmatter } from '../utils/content'
-import type { ContentFile, Dialogue, FillInExercise, Lang, MatchingExercise, MultipleChoiceExercise, Phrase, Word } from '../types/content'
+import type { ContentFile, Dialogue, Lang, Phrase, Word } from '../types/content'
 
 const mdModules = import.meta.glob('/content/vocabulary/*/*.md', { query: '?raw', import: 'default' })
 const jsonModules = import.meta.glob<ContentFile>('/content/vocabulary/*/*.json', { import: 'default' })
 
 function highlightLine(text: string, highlightedWords: string[], words: Word[]) {
-  // Build a map from bare word -> gender for color lookup
   const wordMap: Record<string, string> = {}
   for (const w of words) {
     wordMap[w.german.toLowerCase()] = w.gender
   }
 
-  // Split text on highlighted words (case-insensitive), wrap in colored spans
   const pattern = new RegExp(`\\b(${highlightedWords.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'gi')
   const parts = text.split(pattern)
 
@@ -40,13 +37,6 @@ function highlightLine(text: string, highlightedWords: string[], words: Word[]) 
     return part
   })
 }
-
-const stickerPositions = [
-  'absolute bottom-2 left-3 text-3xl rotate-8',
-  'absolute bottom-3 left-15 text-3xl -rotate-10',
-  'absolute bottom-2 right-15 text-3xl rotate-10',
-  'absolute bottom-2 right-3 text-4xl -rotate-6',
-]
 
 function DialogueSection({ dialogue, words, lang }: { dialogue: Dialogue; words: Word[]; lang: Lang }) {
   return (
@@ -93,15 +83,10 @@ export default function VocabularyPage() {
 
   const title = content?.topic ?? topic ?? ''
   const tags = content?.tags ?? []
-
   const words: Word[] = content?.words ?? []
   const dialogues: Dialogue[] = content?.dialogues ?? []
   const phrasebook: Phrase[] = content?.phrasebook ?? []
   const exercises = content?.exercises ?? []
-  const matchings = exercises.filter((e): e is MatchingExercise => e.type === 'matching')
-  const fillIns = exercises.filter((e): e is FillInExercise => e.type === 'fill-in')
-  const multiChoices = exercises.filter((e): e is MultipleChoiceExercise => e.type === 'multiple-choice')
-
   const emoji = content?.emoji ?? '📖'
   const stickers = content?.stickers ?? ['🇩🇪', '⭐', '✏️', '📖']
 
@@ -114,32 +99,13 @@ export default function VocabularyPage() {
         </Link>
       </div>
 
-      {/* 1. Header */}
-      <div className='relative overflow-hidden bg-bg2 border-b-2 border-border p-4'>
-        {stickers.slice(0, 4).map((s, i) => (
-          <span key={i} className={`${stickerPositions[i]} select-none pointer-events-none`}>
-            {s}
-          </span>
-        ))}
-        <div className='max-w-2xl mx-auto text-center relative z-10'>
-          <div className='float-delay inline-block mb-1 text-2xl'>{emoji}</div>
-          <h1 className='font-display text-text text-[clamp(1.1rem,4vw,2rem)] leading-none'>{title || topic}</h1>
-          <div className='flex gap-2 justify-center flex-wrap mt-2'>
-            {tags.map((tag) => (
-              <Tag key={tag} label={tag} />
-            ))}
-          </div>
-        </div>
-      </div>
-
       <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] py-[clamp(8px,2vw,20px)]'>
-        {/* 2. Word List */}
+        <TopicHeader emoji={emoji} title={title} tags={tags} stickers={stickers} />
+
+        {/* Word List */}
         {words.length > 0 && (
           <section className='mb-6'>
-            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
-              📖 Word List
-              <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
-            </h2>
+            <SectionHeading emoji='📖' label='Word List' />
             <Card className='p-4'>
               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
                 {words.map((word) => (
@@ -169,26 +135,20 @@ export default function VocabularyPage() {
           </section>
         )}
 
-        {/* 3. Dialogue */}
+        {/* Dialogue */}
         {dialogues.length > 0 && (
           <section className='mb-6'>
-            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
-              💬 Dialogue
-              <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
-            </h2>
+            <SectionHeading emoji='💬' label='Dialogue' />
             {dialogues.map((dialogue) => (
               <DialogueSection key={dialogue.id} dialogue={dialogue} words={words} lang={lang} />
             ))}
           </section>
         )}
 
-        {/* 4. Phrasebook */}
+        {/* Phrasebook */}
         {phrasebook.length > 0 && (
           <section className='mb-6'>
-            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
-              📝 Phrasebook
-              <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
-            </h2>
+            <SectionHeading emoji='📝' label='Phrasebook' />
             <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
               {phrasebook.map((phrase, i) => (
                 <Card key={i} className='p-3 flex flex-col gap-1.5'>
@@ -200,7 +160,7 @@ export default function VocabularyPage() {
           </section>
         )}
 
-        {/* 5. Language Notes */}
+        {/* Language Notes */}
         {notesBody && (
           <section className='mb-6'>
             <Card className='prose-content px-6'>
@@ -209,29 +169,9 @@ export default function VocabularyPage() {
           </section>
         )}
 
-        {/* 5. Exercises */}
-        {exercises.length > 0 && (
-          <section>
-            <h2 className='flex items-center gap-3 mb-3 font-display text-xl text-text'>
-              ✏️ Exercises
-              <span className='inline-block w-9 h-1 rounded-sm bg-accent3' />
-            </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-              {matchings.map((ex, i) => (
-                <Matching key={i} exercise={ex} lang={lang} />
-              ))}
-              {fillIns.length > 0 && <FillInBlanks exercises={fillIns} lang={lang} />}
-              {multiChoices.map((ex, i) => (
-                <MultipleChoice key={i} exercise={ex} lang={lang} />
-              ))}
-            </div>
-          </section>
-        )}
+        <ExercisesSection exercises={exercises} lang={lang} />
       </div>
 
-      <div className='mt-6 py-2.5 text-center bg-accent4'>
-        <span className='font-display text-white text-[clamp(0.85rem,2.5vw,1rem)] tracking-wider'>✦ Keep going · Weitermachen · 你能做到 ✦</span>
-      </div>
     </SectionLayout>
   )
 }

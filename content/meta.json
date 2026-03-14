@@ -11,7 +11,7 @@
     "weather": { "emoji": "🌤️", "tags": ["A1", "A2", "weather"], "wordCount": 43, "title": { "en": "Weather", "zh": "天气" } }
   },
   "grammar": {
-    "articles": { "emoji": "📌", "tags": ["A1", "articles", "grammar"], "title": { "en": "German Articles", "zh": "德语冠词" } },
+    "articles": { "tags": ["A1", "articles", "grammar"], "title": { "en": "German Articles", "zh": "德语冠词" } },
     "adjective-endings": { "emoji": "✏️", "tags": ["B1", "adjectives", "grammar"], "title": { "en": "Adjective Endings", "zh": "形容词词尾" } }
   }
 }

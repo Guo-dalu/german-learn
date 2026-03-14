@@ -52,7 +52,14 @@ export default function SectionLayout({ section, currentSlug, children }: Props)
       </aside>
 
       {/* Main content */}
-      <div className='flex-1 min-w-0'>{children}</div>
+      <div className='flex-1 min-w-0'>
+        {children}
+        <div className='max-w-5xl mx-auto px-[clamp(10px,3vw,13px)] pb-[clamp(8px,2vw,20px)]'>
+          <div className='py-2.5 text-center bg-accent4 border-2 border-accent6 rounded-2xl'>
+            <span className='font-display text-white text-[clamp(0.85rem,2.5vw,1rem)] tracking-wider'>✦ Keep going · Weitermachen · 你能做到 ✦</span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

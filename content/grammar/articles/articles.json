@@ -1,8 +1,48 @@
 {
   "topic": "articles",
-  "emoji": "📌",
-  "tags": ["A1", "articles"],
+  "tags": ["A1", "articles", "grammar"],
   "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "der Tisch",  "en": "table (masculine)",  "zh": "桌子（阳性）" },
+        { "german": "die Lampe",  "en": "lamp (feminine)",    "zh": "灯（阴性）" },
+        { "german": "das Buch",   "en": "book (neuter)",      "zh": "书（中性）" },
+        { "german": "die Frau",   "en": "woman (feminine)",   "zh": "女人（阴性）" },
+        { "german": "der Hund",   "en": "dog (masculine)",    "zh": "狗（阳性）" },
+        { "german": "das Kind",   "en": "child (neuter)",     "zh": "孩子（中性）" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Das ist ___ Lehrer.",
+      "answer": "der"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich kaufe ___ Apfel.",
+      "answer": "einen"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Hast du ___ Schwester?",
+      "answer": "eine"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Das ist ___ Mädchen.",
+      "answer": "ein"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Ich sehe ___ Mann nicht.",
+      "answer": "den"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Er hat ___ Auto.",
+      "answer": "ein"
+    },
     {
       "type": "multiple-choice",
       "question": { "en": "What is the article for 'Tisch' (table)?", "zh": "'Tisch'（桌子）的冠词是什么？" },
@@ -10,6 +50,50 @@
         { "en": "die", "zh": "die" },
         { "en": "der", "zh": "der" },
         { "en": "das", "zh": "das" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Fill the gap: 'Ich sehe ___ Hund.'", "zh": "填空：'Ich sehe ___ Hund.'" },
+      "options": [
+        { "en": "der", "zh": "der" },
+        { "en": "die", "zh": "die" },
+        { "en": "den", "zh": "den" },
+        { "en": "dem", "zh": "dem" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Fill the gap: 'Er hat ___ Bruder.'", "zh": "填空：'Er hat ___ Bruder.'" },
+      "options": [
+        { "en": "ein", "zh": "ein" },
+        { "en": "eine", "zh": "eine" },
+        { "en": "einen", "zh": "einen" },
+        { "en": "einem", "zh": "einem" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which word is neuter (das)?", "zh": "哪个词是中性（das）？" },
+      "options": [
+        { "en": "Tisch (table)", "zh": "Tisch（桌子）" },
+        { "en": "Lampe (lamp)", "zh": "Lampe（灯）" },
+        { "en": "Mädchen (girl)", "zh": "Mädchen（女孩）" },
+        { "en": "Zeitung (newspaper)", "zh": "Zeitung（报纸）" }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which sentence is correct?", "zh": "哪句话是正确的？" },
+      "options": [
+        { "en": "Ich habe ein Bruder.", "zh": "Ich habe ein Bruder." },
+        { "en": "Ich habe einen Bruder.", "zh": "Ich habe einen Bruder." },
+        { "en": "Ich habe eine Bruder.", "zh": "Ich habe eine Bruder." },
+        { "en": "Ich habe einem Bruder.", "zh": "Ich habe einem Bruder." }
       ],
       "answer": 1
     }

@@ -73,9 +73,47 @@ Each topic = `{topic}.md` + `{topic}.zh.md` + `{topic}.json`
 
 ## grammar/
 
-Each topic = `{topic}.md` + `{topic}.zh.md` + `{topic}.json`
+Each topic lives in its own folder: `{topic}/{topic}.md` + `{topic}/{topic}.zh.md` + `{topic}/{topic}.json`
 
-Structure TBD. Rules + examples + exercises.
+### Page sections (in order)
+
+1. **Header** — title, tags, emoji (from JSON)
+2. **Grammar content** — the `.md` body rendered as prose with tables
+3. **Exercises** — matching → fill-in → multiple-choice
+
+### Markdown rules
+
+- Frontmatter: `title`, `tags` (no `emoji` or `wordCount` needed — emoji lives in JSON)
+- Use `##` headings (not `#`) — the page title comes from frontmatter
+- Lead with the core principle in plain language before tables
+- Tables for declension/conjugation patterns — bold the changing part (e.g. `**den**`)
+- End with a **Common Mistakes** section using ❌ / ✅ pairs
+- Max ~60 lines — stay dense and scannable, not encyclopedic
+- `.zh.md` is a full Chinese translation: headings, prose, table headers, examples all in Chinese
+
+### Exercise rules
+
+- **matching**: 5–8 pairs mapping a German form to its grammar label + meaning
+- **fill-in**: sentence with `___`; answer is the exact German word/ending; no hints; sentences must illustrate the rule being taught
+- **multiple-choice**: test genuine grammar decisions — wrong case, wrong gender, spot-the-error; options as `{ "en": "...", "zh": "..." }`
+- Aim for ~10 exercises total (1 matching + 5–6 fill-ins + 3–4 multiple-choice)
+
+### JSON structure
+
+```json
+{
+  "topic": "adjective-endings",
+  "emoji": "✏️",
+  "tags": ["B1", "adjectives", "grammar"],
+  "exercises": [
+    { "type": "matching", "pairs": [ { "german": "der strenge ___", "en": "Lehrer (nom, definite)", "zh": "Lehrer（主格，定冠词）" } ] },
+    { "type": "fill-in", "sentence": "Sie trägt einen lang___ Mantel.", "answer": "en" },
+    { "type": "multiple-choice", "question": { "en": "Which is correct?", "zh": "哪句正确？" }, "options": [ { "en": "Ich suche eine billige Wohnung.", "zh": "Ich suche eine billige Wohnung." } ], "answer": 0 }
+  ]
+}
+```
+
+No `words`, `dialogues`, or `phrasebook` keys.
 
 ---
 
@@ -127,18 +165,19 @@ To generate a new topic with an AI agent, provide these files as context:
 
 **For grammar:**
 - `CONTENT.md` (this file)
-- `content/grammar/articles.md`
-- `content/grammar/articles.zh.md`
-- `content/grammar/articles.json`
+- `content/grammar/adjective-endings/adjective-endings.md`
+- `content/grammar/adjective-endings/adjective-endings.zh.md`
+- `content/grammar/adjective-endings/adjective-endings.json`
 
 Then prompt:
 
 ```
 Using the spec in CONTENT.md and the example files as reference, create a new
-vocabulary topic: "{topic}" at level {A1/A2/B1}.
+[vocabulary / grammar] topic: "{topic}" at level {A1/A2/B1}.
 
-Produce 3 files: {topic}.md, {topic}.zh.md, {topic}.json.
-Follow the exact structure of the example. German must be accurate and natural.
+Produce 3 files: {topic}.md, {topic}.zh.md, {topic}.json inside content/[vocabulary|grammar]/{topic}/.
+Follow the exact structure of the example. Double-check all German for accuracy.
+Remember to update content/meta.json with the new entry.
 ```
 
 The spec + one complete example is sufficient context. No other files needed.
