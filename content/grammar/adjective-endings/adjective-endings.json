@@ -1,0 +1,76 @@
+{
+  "topic": "adjective-endings",
+  "tags": ["B1", "adjectives", "grammar"],
+  "emoji": "✏️",
+  "exercises": [
+    {
+      "type": "matching",
+      "pairs": [
+        { "german": "der strenge ___",     "en": "Lehrer (nom, definite)",       "zh": "Lehrer（主格，定冠词）" },
+        { "german": "ein dunkles ___",      "en": "Zimmer (nom, indefinite)",     "zh": "Zimmer（主格，不定冠词）" },
+        { "german": "die freundliche ___",  "en": "Nachbarin (nom, definite)",    "zh": "Nachbarin（主格，定冠词）" },
+        { "german": "starker ___",          "en": "Wind (nom, no article)",       "zh": "Wind（主格，零冠词）" },
+        { "german": "den schweren ___",     "en": "Koffer (acc, definite)",       "zh": "Koffer（宾格，定冠词）" },
+        { "german": "eine gemütliche ___",  "en": "Wohnung (nom, indefinite)",    "zh": "Wohnung（主格，不定冠词）" }
+      ]
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Sie trägt einen lang___ Mantel.",
+      "answer": "en"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Wir wohnen in einer ruhig___ Straße.",
+      "answer": "en"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Er bestellt heiß___ Suppe ohne Löffel.",
+      "answer": "e"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Das ist ein ziemlich kompliziert___ Thema.",
+      "answer": "es"
+    },
+    {
+      "type": "fill-in",
+      "sentence": "Mit leer___ Magen kann ich nicht arbeiten.",
+      "answer": "em"
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which is correct?", "zh": "哪句正确？" },
+      "options": [
+        { "en": "Ich suche eine billige Wohnung.", "zh": "Ich suche eine billige Wohnung." },
+        { "en": "Ich suche eine billiger Wohnung.", "zh": "Ich suche eine billiger Wohnung." },
+        { "en": "Ich suche eine billigen Wohnung.", "zh": "Ich suche eine billigen Wohnung." },
+        { "en": "Ich suche eine billiges Wohnung.", "zh": "Ich suche eine billiges Wohnung." }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Fill the gap: 'Er fährt mit einem alt___ Fahrrad.'", "zh": "填空：'Er fährt mit einem alt___ Fahrrad.'" },
+      "options": [
+        { "en": "-e", "zh": "-e" },
+        { "en": "-es", "zh": "-es" },
+        { "en": "-er", "zh": "-er" },
+        { "en": "-en", "zh": "-en" }
+      ],
+      "answer": 3
+    },
+    {
+      "type": "multiple-choice",
+      "question": { "en": "Which ending is WRONG?", "zh": "哪个词尾是错误的？" },
+      "options": [
+        { "en": "die berühmte Schauspielerin", "zh": "die berühmte Schauspielerin" },
+        { "en": "ein ehrlicher Mensch", "zh": "ein ehrlicher Mensch" },
+        { "en": "der wichtiger Termin", "zh": "der wichtiger Termin" },
+        { "en": "frisches Obst", "zh": "frisches Obst" }
+      ],
+      "answer": 2
+    }
+  ]
+}
